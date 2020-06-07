@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import NavBar from './NavBar';
 
 const CharacterPage = () => {
 
@@ -27,10 +28,28 @@ const CharacterPage = () => {
     }
     fetchData();
   },[]);
-  console.log(results[0].name)
+  console.log(results[0].series)
   
   return (
-  <p> { results[0].name ? (results[0].name) : ("ups...") } </p>
+
+    <>
+    <NavBar />
+      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+
+      {/* Attempt to display characters pictures  */}
+      <img src={results[0].thumbnail} className="App-logo" alt="logo" />
+
+      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+
+      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+
+      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+
+      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+
+      
+
+    </>
   )
 };
 
