@@ -35,19 +35,20 @@ const CharacterPage = () => {
 
     <>
     <NavBar />
-      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+      <div className="character-page-content" >
+        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
 
-      {/* Attempt to display characters pictures  */}
-      <img src={results[0].thumbnail} className="App-logo" alt="logo" />
+        {/* Attempt to display characters pictures  */}
+        <img src={results[0].thumbnail} className="App-logo" alt="logo" />
 
-      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
 
-      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
 
-      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
 
-      <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
-
+        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+      </div>
     <Footer />      
 
     </>

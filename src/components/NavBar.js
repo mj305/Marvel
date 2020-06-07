@@ -44,7 +44,7 @@ export default function ButtonAppBar() {
            {/*  News */}
           </Typography>
           <Link className="nav-bar-about-link" > About Us </Link>
-          <Button color="inherit" className="nav-bar-login-button" >Login</Button>
+          <Button color="inherit" className="nav-bar-login-button" >Login / SignUp</Button>
         </Toolbar>
       </AppBar>
     </div>

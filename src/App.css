@@ -55,7 +55,9 @@
 
 .main-page-paragraph {
   color: navy;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 1rem 11px -1px 8px;
+    margin: 3rem 28px;
 }
 
 /* FOOTER MAIN PAGE */
@@ -83,5 +85,26 @@
   font-size: 1.5rem;
 }
 
-/* FOOTER CHARACTERS/ID PAGE */
+
+/* ABOUT */
+
+.characters-pic {
+  width: 50rem;
+  height: 25rem;
+}
+
+.about-paragraph {
+  font-size: 2rem;
+  color: navy;
+  padding: 2rem;
+    margin: 2rem;
+
+}
+
+/* CHARACTERS PAGE */
+
+.character-page-content {
+  margin: 1rem;
+  padding: 1rem;
+}
 
