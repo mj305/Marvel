@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const CharacterPage = () => {
 
@@ -47,7 +48,7 @@ const CharacterPage = () => {
 
       <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
 
-      
+    <Footer />      
 
     </>
   )

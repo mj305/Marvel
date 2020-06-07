@@ -13,6 +13,8 @@ import {
 const App = () => {
 
   return (
+
+    <div className="backImage" >
       <Router>
           <Switch>
               <Route path="/about">
@@ -23,6 +25,10 @@ const App = () => {
                 <SearchPage />
               </Route>
 
+              <Route path="/characters">
+                <CharactersPage />
+              </Route>
+
               <Route path="/characters/:id">
                 <CharactersPage />
               </Route>
@@ -30,9 +36,10 @@ const App = () => {
               <Route path="/">
                 <MainPage />
               </Route>
-              
+
           </Switch>
       </Router>
+    </div>  
   )
 
 };
