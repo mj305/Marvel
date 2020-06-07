@@ -1,5 +1,14 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+.nav-bar-logo {
+  width: 6rem;
+  padding: .5rem;
+}
+
+.MuiButton-label {
+  font-size: 1.5rem;
 }
 
 .App-logo {
@@ -7,14 +16,22 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.nav-bar-about-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 450;
+  padding-right: 8rem
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
-  background-color: #282c34;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +53,10 @@
     transform: rotate(360deg);
   }
 } */
+
+/* Main Page Style */
+
+.main-page-paragraph {
+  color: navy;
+  font-weight: 400;
+}

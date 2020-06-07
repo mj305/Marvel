@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-/* import logo from './assets/logo.png';
- */
+import NavBar from './NavBar';
+import logo from '../assets/logo.png'
+
 function MainPage() {
 
   const [query, setQuery] = useState([]);
@@ -21,16 +22,17 @@ function MainPage() {
   console.log(query);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <>
+     <NavBar />
+        <div className="App">
+          <header className="App-header">
 
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <p>
-          Marvel App Coming Soon...
-        </p>
-        
-      </header>
-    </div>
+            <img src={logo} className="App-logo" alt="logo" /> 
+            <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
+            
+          </header>
+        </div>
+    </>
   );
 }
 

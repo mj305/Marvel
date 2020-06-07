@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import About from './components/About';
 import SearchPage from './components/SearchPage';
 import CharactersPage from './components/CharacterPage';
