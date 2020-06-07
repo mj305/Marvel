@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import NavBar from './NavBar';
+import Footer from './Footer';
 import logo from '../assets/logo.png'
 
 function MainPage() {
@@ -32,6 +33,7 @@ function MainPage() {
             
           </header>
         </div>
+      <Footer />  
     </>
   );
 }
