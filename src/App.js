@@ -17,11 +17,7 @@ const App = () => {
     <div className="backImage" >
       <Router>
           <Switch>
-            
-              <Route path="/">
-                <MainPage />
-              </Route>
-
+          
               <Route path="/about">
                 <About />
               </Route>
@@ -36,6 +32,10 @@ const App = () => {
 
               <Route path="/characters/:id">
                 <CharactersPage />
+              </Route>
+
+              <Route path="/">
+                <MainPage />
               </Route>
 
           </Switch>

@@ -10,7 +10,14 @@ const CharacterPage = () => {
   const [query, setQuery] = React.useState({
     data:{
       data:{
-        results:[{}]
+        results:[{
+          thumbnail:{
+            path:" "
+          },
+          comics: {
+            items:[]
+          }
+        }]
       }
     }
   });
@@ -29,25 +36,30 @@ const CharacterPage = () => {
     }
     fetchData();
   },[]);
-  console.log(results[0].series)
-  
+  console.log(results[0].comics.items.map(comic => {
+    return comic
+  }))
+
+  const comics = results[0].comics.items.map(comic => (
+    <p key={comic.name} > { comic.name } </p>
+  ))
+
   return (
 
     <>
     <NavBar />
       <div className="character-page-content" >
-        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>Character Name: { results[0].name ? (results[0].name) : ("ups...")}</p>
 
-        {/* Attempt to display characters pictures  */}
-        <img src={results[0].thumbnail} className="App-logo" alt="logo" />
+       {/* <img src={`${results[0].thumbnail.path}?apikey=5189968cf45946bfc4dba96d1349fe75`} className="App-logo" alt="logo" /> */}
 
-        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p> Comics: { comics }</p>
 
-        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name }</p>
 
-        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name }</p>
 
-        <p>{ results[0].name ? (results[0].name) : ("ups...")}</p>
+        <p>{ results[0].name }</p>
       </div>
     <Footer />      
 
