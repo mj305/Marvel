@@ -28,7 +28,10 @@ function MainPage() {
         <div className="App">
           <header className="App-header">
 
-            <img src={logo} className="App-logo" alt="logo" /> 
+            <a href="http://marvel.com" target="blank" >
+              <img src={logo} className="App-logo" alt="logo" />
+            </a>   
+            
             <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
             
           </header>
