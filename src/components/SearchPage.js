@@ -1,11 +1,11 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import InputBase from '@material-ui/core/InputBase';
-import SearchIcon from '@material-ui/icons/Search'; 
 import Button from '@material-ui/core/Button';
 
+import CharacterPage from './CharacterPage'
 import NavBar from './NavBar';
 import Footer from './Footer';
+import BackToTop from './BackToTop';
 
 const SearchPage = () => {
 
@@ -22,6 +22,8 @@ const SearchPage = () => {
           <Button variant="contained" className="search-button" > Search </Button>
         </div>
 
+        < CharacterPage />
+        <BackToTop />
       <Footer />  
     </>
     

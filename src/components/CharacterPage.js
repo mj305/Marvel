@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import NavBar from './NavBar';
-import Footer from './Footer';
+/* import NavBar from './NavBar';
+import Footer from './Footer'; */
 
 const CharacterPage = () => {
 
@@ -12,10 +12,17 @@ const CharacterPage = () => {
       data:{
         results:[{
           thumbnail:{
+            extension: " ",
             path:" "
           },
           comics: {
             items:[]
+          },
+          series: {
+            items: []
+          },
+            stories: {
+            items: []
           }
         }]
       }
@@ -36,33 +43,36 @@ const CharacterPage = () => {
     }
     fetchData();
   },[]);
-  console.log(results[0].comics.items.map(comic => {
-    return comic
-  }))
+  console.log(results[0])
 
   const comics = results[0].comics.items.map(comic => (
-    <p key={comic.name} > { comic.name } </p>
+    <li key={comic.name} > { comic.name } </li>
+  ))
+
+  const series = results[0].series.items.map(series => (
+    <li key={series.name} > { series.name }  </li>
+  ))
+
+  const stories = results[0].stories.items.map(stories => (
+    <li key={stories.name} > { stories.name } </li>
   ))
 
   return (
 
     <>
-    <NavBar />
       <div className="character-page-content" >
-        <p>Character Name: { results[0].name ? (results[0].name) : ("ups...")}</p>
 
-       {/* <img src={`${results[0].thumbnail.path}?apikey=5189968cf45946bfc4dba96d1349fe75`} className="App-logo" alt="logo" /> */}
+        <h1> { results[0].name ? (results[0].name) : ("ups...")}</h1>
 
-        <p> Comics: { comics }</p>
+       <img src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} className="App-logo" alt="logo" />
 
-        <p>{ results[0].name }</p>
+        <ul> Comics: { comics }</ul>
 
-        <p>{ results[0].name }</p>
+        <ul> Series: { series } </ul>
 
-        <p>{ results[0].name }</p>
-      </div>
-    <Footer />      
+        <ul> Stories: { stories }</ul>
 
+      </div>   
     </>
   )
 };

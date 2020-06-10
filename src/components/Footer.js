@@ -8,14 +8,15 @@ const useStyles = makeStyles((theme) => ({
       margin: theme.spacing(1),
     },
   },
+  
 }));
 
 export default function TextButtons() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root} className="bottom-menu">
-      <Button href="http://marvel.com" target="blank" >Data provided by Marvel. © 2014 Marvel</Button>
+    <div className={`${classes.root} bottom-menu`} >
+      <Button href="http://marvel.com" target="blank" >Data provided by Marvel. © 2020 MARVEL</Button>
         <span> </span>
       <Button href="https://mariabeckles.herokuapp.com/" target="blank" color="primary"> Created By Maria Beckles </Button>
     </div>

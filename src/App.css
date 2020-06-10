@@ -12,20 +12,6 @@
   text-transform: ;
 }
 
-.MuiButton-text {
-  padding: 6px 237px;
-}
-
-.MuiToolbar-root {
-   padding: .3rem;
-   
-}
-
-.nav-bar-logo {
-  width: 4rem;
-  padding: .5rem;
-}
-
 .MuiButton-label {
   font-size: 1.2rem;
   font-weight: 450;
@@ -35,6 +21,29 @@
   padding-bottom: .2rem;
   color: white;
   text-transform: none !important;
+}
+
+.MuiButton-text {
+  padding: 6px 237px;
+}
+
+.MuiButton-contained {
+  color: white;
+  background-color: navy !important;
+  margin-left: .5rem !important;
+}
+
+.MuiToolbar-root {
+   padding: .3rem;
+   
+}
+
+
+/* ADDED CLASSES */
+
+.nav-bar-logo {
+  width: 4rem;
+  padding: .5rem;
 }
 
 .App-logo {
@@ -142,12 +151,15 @@
   margin-bottom: -8rem;
 }
 
-.MuiButton-contained {
-  color: white;
-  background-color: navy !important;
-  margin-left: .5rem !important;
-}
+
 
 .MuiInputBase-input {
   margin-right: 18rem !important;
+}
+
+/* BACK TO TOP BUTTON */
+
+.scroll-up-button {
+  color: white !important;
+  background-color: red !important;
 }

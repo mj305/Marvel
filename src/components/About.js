@@ -1,4 +1,5 @@
 import React from 'react';
+import BackToTop from './BackToTop';
 import NavBar from './NavBar';
 import Footer from './Footer';
 import characterspic from '../assets/characterspic.png';
@@ -22,6 +23,7 @@ const About = () => {
               
             </header>
           </div>
+          <BackToTop />
         <Footer />  
       </>
     );
