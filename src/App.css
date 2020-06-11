@@ -125,8 +125,33 @@
 /* CHARACTERS PAGE */
 
 .character-page-content {
-  margin: 1rem;
-  padding: 1rem;
+  margin: .5rem;
+  padding: .5rem;
+}
+
+.character-page-header {
+  margin: 4rem 0 2rem 0;
+  display: grid;
+  grid-template-rows: repeat(minmax(150px, 150px));
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.character-page-title {
+  z-index: 1;
+  text-align: center;
+  font-size: 5rem;
+  color: red;
+  grid-column-start: 1;
+  transform: skewY(20deg);
+
+  
+}
+
+.character-page-pic {
+  opacity: 90%;
+  width: 75rem;
+  height: 450px;
+  grid-column: 2 /  2;
 }
 
 /* SEARCH */
@@ -134,7 +159,9 @@
 .MuiInputBase-root {
   border: navy solid .1rem;
   margin-top: 14.9rem;
-  padding: .5rem;
+  margin-left: -5rem;
+  padding: .6rem;
+  border-radius: 2%;
 }
 
 .search-bar-container {
@@ -152,7 +179,6 @@
 }
 
 
-
 .MuiInputBase-input {
   margin-right: 18rem !important;
 }
@@ -163,3 +189,53 @@
   color: white !important;
   background-color: red !important;
 }
+
+/*  COMICS */
+
+.comic-books-container {
+
+  text-align: center;
+  font-size: 2rem ;
+  color: red;
+  padding: 2rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.comic-books-title {
+  margin-bottom: 5rem;
+  transform: skewY(-20deg);
+}
+
+.comic-book-detail {
+  display: grid;
+  grid-column-gap: 5rem;
+  grid-row-gap: 5rem;
+  grid-template-columns:  repeat(auto-fill, minmax(550px, 1fr));
+  justify-self: center;  
+}
+
+.character-comic-image {
+  padding: 1.5rem;
+  width: 25rem;
+  
+
+  box-shadow: 0 8px 6px -6px black;
+
+  
+  
+}
+
+.title-of-comics {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+  position: fixed;
+    
+       
+}
+
+
+

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-/* import Typography from '@material-ui/core/Typography';
- */import { makeStyles } from '@material-ui/core/styles';
+/* import Typography from '@material-ui/core/Typography'; */
+import { makeStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import Box from '@material-ui/core/Box';
@@ -70,14 +70,14 @@ export default function BackToTop(props) {
       <Toolbar id="back-to-top-anchor" />
       <Container>
         <Box my={2}>
-          {/* [...new Array(12)]
+          {[...new Array(12)]
             .map(
               () => `Cras mattis consectetur purus sit amet fermentum.
 Cras justo odio, dapibus ac facilisis in, egestas eget quam.
 Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
             )
-            .join('\n') */}
+            .join('\n')}
         </Box>
       </Container>
       <ScrollTop {...props}>
