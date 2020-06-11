@@ -1,10 +1,10 @@
 import React from 'react';
-import BackToTop from './BackToTop';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import BackToTop from '../components/BackToTop';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import characterspic from '../assets/characterspic.png';
 
-const About = () => {
+const AboutPage = () => {
 
   return (
     
@@ -29,4 +29,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default AboutPage;

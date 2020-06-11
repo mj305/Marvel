@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import NavBar from './NavBar';
-import Footer from './Footer';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 import logo from '../assets/logo.png'
 
 function MainPage() {

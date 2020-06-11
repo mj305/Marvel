@@ -3,9 +3,9 @@ import InputBase from '@material-ui/core/InputBase';
 import Button from '@material-ui/core/Button';
 
 import CharacterPage from './CharacterPage'
-import NavBar from './NavBar';
-import Footer from './Footer';
-import BackToTop from './BackToTop';
+import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
+import BackToTop from '../components/BackToTop';
 
 const SearchPage = () => {
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import About from './components/About';
-import SearchPage from './components/SearchPage';
-import CharactersPage from './components/CharacterPage';
-import MainPage from './components/MainPage';
+import AboutPage from './pages/AboutPage'
+import SearchPage from './pages/SearchPage';
+import CharactersPage from './pages/CharacterPage';
+import MainPage from './pages/MainPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +19,7 @@ const App = () => {
           <Switch>
           
               <Route path="/about">
-                <About />
+                <AboutPage />
               </Route>
 
               <Route path="/search">
