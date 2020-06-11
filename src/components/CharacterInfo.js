@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 
-
 const CharacterInfo = () => {
 
   const [character, setCharacter] = React.useState({
@@ -37,14 +36,17 @@ const CharacterInfo = () => {
 
   return(
     
-    <div className="character-page-header" >
-        <h1 className="character-page-title" > { results[0].name ? (results[0].name) : ("ups...")}</h1>
+      <>
+        <div>
+          <h1> { results[0].name ? (results[0].name) : ("ups...")}</h1>
 
-        <img className="character-page-pic" 
-             src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} 
-             alt="character-pic" 
+          <img
+            src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} 
+            alt="character-pic" 
           />
-      </div>
+          
+        </div>
+      </>
   );
 };
 

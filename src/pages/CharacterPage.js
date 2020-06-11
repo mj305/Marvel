@@ -7,10 +7,12 @@ const CharacterPage = () => {
 
   return (
     <>
-      <div className="character-page-content" >
-        <CharacterInfo />
-        <ComicsInfo /> 
-      </div>   
+      
+        <div>
+          <CharacterInfo />
+          <ComicsInfo /> 
+        </div>  
+      
     </>
   )
 };

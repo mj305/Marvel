@@ -1,241 +1,49 @@
-/* .backImage {
-  background: url(../src/assets/characterspic.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+
+/* Main Page */
+
+.App-header {
+  min-height: 51.8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin-top: 5rem;
+  margin-bottom: -20.5rem;
+
+
+  background: url(./assets/background.jpg);
+  position:fixed;
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #cccccc; 
-  padding-bottom: 74px;
-} */
-
-.MuiButton-root {
-  text-transform: ;
-}
-
-.MuiButton-label {
-  font-size: 1.2rem;
-  font-weight: 450;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  padding-top: .2rem;
-  padding-bottom: .2rem;
-  color: white;
-  text-transform: none !important;
-}
-
-.MuiButton-text {
-  padding: 6px 237px;
-}
-
-.MuiButton-contained {
-  color: white;
-  background-color: navy !important;
-  margin-left: .5rem !important;
-}
-
-.MuiToolbar-root {
-   padding: .3rem;
-   
-}
-
-
-/* ADDED CLASSES */
-
-.nav-bar-logo {
-  width: 4rem;
-  padding: .5rem;
+  background-position: center center;
 }
 
 .App-logo {
   height: 20vmin;
-  pointer-events: none;
-
+  outline: 0;
 }
-
-.nav-bar-about-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 450;
-  padding-right: 8rem;
-  margin-left: 50%;
-}
-
-.App-header {
-    min-height: 51.8vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    margin-top: 5rem;
-    margin-bottom: -20.5rem;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-/* Main Page Style */
 
 .main-page-paragraph {
   color: navy;
-  font-weight: 500;
+  font-size: 5rem;
+  font-weight: bold;
   padding: 1rem 11px -1px 8px;
   margin: 3rem 28px;
 }
 
-/* FOOTER MAIN PAGE */
 
-.App {
-  padding-bottom: 0rem;
-}
-
-  .bottom-menu {
-  background-color: #3F51B5;
-  width: 100%;
-  height: 100%;
-  font-size: 1.5rem;
-  margin-top: 37.8rem;
-  text-align: center;
-}
-
-.footer-text {
-  font-size: 1rem;
-  padding-left: 15rem;
-  margin-right: 10rem;
-}
-
-
-/* ABOUT */
-
-.characters-pic {
-  width: 50rem;
-  height: 25rem;
-}
-
-.about-paragraph {
-  font-size: 2rem;
-  color: navy;
-  padding: 2rem;
-    margin: 2rem;
-
-}
-
-/* CHARACTERS PAGE */
+/* All Characters Page */
 
 .character-page-content {
   margin: .5rem;
   padding: .5rem;
 }
 
-.character-page-header {
-  margin: 4rem 0 2rem 0;
-  display: grid;
-  grid-template-rows: repeat(minmax(150px, 150px));
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-}
 
-.character-page-title {
-  z-index: 1;
-  text-align: center;
-  font-size: 5rem;
-  color: red;
-  grid-column-start: 1;
-  transform: skewY(20deg);
-
-  
-}
-
-.character-page-pic {
-  opacity: 90%;
-  width: 75rem;
-  height: 450px;
-  grid-column: 2 /  2;
-}
-
-/* SEARCH */
-
-.MuiInputBase-root {
-  border: navy solid .1rem;
-  margin-top: 14.9rem;
-  margin-left: -5rem;
-  padding: .6rem;
-  border-radius: 2%;
-}
-
-.search-bar-container {
-  padding: 299 339.4;
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align: center;
-}
-
-.search-text {
-  font-size: 2rem;
-  color: navy;
-  margin-top: 9rem;
-  margin-bottom: -8rem;
-}
-
-
-.MuiInputBase-input {
-  margin-right: 18rem !important;
-}
-
-/* BACK TO TOP BUTTON */
-
-.scroll-up-button {
-  color: white !important;
-  background-color: red !important;
-}
-
-/*  COMICS */
-
-.comic-books-container {
-
-  text-align: center;
-  font-size: 2rem ;
-  color: red;
-  padding: 2rem;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.comic-books-title {
-  margin-bottom: 5rem;
-  transform: skewY(-20deg);
-}
-
-.comic-book-detail {
-  display: grid;
-  grid-column-gap: 5rem;
-  grid-row-gap: 5rem;
-  grid-template-columns:  repeat(auto-fill, minmax(550px, 1fr));
-  justify-self: center;  
-}
-
-.character-comic-image {
-  padding: 1.5rem;
-  width: 25rem;
-  
-
-  box-shadow: 0 8px 6px -6px black;
-
-  
-  
-}
-
-.title-of-comics {
-  margin-left: auto;
-  margin-right: auto;
-  width: 8em;
-  position: fixed;
-    
-       
-}
+/* Individual Character Page */
 
 
 

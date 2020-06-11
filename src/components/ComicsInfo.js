@@ -42,7 +42,7 @@ const ComicsInfo = () => {
     return(
       <>
       {console.log(data.images)}
-        <li className="title-of-comics" key={data.title} > { data.title } </li> 
+        <li key={data.title} > { data.title } </li> 
         {images} 
       </>
      )
@@ -50,11 +50,15 @@ const ComicsInfo = () => {
 
     
     return(
-      <div className="comic-books-container" >
-        <h1 className="comic-books-title" >Comics</h1>
-        <ul className="comic-book-detail" > { characterComics }</ul>
-      </div> 
-    )
+
+      <>
+          <div>
+            <h1>Comics</h1>
+            <ul> { characterComics }</ul>
+          </div> 
+      </>
+
+    );
 };
 
 export default ComicsInfo;

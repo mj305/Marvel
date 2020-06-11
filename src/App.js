@@ -1,37 +1,29 @@
 import React from 'react';
-import './App.css';
-import AboutPage from './pages/AboutPage'
-import SearchPage from './pages/SearchPage';
-import CharactersPage from './pages/CharacterPage';
-import MainPage from './pages/MainPage';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import './App.css';
+import CharactersPage from './pages/CharacterPage';
+import CharacterInfo from './components/CharacterInfo';
+import MainPage from './pages/MainPage';
+
 
 const App = () => {
 
   return (
 
-    <div className="backImage" >
+    <div >
       <Router>
           <Switch>
-          
-              <Route path="/about">
-                <AboutPage />
-              </Route>
 
-              <Route path="/search">
-                <SearchPage />
-              </Route>
-
-              <Route path="/characters">
+              <Route path="/characterpage">
                 <CharactersPage />
               </Route>
 
-              <Route path="/characters/:id">
-                <CharactersPage />
+              <Route path="/allcharacters">
+                <CharacterInfo />
               </Route>
 
               <Route path="/">

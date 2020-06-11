@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
 import logo from '../assets/logo.png'
 
 function MainPage() {
@@ -23,9 +21,8 @@ function MainPage() {
   console.log(query);
 
   return (
-    <>
-     <NavBar />
-        <div className="App">
+      <>
+        <div>
           <header className="App-header">
 
             <a href="http://marvel.com" target="blank" >
@@ -36,8 +33,7 @@ function MainPage() {
             
           </header>
         </div>
-      <Footer />  
-    </>
+      </>
   );
 }
 
