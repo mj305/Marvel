@@ -37,14 +37,15 @@ const CharacterInfo = () => {
   return(
     
       <>
-        <div>
-          <h1> { results[0].name ? (results[0].name) : ("ups...")}</h1>
+        <div className="character-container" >
 
-          <img
+          <h1 className="character-name" > { results[0].name ? (results[0].name) : ("ups...")}</h1>
+
+          <img className="character-image"
             src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} 
             alt="character-pic" 
           />
-          
+
         </div>
       </>
   );

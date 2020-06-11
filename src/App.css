@@ -1,4 +1,3 @@
-
 /* Main Page */
 
 .App-header {
@@ -10,7 +9,6 @@
   font-size: calc(10px + 2vmin);
   margin-top: 5rem;
   margin-bottom: -20.5rem;
-
 
   background: url(./assets/background.jpg);
   position:fixed;
@@ -27,7 +25,7 @@
 }
 
 .main-page-paragraph {
-  color: navy;
+  color: rgb(202, 202, 255);
   font-size: 5rem;
   font-weight: bold;
   padding: 1rem 11px -1px 8px;
@@ -37,9 +35,22 @@
 
 /* All Characters Page */
 
-.character-page-content {
-  margin: .5rem;
-  padding: .5rem;
+.character-container {
+  border: solid red .5rem;
+  margin: 1rem;
+  height: 560px;
+  width: 480px;
+  background-color: red;
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.character-name {
+  text-align: center;
+  color: white;
+}
+
+.character-image {
+  width: 30rem;
 }
 
 

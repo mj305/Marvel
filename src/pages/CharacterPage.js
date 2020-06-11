@@ -9,8 +9,8 @@ const CharacterPage = () => {
     <>
       
         <div>
-          <CharacterInfo />
-          <ComicsInfo /> 
+          <CharacterInfo/>
+          <ComicsInfo/> 
         </div>  
       
     </>
