@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-const ComicsInfo = () => {
+const ComicsInfo = (props) => {
 
   const [comics, setComics] = React.useState({
     data: {
@@ -17,10 +17,11 @@ const ComicsInfo = () => {
     }
   });
 
+
   React.useEffect(() => {
-    
+
     const fetchComics = async () => {
-      const url = `https://gateway.marvel.com:443/v1/public/characters/1011334/comics?apikey=5189968cf45946bfc4dba96d1349fe75`
+      const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/comics?apikey=5189968cf45946bfc4dba96d1349fe75`
       try {
         const result = await axios(url);
         setComics(result);

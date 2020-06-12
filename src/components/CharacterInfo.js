@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 
-const CharacterInfo = () => {
+const CharacterInfo = (props) => {
 
   const [character, setCharacter] = React.useState({
     data:{
@@ -21,7 +21,7 @@ const CharacterInfo = () => {
 
   React.useEffect(() => {
     const fetchCharacter = async () => {
-    const url = `https://gateway.marvel.com:443/v1/public/characters/1011334?apikey=5189968cf45946bfc4dba96d1349fe75`  
+    const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}?apikey=5189968cf45946bfc4dba96d1349fe75`  
       try {
         const result = await axios(url);
         setCharacter(result);

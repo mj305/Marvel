@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import './App.css';
+import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
 import CharacterInfo from './components/CharacterInfo';
 import MainPage from './pages/MainPage';
@@ -18,11 +19,15 @@ const App = () => {
       <Router>
           <Switch>
 
-              <Route path="/characterpage">
+              <Route path="/allcharacterspage">
+                <AllCharactersPage />
+              </Route>
+
+              <Route path="/characterpage/:id">
                 <CharactersPage />
               </Route>
 
-              <Route path="/allcharacters">
+              <Route path="/characterinfo">
                 <CharacterInfo />
               </Route>
 
@@ -34,7 +39,6 @@ const App = () => {
       </Router>
     </div>  
   )
-
 };
 
 export default App;
