@@ -34,6 +34,40 @@
 
 
 /* All Characters Page */
+/* .all-characters-page  {
+  display: grid;
+  grid-template-rows: auto;
+} */
+
+.all-characters-container {
+  /* Style */
+  box-shadow: -10px 11px 9px -5px black;
+  border: solid red .5rem;
+  background-color: red;
+  color: white;
+  height: 560px;
+  width: 480px;
+  margin: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.all-characters-name {
+  color: white;
+  text-align: center;
+  font-size: 2.2rem;
+  text-decoration: none;
+}
+
+.all-characters-image {
+  width: 100%;
+  height: 83%;
+}
+
+
+/* Individual Character Page */
 
 .character-container {
   border: solid red .5rem;
@@ -52,9 +86,4 @@
 .character-image {
   width: 30rem;
 }
-
-
-/* Individual Character Page */
-
-
 

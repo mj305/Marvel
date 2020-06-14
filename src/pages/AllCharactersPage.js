@@ -36,11 +36,17 @@ const AllCharactersPage = () => {
   const allCharactersMap = allCharacters.data.data.results.map(data => {
     console.log(data)
     return (
-     
-      <Link to={`/characterpage/${data.id}`} >
-          <p key={data.id}> {data.name} </p>
-          <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} />
-      </Link>
+      
+      <>
+        <div className="all-characters-page" >
+          <div className="all-characters-container" >
+            <Link to={`/characterpage/${data.id}`} >
+              <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
+              <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} />
+            </Link>
+          </div>
+        </div>
+      </>
     )
   })
 
