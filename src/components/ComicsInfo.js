@@ -7,10 +7,10 @@ const ComicsInfo = (props) => {
     data: {
       data: {
         results: [{
-          title: " ",
+          title: "",
           images: [{
-            path: " ",
-            extension: " ",
+            path: "",
+            extension: "",
           }]
         }]
       }
@@ -42,7 +42,6 @@ const ComicsInfo = (props) => {
     
     return(
       <>
-      {console.log(data.images)}
         <li key={data.title} > { data.title } </li> 
         {images} 
       </>
