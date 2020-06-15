@@ -34,20 +34,32 @@
 
 
 /* All Characters Page */
-/* .all-characters-page  {
+
+/* div .all-characters-page {
+  
+}  */
+
+.all-characters-page  {
   display: grid;
-  grid-template-rows: auto;
-} */
+  grid-template-columns: 20rem 20rem 20rem 20rem auto;
+  grid-template-rows: 26rem auto;
+  row-gap: 4rem;
+  column-gap: 4rem;
+  padding: 2rem;
+}
 
 .all-characters-container {
   /* Style */
+  
+  margin-bottom: 1rem;
+  height: 24rem;
+  width: 18rem;
+  margin: .5rem;
   box-shadow: -10px 11px 9px -5px black;
   border: solid red .5rem;
   background-color: red;
   color: white;
-  height: 560px;
-  width: 480px;
-  margin: 1rem;
+  
 }
 
 a:link {
@@ -57,13 +69,13 @@ a:link {
 .all-characters-name {
   color: white;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.1rem;
   text-decoration: none;
 }
 
 .all-characters-image {
-  width: 100%;
-  height: 83%;
+  width: 18rem;
+  height: 21rem;
 }
 
 
