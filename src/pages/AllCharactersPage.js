@@ -38,7 +38,6 @@ const AllCharactersPage = () => {
   const allCharactersMap = allCharacters.data.data.results.map(data => {
     if(data.name){
       return (
-      
         <div className="all-characters-container" >
           <Link to={`/characterpage/${data.id}`} >
             <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
@@ -48,24 +47,25 @@ const AllCharactersPage = () => {
     )
     } else {
       return (
-        <LoadingComponent />
+          <LoadingComponent />
       )
     }
-
-    
   })
 
   return( 
    
      <> 
       <div className="all-characters-nav-bar"  >
-          <div> <img src={logo} className="all-characters-page-logo" alt="logo" /> </div> 
-          <div> About </div>
-          <div> Login / Sign-up </div>
+          <div> <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" /></div>
+           <div href="#about" className="all-characters-about-paragraph" > About </div> 
+           <div href="#about" className="all-characters-signup-paragraph" > Login / Sign-up </div>
       </div>
 
       <div>
         <h1 className="all-characters-page-header" >All Characters Page</h1>
+
+        <LoadingComponent />
+
         <div className="all-characters-page" >
           {allCharactersMap}
         </div>

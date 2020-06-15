@@ -44,21 +44,39 @@
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
-  padding: 1rem;
-  margin-right: 1rem;
+  padding: 1rem;  
+  width: 100%;
 }
 
 .all-characters-page-logo {
   width: 5rem;
   height: 4rem;
   margin-left: 1rem;
+  outline: 0;
+}
+
+.all-characters-about-paragraph {
+  margin-left: 40rem;
+  padding-left: 35rem;
+  outline: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.all-characters-signup-paragraph {
+  margin-right: 3rem;
+  width: 20rem;
+  outline: 0;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
 }
 
 .all-characters-page-header {
   color: red;
   font-size: 3rem;
   text-align: center;
-  
   margin-top: 2rem;
   margin-bottom: 2rem;
   padding-top: 15px;
@@ -112,6 +130,10 @@ a:link {
   justify-content: space-around;
   background-color: rgb(39, 39, 182);
   margin-top: 2rem;
+  
+  text-decoration: none;
+  padding-right: 2rem;
+  width: 100%;
 }
 
 .all-characters-page-footer-data-text {
