@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import logo from '../assets/logo.png';
 
 
 const AllCharactersPage = () => {
@@ -49,10 +50,33 @@ const AllCharactersPage = () => {
   return( 
    
      <> 
-      <h1 className="all-characters-page-header" >ALL CHARACTERS PAGE</h1>
+      <div className="all-characters-nav-bar"  >
+          <div> <img src={logo} className="all-characters-page-logo" alt="logo" /> </div> 
+          <div> About </div>
+          <div> Login / Sign-up </div>
+      </div>
+
+      <div>
+        <h1 className="all-characters-page-header" >All Characters Page</h1>
         <div className="all-characters-page" >
           {allCharactersMap}
-       </div>
+        </div>
+      </div>
+
+      <div className="all-characters-footer-container" >
+        <div>
+          <a href='http://marvel.com' target='blank' >
+            <p className="all-characters-page-footer-data-text" > Data provided by Marvel. © 2020 Marvel </p>
+          </a>
+        </div>
+
+        <div>
+          <a href='https://mariabeckles.herokuapp.com/'  target='blank' >
+            <p className="all-characters-page-footer-data-text" > Created By Maria Beckles </p>
+          </a>
+        </div>
+      </div> 
+
      </> 
    )
 };

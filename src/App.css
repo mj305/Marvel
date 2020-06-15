@@ -35,14 +35,34 @@
 
 /* All Characters Page */
 
-/* div .all-characters-page {
-  
-}  */
+.all-characters-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(39, 39, 182);
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.all-characters-page-logo {
+  width: 5rem;
+  height: 4rem;
+  margin-left: 1rem;
+}
 
 .all-characters-page-header {
-  text-align: center;
-  font-size: 4rem;
   color: red;
+  font-size: 3rem;
+  text-align: center;
+  
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .all-characters-page  {
@@ -82,6 +102,22 @@ a:link {
 .all-characters-image {
   width: 18rem;
   height: 21rem;
+}
+
+/* All Characters Page Footer */
+
+.all-characters-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(39, 39, 182);
+  margin-top: 2rem;
+}
+
+.all-characters-page-footer-data-text {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
 }
 
 
