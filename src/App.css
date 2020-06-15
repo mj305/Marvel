@@ -67,7 +67,7 @@
 
 .all-characters-page  {
   display: grid;
-  grid-template-columns: 20rem 20rem 20rem auto;
+  grid-template-columns:  repeat(4, 20rem);
   grid-template-rows: 27rem auto;
   row-gap: 4rem; 
   justify-content: space-evenly; 
