@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
+import LoadingComponent from '../components/LoadingComponent';
 
 
 const AllCharactersPage = () => {
@@ -11,8 +12,8 @@ const AllCharactersPage = () => {
       data: {
         results: [{
           thumbnail: {
-            extension: " ",
-            path: " "
+            extension: "",
+            path: ""
           }
         }]
       } 
@@ -35,8 +36,8 @@ const AllCharactersPage = () => {
   },[]);
 
   const allCharactersMap = allCharacters.data.data.results.map(data => {
-    console.log(data)
-    return (
+    if(data.name){
+      return (
       
         <div className="all-characters-container" >
           <Link to={`/characterpage/${data.id}`} >
@@ -45,6 +46,13 @@ const AllCharactersPage = () => {
           </Link>
         </div>
     )
+    } else {
+      return (
+        <LoadingComponent />
+      )
+    }
+
+    
   })
 
   return( 
