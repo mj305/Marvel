@@ -3,9 +3,13 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png';
 import LoadingComponent from '../components/LoadingComponent';
+import NavBarComponent from '../components/NavBarComponent';
+import Footer from '../components/FooterComponent';
 
 
 const AllCharactersPage = () => {
+
+  const [loading, setLoading] = React.useState(true)
 
   const [allCharacters, setAllCharacters] = React.useState({
     data: {
@@ -27,64 +31,47 @@ const AllCharactersPage = () => {
       try {
         const result = await axios(url);
         setAllCharacters(result);
+        setLoading(false) 
        } catch (error) {
         console.log("there is an error", error)
        }
     }
-
     fetchAllCharacters();
   },[]);
 
   const allCharactersMap = allCharacters.data.data.results.map(data => {
-    if(data.name){
-      return (
-        <div className="all-characters-container" >
-          <Link to={`/characterpage/${data.id}`} >
-            <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
-            <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} />
-          </Link>
-        </div>
+    return (
+      <div className="all-characters-container" >
+        <Link to={`/characterpage/${data.id}`} >
+          <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
+          <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} />
+        </Link>
+      </div>
     )
-    } else {
-      return (
-          <LoadingComponent />
-      )
-    }
   })
 
+
   return( 
-   
      <> 
-      <div className="all-characters-nav-bar"  >
-          <div> <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" /></div>
-           <div href="#about" className="all-characters-about-paragraph" > About </div> 
-           <div href="#about" className="all-characters-signup-paragraph" > Login / Sign-up </div>
-      </div>
-
-      <div>
-        <h1 className="all-characters-page-header" >All Characters Page</h1>
-
-        <LoadingComponent />
-
-        <div className="all-characters-page" >
-          {allCharactersMap}
-        </div>
-      </div>
-
-      <div className="all-characters-footer-container" >
-        <div>
-          <a href='http://marvel.com' target='blank' >
-            <p className="all-characters-page-footer-data-text" > Data provided by Marvel. © 2020 Marvel </p>
-          </a>
-        </div>
-
-        <div>
-          <a href='https://mariabeckles.herokuapp.com/'  target='blank' >
-            <p className="all-characters-page-footer-data-text" > Created By Maria Beckles </p>
-          </a>
-        </div>
-      </div> 
-
+      {loading ? (
+        <>
+          <div>
+            <NavBarComponent />
+            <LoadingComponent />
+          </div> 
+        </>
+      ) : (
+        <>
+          <div>
+            <NavBarComponent />
+             <h1 className="all-characters-page-header" >All Characters Page</h1>
+              <div className="all-characters-page" >
+               {allCharactersMap}
+              </div>
+            </div>
+         <Footer />
+        </>
+      )}
      </> 
    )
 };

@@ -20,7 +20,6 @@ export default function LoadingComponent() {
       <LinearProgress color="secondary" />
     </div>
   );
-}
+} 
 
 
-/* LoadingComponent */

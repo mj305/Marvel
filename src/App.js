@@ -19,7 +19,7 @@ const App = () => {
       <Router>
           <Switch>
 
-              <Route path="/allcharacterspage">
+              <Route path="/allcharacters">
                 <AllCharactersPage />
               </Route>
 
