@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import logo from '../assets/logo.png'
 import NavBarComponent from '../components/NavBarComponent';
+import Footer from '../components/FooterComponent';
 
 function MainPage() {
 
@@ -22,20 +23,22 @@ function MainPage() {
   console.log(query);
 
   return (
-      <>
-        <div>
-        <NavBarComponent />
+    <>
+      <div>
+       <NavBarComponent />
           <header className="App-header">
 
-            <a href="http://marvel.com" target="blank" >
-              <img src={logo} className="App-logo" alt="logo" />
-            </a>   
-            
-            <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
-            
+              <a href="http://marvel.com" target="blank" >
+                <img src={logo} className="App-logo" alt="logo" />
+              </a>   
+
+              <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
+
+            <Footer />
+
           </header>
-        </div>
-      </>
+      </div>
+    </>
   );
 }
 

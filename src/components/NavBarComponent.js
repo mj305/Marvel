@@ -24,18 +24,23 @@ export default function NavBarComponent() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
-        <Toolbar>
-        
-          <IconButton >
-          <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" />
-          </IconButton>
 
-          <Button color="inherit">About </Button>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
+    <div className="nav-bar-container" >
+      <div className={classes.root}>
+          <AppBar position="static">
+              <Toolbar>
+
+                <IconButton >
+                  <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" />
+                </IconButton>
+
+                <Button className="nav-bar-about" color="inherit">About </Button>
+                <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button>
+
+              </Toolbar>
+          </AppBar>
+      </div>
     </div>
+   
   );
 }

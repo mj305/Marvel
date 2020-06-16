@@ -7,13 +7,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  margin-top: 5rem;
   margin-bottom: -20.5rem;
 
   background: url(./assets/background.jpg);
   position:fixed;
   width: 100%;
-  height: 80%;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -26,14 +25,17 @@
 
 .main-page-paragraph {
   color: red;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   padding: 1rem 11px -1px 8px;
   margin: 3rem 28px;
 }
 
 
+
 /* All Characters Page */
+
+
 
 .all-characters-nav-bar {
   display: flex;
@@ -129,7 +131,7 @@ a:link {
   flex-direction: row;
   justify-content: space-around;
   background-color: rgb(39, 39, 182);
-  margin-top: 2rem;
+  margin-top: 19rem;
   
   text-decoration: none;
   padding-right: 2rem;
@@ -139,7 +141,7 @@ a:link {
 .all-characters-page-footer-data-text {
   color: white;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 
