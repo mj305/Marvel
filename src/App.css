@@ -214,6 +214,7 @@ a:link {
 /* Single Character All Comics */
 
 .all-comics-title {
+  border: dotted .5rem orange;
   margin-top: 6rem;
   text-align: center;
   font-size: 4rem;
@@ -221,25 +222,27 @@ a:link {
 } 
 
 .character-comic-image {
+  border: dotted .5rem orange;
   width: 30rem;
-  margin-top: 5rem;
-  margin-left: 10.5rem;
-  
-
+  height: 45rem;
   box-shadow: -10px 11px 9px -5px black;
 }
 
 .all-comics-container {
-
+  border: dotted .5rem orange;
+  height: 48rem;
+  width: 31rem;
+  padding: .5rem;
 }
 
 .all-comics-thumbnail {
+  border: dotted .5rem orange;
   display: grid;
   grid-template-columns: repeat(3, 30rem);
   grid-template-rows: 45rem auto;
-  grid-gap: 5rem;
+  grid-gap: 4rem;
   padding-right: 1.5rem;
-  justify-content: space-between;
+  justify-content: space-around;
 } 
 
 
