@@ -243,6 +243,18 @@ a:link {
   }
 }
 
+@media (max-width: 1300px) {
+
+  .all-characters-page  {
+    display: grid;
+    grid-template-columns:  repeat(3, 20rem);
+    grid-template-rows: 27rem auto;
+    row-gap: 4rem; 
+    justify-content: space-evenly; 
+    
+  }
+}
+
 @media (max-width: 1100px) {
 
   .all-characters-page  {
@@ -312,10 +324,16 @@ a:link {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 550px) {
 
     .all-characters-page-footer-data-text {;
       font-size: .6rem;
+  }
+
+  .MuiButton-text {
+    margin-right: 3rem !important;
+    font-size: 1rem !important;
+    text-transform: none !important;
   }
 }
 
