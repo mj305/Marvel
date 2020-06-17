@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import { useHistory } from "react-router-dom"
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
 import logo from '../assets/logo.png';
 
 const useStyles = makeStyles((theme) => ({
@@ -21,7 +21,14 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NavBarComponent() {
+
   const classes = useStyles();
+
+  const history = useHistory();
+
+  const handleAbout = () => {
+       history.push("/about") 
+  }
 
   return (
 
@@ -30,13 +37,16 @@ export default function NavBarComponent() {
           <AppBar position="static">
               <Toolbar>
 
-                <IconButton >
-                  <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" />
-                </IconButton>
+               <Link to="/" > 
+                  <IconButton >
+                    <img href="#" src={logo} className="all-characters-page-logo" alt="logo" />
+                  </IconButton>
+                </Link>
 
                 <div className="nav-bar-about-auth-container" >
-                  <Button className="nav-bar-about" color="inherit">About </Button>
-                  <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button>
+                    <Button className="nav-bar-about" color="inherit" onClick={handleAbout} >About </Button>
+
+                    <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button>
                 </div>
 
               </Toolbar>

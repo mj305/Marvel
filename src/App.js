@@ -9,6 +9,7 @@ import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
 import CharacterInfo from './components/CharacterInfo';
 import MainPage from './pages/MainPage';
+import AboutPage from './pages/AboutPage';
 
 
 const App = () => {
@@ -18,6 +19,10 @@ const App = () => {
     <div >
       <Router>
           <Switch>
+
+              <Route path="/about" >
+                <AboutPage />
+              </Route>
 
               <Route path="/allcharacters">
                 <AllCharactersPage />
