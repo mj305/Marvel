@@ -34,8 +34,10 @@ export default function NavBarComponent() {
                   <img href="#home" src={logo} className="all-characters-page-logo" alt="logo" />
                 </IconButton>
 
-                <Button className="nav-bar-about" color="inherit">About </Button>
-                <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button>
+                <div className="nav-bar-about-auth-container" >
+                  <Button className="nav-bar-about" color="inherit">About </Button>
+                  <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button>
+                </div>
 
               </Toolbar>
           </AppBar>

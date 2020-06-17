@@ -1,3 +1,17 @@
+/* Nav Bar */
+
+.nav-bar-about-auth-container {
+  width: 100%;
+  text-align: right;
+  margin-right: 3rem;
+}
+
+.MuiButton-text {
+  margin-right: 3rem !important;
+  font-size: 1.2rem !important;
+  text-transform: none !important;
+}
+
 /* Main Page */
 
 .App-header {
