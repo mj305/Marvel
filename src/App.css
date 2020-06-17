@@ -163,6 +163,7 @@ a:link {
 
 /* Individual Character Page */
 
+/* Character Large Card */ 
 .character-container {
   border: solid #EF482A .5rem;
   margin: 1rem;
@@ -179,27 +180,24 @@ a:link {
   color: white;
 }
 
-/* .character-image {
-  width: 30rem;
-} */
-
 .character-image {
   width: 100%;
   height: 41rem;
 }
 
+/* Scroll Arrow Animation */
 .scroll-down {
     width: 100%;
-    
 }
 
 .scroll-icon {
     font-size: 8rem;
+    font-weight: bold;
     animation: mouse 2s infinite;
     position: absolute;
     margin-left: 50vw;
     margin-top: 66vh;
-    color: #dee1ec;
+    color: #0d0cb5;
 }
 
 @keyframes mouse {
@@ -213,16 +211,39 @@ a:link {
     }
 }
 
-./* character-page-header-container {
-  position: relative;
-  display: grid;
-  grid-template-rows: repeat(4, 16.5rem);
+/* Single Character All Comics */
+
+.all-comics-title {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #EF482A;
+} 
+
+.character-comic-image {
+  width: 30rem;
+  margin-top: 5rem;
+  margin-left: 10.5rem;
+  
+
+  box-shadow: -10px 11px 9px -5px black;
 }
- */
+
+.all-comics-container {
+
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 30rem);
+  grid-template-rows: 45rem auto;
+  grid-gap: 5rem;
+  padding-right: 1.5rem;
+  justify-content: space-between;
+} 
 
 
-
-
+/* box-shadow: -10px 11px 9px -5px black; */
 
 /*======================================================
 ================   Media Queries  ======================

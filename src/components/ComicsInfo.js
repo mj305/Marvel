@@ -42,8 +42,9 @@ const ComicsInfo = (props) => {
     
     return(
       <>
-        <li key={data.title} > { data.title } </li> 
-        {images} 
+        <div className="all-comics-container" >
+          {images} 
+        </div>
       </>
      )
     })
@@ -53,8 +54,8 @@ const ComicsInfo = (props) => {
 
       <>
           <div>
-            <h1>Comics</h1>
-            <ul> { characterComics }</ul>
+            <h1 className="all-comics-title" >Comics</h1>
+            <div className="all-comics-thumbnail" > { characterComics }</div>
           </div> 
       </>
 

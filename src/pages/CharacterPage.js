@@ -24,9 +24,12 @@ const CharacterPage = () => {
             </div>   
           </div> 
 
-          <StoriesInfo id={id} />
-          <SeriesInfo id={id} />
           <ComicsInfo id={id} /> 
+
+          <StoriesInfo id={id} />
+          
+          <SeriesInfo id={id} />
+          
         </div>
       <Footer />
     </>
