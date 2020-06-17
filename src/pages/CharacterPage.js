@@ -16,7 +16,14 @@ const CharacterPage = () => {
     <>  
      <NavBarComponent />
         <div>
-          <CharacterInfo id={id}/>
+             
+          <div className="character-page-header-container" >
+            <div class="scroll-down center">
+             <CharacterInfo id={id}/>
+              <div class="scroll-icon center">&darr;</div>
+            </div>   
+          </div> 
+
           <StoriesInfo id={id} />
           <SeriesInfo id={id} />
           <ComicsInfo id={id} /> 
