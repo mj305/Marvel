@@ -259,29 +259,34 @@ a:link {
 
 .all-series-thumbnail {
   border: dotted .5rem rgb(245, 16, 188);
+  display: grid;
+  grid-template-columns: repeat(2, 58rem);
 }
 
 .all-series-container {
   border: dotted .5rem rgb(5, 5, 5);
   background-color: #0d0cb5;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  margin-left: 5rem;
   margin-bottom: 2rem;
-  width: 34rem;
+  width: 50rem;
+  height: 50rem;
+  border-radius: .5%;
 }
 
 .all-series-name {
   border: dotted .5rem rgb(219, 7, 7);
   color: white;
+  font-size: 2rem;
   text-align: center;
-  width: 33.1rem;
+  width: 49.1rem
 }
 
 .character-series-image {
   border: dotted .5rem yellowgreen;
-  margin-left: 1.4rem;
-  margin-bottom: .2rem;
-  width: 30rem;
-  height: 30rem;
+  margin-left: 2rem;
+  width: 45rem;
+  height: 43rem;
 }
 
 
