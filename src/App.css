@@ -243,7 +243,7 @@ a:link {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1590px) {
 
   .all-characters-page  {
     display: grid;
@@ -335,6 +335,32 @@ a:link {
     font-size: 1rem !important;
     text-transform: none !important;
   }
+      /* About Nav Bar  */
+      .MuiButton-label {
+        font-size: .9rem;
+    }
+
+    /* About Nav Bar  */
+    .MuiButton-label {
+      font-size: .9rem;
+  }
+
+  .nav-bar-about-auth-container {
+    width: 100%;
+    text-align: right;
+    font-size: .9rem;
+  }
+
+  .all-characters-page-logo {
+    height: 2.5rem;
+    width: 3rem;
+    margin-left: 0;
+  }
+
+  .nav-bar-about-auth-container {
+    
+    margin-right: 0;
+}
 }
 
 
