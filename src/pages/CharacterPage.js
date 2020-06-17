@@ -26,9 +26,9 @@ const CharacterPage = () => {
 
           <ComicsInfo id={id} /> 
 
-          <StoriesInfo id={id} />
-          
           <SeriesInfo id={id} />
+
+          <StoriesInfo id={id} />
           
         </div>
       <Footer />

@@ -246,6 +246,55 @@ a:link {
 } 
 
 
+/* Single Character All Series Info */
+
+.all-series-title {
+  border: dotted .5rem rgb(55, 82, 236);
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #EF482A;
+
+}
+
+.all-series-thumbnail {
+  border: dotted .5rem rgb(245, 16, 188);
+}
+
+.all-series-container {
+  border: dotted .5rem rgb(5, 5, 5);
+  background-color: #0d0cb5;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  width: 34rem;
+}
+
+.all-series-name {
+  border: dotted .5rem rgb(219, 7, 7);
+  color: white;
+  text-align: center;
+  width: 33.1rem;
+}
+
+.character-series-image {
+  border: dotted .5rem yellowgreen;
+  margin-left: 1.4rem;
+  margin-bottom: .2rem;
+  width: 30rem;
+  height: 30rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* box-shadow: -10px 11px 9px -5px black; */
 
 /*======================================================

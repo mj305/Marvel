@@ -34,9 +34,11 @@ const SeriesInfo = (props) => {
 
     return (
       <>
-        <li> { data.title } </li>
-        <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="series pic" />
-   
+        
+        <div className="all-series-container" >
+          <h2 className="all-series-name" > { data.title } </h2>
+          <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="series pic" className="character-series-image" />
+        </div>
       </>
     )
   })
@@ -45,8 +47,8 @@ const SeriesInfo = (props) => {
 
   return (
     <>
-      <p>Series</p>
-    <h1> { characterSeries }  </h1>
+      <p className="all-series-title" >Series</p>
+      <div className="all-series-thumbnail" > { characterSeries }  </div>
     </>
   )
 };
