@@ -214,7 +214,6 @@ a:link {
 /* Single Character All Comics */
 
 .all-comics-title {
-  border: dotted .5rem orange;
   margin-top: 6rem;
   text-align: center;
   font-size: 4rem;
@@ -222,21 +221,18 @@ a:link {
 } 
 
 .character-comic-image {
-  border: dotted .5rem orange;
   width: 30rem;
   height: 45rem;
   box-shadow: -10px 11px 9px -5px black;
 }
 
 .all-comics-container {
-  border: dotted .5rem orange;
   height: 48rem;
   width: 31rem;
   padding: .5rem;
 }
 
 .all-comics-thumbnail {
-  border: dotted .5rem orange;
   display: grid;
   grid-template-columns: repeat(3, 30rem);
   grid-template-rows: 45rem auto;
@@ -249,7 +245,6 @@ a:link {
 /* Single Character All Series Info */
 
 .all-series-title {
-  border: dotted .5rem rgb(55, 82, 236);
   margin-top: 6rem;
   text-align: center;
   font-size: 4rem;
@@ -257,7 +252,6 @@ a:link {
 }
 
 .all-series-thumbnail {
-/*   border: dotted .5rem rgb(245, 16, 188); */
   display: grid;
   grid-template-columns: repeat(2, 58rem);
   grid-gap: 5rem;
@@ -265,7 +259,6 @@ a:link {
 }
 
 .all-series-container {
-  border: dotted .5rem rgb(5, 5, 5);
   background-color: #0d0cb5;
   padding-bottom: 2rem;
   margin-left: 5rem;
@@ -297,7 +290,7 @@ a:link {
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1.6s;
+  transition: transform 2s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
@@ -305,16 +298,9 @@ a:link {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-
-/* .flip-card-front {
-  background-color: #dee1ec;
-} */
-
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 53.5rem;
-  /* min-height: 47rem;
-  max-height: 47rem; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -327,10 +313,10 @@ a:link {
   min-height: 46rem;
   max-height: 46rem;
   color: white;
-    font-size: 3rem;
-    font-weight: 400;
-    margin-top: 0rem;
-    padding-top: 2rem;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 0rem;
+  padding-top: 2rem;
 }
 
 
