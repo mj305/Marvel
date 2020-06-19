@@ -30,14 +30,18 @@ const StoriesInfo = (props) => {
     console.log(data)
     return (
       <>
-        <p>{data.title}</p>
+        <div className="stories-info-stories-info-title" >
+            <p>{data.title}</p>
+        </div>
       </>
     )})
 
     return (
       <>
-        <p>Stories</p>
-        <h1> {characterStories} </h1>
+        <div className="stories-info-container" >
+          <h1 className="stories-info-header" >Stories</h1>
+          <h3 className="stories-info-stories" > {characterStories} </h3>
+        </div>
       </>
     )
 };

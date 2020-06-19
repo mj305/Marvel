@@ -1,3 +1,5 @@
+html {
+}
 
 a:link {
   text-decoration: none;
@@ -19,7 +21,13 @@ a:link {
   text-transform: none !important;
 }
 
-
+.MuiButton-label {
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    font-size: 1.4rem;
+}
 
 
 /* Main Page */
@@ -74,7 +82,7 @@ a:link {
 }
 
 .all-characters-page-logo {
-  width: 5rem;
+  width: 6rem;
   height: 4rem;
   margin-left: 1rem;
   outline: 0;
@@ -155,7 +163,7 @@ a:link {
 .all-characters-page-footer-data-text {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -169,10 +177,11 @@ a:link {
   margin: 1rem;
   height: 46rem;
   width: 97%;
+
   background-color: #EF482A;
   box-shadow: -10px 11px 9px -5px black;
   margin-left: 1.5rem;
-  /* opacity: 68%; */
+ opacity: 68%; 
 }
 
 .character-name {
@@ -191,13 +200,13 @@ a:link {
 }
 
 .scroll-icon {
-    font-size: 8rem;
-    font-weight: bold;
-    animation: mouse 2s infinite;
-    position: absolute;
-    margin-left: 50vw;
-    margin-top: 66vh;
-    color: #0d0cb5;
+  font-size: 12rem;
+  font-weight: bold;
+  animation: mouse 2s infinite;
+  position: absolute;
+  margin-left: 50vw;
+  margin-top: 53vh;
+  color: #0d0cb5;
 }
 
 @keyframes mouse {
@@ -216,7 +225,7 @@ a:link {
 .all-comics-title {
   margin-top: 6rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #EF482A;
 } 
 
@@ -227,19 +236,19 @@ a:link {
 }
 
 .all-comics-container {
-  height: 48rem;
-  width: 31rem;
-  padding: .5rem;
+  border: dotted orange .5rem;
+  height: 35rem;
+  width: 30rem;
 }
 
 .all-comics-thumbnail {
   display: grid;
-  grid-template-columns: repeat(3, 30rem);
-  grid-template-rows: 45rem auto;
-  grid-gap: 4rem;
-  padding-right: 1.5rem;
+  grid-template-columns: repeat(3, 27rem);
+  grid-template-rows: 34rem auto;
+  grid-gap: 2rem;
+  padding-right: 5.5rem;
   justify-content: space-around;
-} 
+}
 
 
 /* Single Character All Series Info */
@@ -247,14 +256,14 @@ a:link {
 .all-series-title {
   margin-top: 6rem;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #EF482A;
 }
 
 .all-series-thumbnail {
   display: grid;
-  grid-template-columns: repeat(2, 58rem);
-  grid-gap: 5rem;
+  grid-template-columns: repeat(4, 20rem);
+  grid-gap: 3rem;
   margin-left: 1rem;
 }
 
@@ -269,11 +278,9 @@ a:link {
 } 
 
 .character-series-image {
-  width: 53.5rem;
-  min-height: 47rem;
-  max-height: 47rem;
-  margin-top: 1.1rem;
-  margin-top: 0em;
+  width: 22rem;
+  min-height: 22rem;
+  max-height: 22rem;
 }
 
 /* Flip Cards Series */
@@ -281,14 +288,14 @@ a:link {
 .flip-card {
   background-color: transparent;
   width: 53.5rem;
-  height: 47rem;
+  height: 22rem;
   perspective: 1000px;
 }
 
 .flip-card-inner {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 22rem;
+  height: 22rem;
   text-align: center;
   transition: transform 2s;
   transform-style: preserve-3d;
@@ -298,9 +305,11 @@ a:link {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
+
 .flip-card-front, .flip-card-back {
   position: absolute;
-  width: 53.5rem;
+  /* width: 53.5rem; */
+  width: 31.5;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -309,15 +318,76 @@ a:link {
 .flip-card-back {
   background-color: #0d0cb5;
   transform: rotateY(180deg);
-  width: 53.5rem;
-  min-height: 46rem;
-  max-height: 46rem;
+  width: 22rem;
+  min-height: 21rem;
+  max-height: 21rem;
   color: white;
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 500;
   margin-top: 0rem;
   padding-top: 2rem;
+  padding: .5rem;
 }
+
+
+
+
+/* Character All Stories Info  */
+
+.stories-info-container {
+  border: dotted .5rem red;
+  margin: 1rem;
+  margin-right: 1rem;
+}
+
+.stories-info-header {
+  border: dotted .5rem yellowgreen;
+  margin: 6rem;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #EF482A;
+}
+
+.stories-info-stories {
+  border: dotted .5rem pink;
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1rem;
+}
+
+.stories-info-stories-info-title {
+  border: dotted .5rem black;
+  color: #0d0cb5;
+  font-size: 1.7rem;
+  text-align: center;
+  align-self: center;
+  padding: .5rem;
+}
+
+.stories-info-stories-info-title:hover {
+  animation: shake 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+
 
 
 
@@ -476,10 +546,279 @@ a:link {
 
 /* Individual Character Page */
 
+@media (max-width: 550px) {
+
+  .nav-bar-container {
+    width: 62rem;
+}
+
+.all-characters-page-logo {
+  height: 7.5rem;
+  width: 10rem;
+  margin-left: 0;
+}
+
+.MuiButton-label {
+  font-size: 2.7rem;
+}
+
+  .character-container {
+    margin: 1rem;
+    height: 46rem;
+    width: 167%;
+    background-color: #EF482A;
+    box-shadow: -10px 11px 9px -5px black;
+    margin-left: 1.5rem;
+    opacity: 68%;
+}
+
+.scroll-icon {
+  font-size: 13rem;
+  font-weight: bold;
+  animation: mouse 2s infinite;
+  position: absolute;
+  margin-left: 80vw;
+  margin-top: 30vh;
+  color: #0d0cb5;
+}
+
+.all-comics-container {
+  height: 38rem;
+  width: 25rem;
+}
+
+.all-comics-title {
+  width: 62rem;
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(2, 19rem);
+  grid-template-rows: 35rem auto;
+  grid-gap: 9rem;
+  padding-right: -0.5rem;
+  justify-content: space-around;
+  margin-left: 27rem;
+}
+
+.character-comic-image {
+  width: 25rem;
+  height: 37rem;
+}
+
+.all-series-title {
+  margin-top: 6rem;
+  text-align: center;
+  font-size: 4.5rem;
+  color: #EF482A;
+  margin-left: 26rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(2, 23rem);
+  grid-gap: 4rem;
+  margin-left: 6rem;
+}
+
+.stories-info-container {
+  width: 58rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.stories-info-stories-info-title {
+  font-size: 2.7rem;
+}
+
+.all-characters-footer-container {
+  width: 60rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: 1.8rem;
+}
+
+
+}
+
+
+@media (max-width: 450px) {
+  .all-characters-page-logo {
+    height: 6rem;
+    width: 6rem;
+    margin-left: 0;
+}
+
+.MuiButton-label {
+  font-size: 2rem;
+}
+
+.character-container{
+  margin: 1rem;
+  height: 42rem;
+  width: 92%;
+}
+
+.character-image {
+  width: 100%;
+  height: 37rem;
+}
+
+.scroll-icon{
+  margin-left: 39vw;
+  margin-top: 35vh;
+}
+
+.character-comic-image {
+  width: 25rem;
+  height: 40rem;
+  margin-left: 1rem;
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-columns: 26rem;
+  grid-template-rows: 34rem auto;
+  grid-gap: 9rem;
+  justify-content: space-around;
+  margin-right: 0;
+}
+
+.all-comics-container {
+  border: dotted orange .5rem;
+  height: 41rem;
+  width: 26rem;
+  margin-left: 2rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: 25rem;
+  grid-gap: 3rem;
+  margin-left: 3.2rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: 21rem;
+  grid-gap: 1rem;
+}
+
+.all-comics-title {
+  font-size: 3.4rem;
+}
+}
 
 
 
+@media (max-width: 300px) {
 
+  .MuiToolbar-gutters {
+    padding-left: 6px;
+    padding-right: 0px;
+}
+
+.MuiButton-label {
+  font-size: 1rem;
+}
+
+  .all-characters-page-logo {
+      height: 4.5rem;
+      width: 5rem;
+      margin-left: 0;
+  }
+
+  .character-container {
+    border: solid #EF482A .5rem;
+    margin: 1rem;
+    height: 35rem;
+    width: 84%;
+    background-color: #EF482A;
+    box-shadow: -10px 11px 9px -5px black;
+    margin-left: 1.5rem;
+    opacity: 68%;
+}
+
+.character-image {
+  width: 100%;
+  height: 30rem;
+}
+
+.scroll-icon {
+  font-size: 10rem;
+  font-weight: bold;
+  animation: mouse 2s infinite;
+  position: absolute;
+  margin-left: 40vw;
+  margin-top: 27vh;
+  color: #0d0cb5;
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-rows: 35rem auto;
+  grid-gap: 2rem;
+  justify-content: space-around;
+}
+
+.character-comic-image {
+  width: 17.1rem;
+  height: 32.5rem;
+  box-shadow: -10px 11px 9px -5px black;
+  margin-left: 7.2rem;
+}
+
+.character-series-image {
+  width: 17.5rem;
+  min-height: 22rem;
+  max-height: 22rem;
+}
+
+.stories-info-stories {
+  display: flex;
+  flex-direction: column;
+}
+
+.stories-info-header {
+  margin: 4rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #EF482A;
+}
+
+.flip-card-back {
+  background-color: #0d0cb5;
+transform: rotateY(180deg); 
+  width: 16rem;
+  min-height: 21rem;
+  max-height: 21rem;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 0rem;
+  padding-top: 2rem;
+  padding: .5rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 17rem;
+  height: 22rem;
+  text-align: center;
+  transition: transform 2s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+}
 
 
 
