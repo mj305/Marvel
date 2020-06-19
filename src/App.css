@@ -425,7 +425,7 @@ a:link {
   }
 
   .all-comics-container {
-    width: 31rem;
+    width: 24rem;
   }
 
   .all-comics-title {
@@ -435,14 +435,17 @@ a:link {
 
   .all-comics-thumbnail {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 46rem auto;
-    grid-gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40rem auto;
+    grid-gap: 2.5rem;
     justify-content: space-around;
+    margin-left: -8rem;
 }
 
 .character-comic-image {
   margin-left: 25rem;
+  width: 24rem;
+  height: 39rem;
 }
 
 .all-series-title {
