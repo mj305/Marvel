@@ -1,13 +1,13 @@
-html {
-  border: dotted orange .5rem;
-}
-
 a:link {
   text-decoration: none;
   outline: 0;
 }
 
 /* Nav Bar */
+
+.nav-bar-container {
+  width: 119rem;
+}
 
 .nav-bar-about-auth-container {
   width: 100%;
@@ -158,7 +158,7 @@ a:link {
   margin-top: 19rem;
   text-decoration: none;
   padding-right: 2rem;
-  width: 100%;
+  width: 117rem;
 }
 
 .all-characters-page-footer-data-text {
@@ -205,8 +205,8 @@ a:link {
   font-weight: bold;
   animation: mouse 2s infinite;
   position: absolute;
-  margin-left: 50vw;
-  margin-top: 53vh;
+  margin-left: 28vw;
+  margin-top: 27vh;
   color: #0d0cb5;
 }
 
@@ -262,9 +262,8 @@ a:link {
 
 .all-series-thumbnail {
   display: grid;
-  grid-template-columns: repeat(4, 25rem);
-  grid-gap: 5rem;
-  margin-left: 5rem;
+  grid-template-columns: repeat(3, 20rem);
+  margin-left: 2rem;
 }
 
 .all-series-container {
