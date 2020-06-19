@@ -6,10 +6,12 @@ a:link {
 /* Nav Bar */
 
 .nav-bar-container {
+  border: dotted .2rem orange;
   width: 119rem;
 }
 
 .nav-bar-about-auth-container {
+  border: dotted .2rem orange;
   width: 100%;
   text-align: right;
   margin-right: 3rem;
@@ -23,6 +25,7 @@ a:link {
 }
 
 .MuiButton-label {
+  border: dotted .2rem orange;
     width: 100%;
     display: inherit;
     align-items: inherit;
@@ -151,6 +154,7 @@ a:link {
 }
 
 .all-characters-footer-container {
+  border: dotted .2rem orange;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -162,6 +166,7 @@ a:link {
 }
 
 .all-characters-page-footer-data-text {
+  border: dotted .2rem orange;
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
@@ -182,7 +187,7 @@ a:link {
   background-color: #EF482A;
   box-shadow: -10px 11px 9px -5px black;
   margin-left: 1.5rem;
- opacity: 68%; 
+  opacity: 68%; 
 }
 
 .character-name {
@@ -205,8 +210,8 @@ a:link {
   font-weight: bold;
   animation: mouse 2s infinite;
   position: absolute;
-  margin-left: 28vw;
-  margin-top: 27vh;
+  margin-left: 47vw;
+  margin-top: 61vh;
   color: #0d0cb5;
 }
 
@@ -224,6 +229,7 @@ a:link {
 /* Single Character All Comics */
 
 .all-comics-title {
+  border: dotted .2rem yellowgreen;
   margin-top: 6rem;
   text-align: center;
   font-size: 3.5rem;
@@ -231,21 +237,25 @@ a:link {
 } 
 
 .character-comic-image {
+  border: dotted .2rem orange;
   width: 30rem;
   height: 45rem;
   box-shadow: -10px 11px 9px -5px black;
 }
 
 .all-comics-container {
-  height: 45rem;
-  width: 30rem;
+  border: dotted .2rem blue;
+  height: 46rem;
+  width: 30.5rem;
+  padding: .5rem;
 }
 
 .all-comics-thumbnail {
+  border: dotted .2rem black;
   display: grid;
   grid-template-columns: repeat(3, 27rem);
   grid-template-rows: 46rem auto;
-  grid-gap: 2rem;
+  grid-gap: 1.5rem;
   padding-right: 5.5rem;
   justify-content: space-around;
 }
@@ -254,6 +264,7 @@ a:link {
 /* Single Character All Series Info */
 
 .all-series-title {
+  border: dotted .2rem yellowgreen;
   margin-top: 6rem;
   text-align: center;
   font-size: 3.5rem;
@@ -261,9 +272,14 @@ a:link {
 }
 
 .all-series-thumbnail {
+  border: dotted orange .2rem;
   display: grid;
-  grid-template-columns: repeat(3, 20rem);
-  margin-left: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr auto;
+  margin: 1rem;
+  padding: 1rem;
+  grid-gap: 2rem;
+  justify-items: center;
 }
 
 .all-series-container {
@@ -285,8 +301,9 @@ a:link {
 /* Flip Cards Series */
 
 .flip-card {
+  border: dotted pink .2rem;
   background-color: transparent;
-  width: 53.5rem;
+  width: 22.5rem;
   height: 22rem;
   perspective: 1000px;
 }
@@ -317,7 +334,7 @@ a:link {
 .flip-card-back {
   background-color: #0d0cb5;
   transform: rotateY(180deg);
-  width: 22rem;
+  width: 21rem;
   min-height: 21rem;
   max-height: 21rem;
   color: white;
@@ -334,11 +351,13 @@ a:link {
 /* Character All Stories Info  */
 
 .stories-info-container {
+  border: dotted .2rem orange;
   margin: 1rem;
   margin-right: 1rem;
 }
 
 .stories-info-header {
+  border: dotted .2rem orange;
   margin: 6rem;
   text-align: center;
   font-size: 3.5rem;
@@ -346,6 +365,7 @@ a:link {
 }
 
 .stories-info-stories {
+  border: dotted .2rem yellowgreen;
   display: grid;
   margin: 1rem;
   padding: 1rem;
@@ -354,6 +374,7 @@ a:link {
 }
 
 .stories-info-stories-info-title {
+  border: dotted .2rem blue;
   color: #0d0cb5;
   font-size: 1.7rem;
   text-align: center;
