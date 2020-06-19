@@ -236,15 +236,14 @@ a:link {
 }
 
 .all-comics-container {
-  border: dotted orange .5rem;
-  height: 35rem;
+  height: 45rem;
   width: 30rem;
 }
 
 .all-comics-thumbnail {
   display: grid;
   grid-template-columns: repeat(3, 27rem);
-  grid-template-rows: 34rem auto;
+  grid-template-rows: 46rem auto;
   grid-gap: 2rem;
   padding-right: 5.5rem;
   justify-content: space-around;
@@ -262,9 +261,9 @@ a:link {
 
 .all-series-thumbnail {
   display: grid;
-  grid-template-columns: repeat(4, 20rem);
-  grid-gap: 3rem;
-  margin-left: 1rem;
+  grid-template-columns: repeat(5, 20rem);
+  grid-gap: 5rem;
+  margin-left: 5rem;
 }
 
 .all-series-container {
@@ -335,13 +334,11 @@ a:link {
 /* Character All Stories Info  */
 
 .stories-info-container {
-  border: dotted .5rem red;
   margin: 1rem;
   margin-right: 1rem;
 }
 
 .stories-info-header {
-  border: dotted .5rem yellowgreen;
   margin: 6rem;
   text-align: center;
   font-size: 3.5rem;
@@ -349,7 +346,6 @@ a:link {
 }
 
 .stories-info-stories {
-  border: dotted .5rem pink;
   display: grid;
   margin: 1rem;
   padding: 1rem;
@@ -358,7 +354,6 @@ a:link {
 }
 
 .stories-info-stories-info-title {
-  border: dotted .5rem black;
   color: #0d0cb5;
   font-size: 1.7rem;
   text-align: center;
@@ -649,7 +644,7 @@ a:link {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 400px) {
   .all-characters-page-logo {
     height: 6rem;
     width: 6rem;
@@ -692,7 +687,6 @@ a:link {
 }
 
 .all-comics-container {
-  border: dotted orange .5rem;
   height: 41rem;
   width: 26rem;
   margin-left: 2rem;
