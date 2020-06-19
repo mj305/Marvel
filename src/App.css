@@ -388,6 +388,333 @@ a:link {
 ================   Media Queries  ======================
 ======================================================*/
 
+@media (max-width: 800px) {
+  .nav-bar-container {
+    width: 87rem;
+  }
+
+  .nav-bar-about-auth-container {
+    margin-right: -2rem;
+  }
+
+  .MuiButton-label {
+    font-size: 2.2rem;
+  }
+
+  .all-characters-page-logo {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .character-container {
+    width: 83rem;
+  }
+
+  .character-name {
+    font-size: 2.5rem;
+  }
+
+  .character-image {
+    height: 39rem;
+  }
+
+  .scroll-icon {
+    font-size: 13rem;
+    margin-left: 94vw;
+    margin-top: 70vh;
+  }
+
+  .all-comics-container {
+    width: 31rem;
+  }
+
+  .all-comics-title {
+    font-size: 4rem;
+    margin-left: 35rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 46rem auto;
+    grid-gap: 6rem;
+    justify-content: space-around;
+}
+
+.character-comic-image {
+  margin-left: 25rem;
+}
+
+.all-series-title {
+  font-size: 4rem;
+  margin-left: 34rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin-left: 2rem;
+}
+
+.stories-info-container {
+  margin: 5rem;
+}
+
+.flip-card {
+  width: 26rem;
+  height: 24rem;
+}
+
+.stories-info-header {
+  font-size: 4rem;
+  margin-left: 31rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 23rem);
+  grid-gap: 1rem;
+}
+
+.stories-info-stories-info-title {
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.all-characters-footer-container {
+  width: 86rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: 2.2rem;
+}
+}
+
+
+
+
+
+@media (max-width: 750px) {
+  .nav-bar-container {
+    width: 87rem;
+  }
+
+  .nav-bar-about-auth-container {
+    margin-right: -2rem;
+  }
+
+  .MuiButton-label {
+    font-size: 2.2rem;
+  }
+
+  .all-characters-page-logo {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .character-container {
+    width: 83rem;
+  }
+
+  .character-name {
+    font-size: 2.5rem;
+  }
+
+  .character-image {
+    height: 39rem;
+  }
+
+  .scroll-icon {
+    font-size: 13rem;
+    margin-left: 94vw;
+    margin-top: 70vh;
+  }
+
+  .all-comics-container {
+    width: 31rem;
+  }
+
+  .all-comics-title {
+    font-size: 4rem;
+    margin-left: 35rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 46rem auto;
+    grid-gap: 6rem;
+    justify-content: space-around;
+}
+
+.character-comic-image {
+  margin-left: 25rem;
+}
+
+.all-series-title {
+  font-size: 4rem;
+  margin-left: 34rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin-left: 2rem;
+}
+
+.stories-info-container {
+  margin: 5rem;
+}
+
+.flip-card {
+  width: 26rem;
+  height: 24rem;
+}
+
+.stories-info-header {
+  font-size: 4rem;
+  margin-left: 31rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 23rem);
+  grid-gap: 1rem;
+}
+
+.stories-info-stories-info-title {
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.all-characters-footer-container {
+  width: 86rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: 2.2rem;
+}
+}
+
+
+
+
+
+@media (max-width: 700px) {
+  .nav-bar-container {
+    width: 87rem;
+  }
+
+  .nav-bar-about-auth-container {
+    margin-right: -2rem;
+  }
+
+  .MuiButton-label {
+    font-size: 2.2rem;
+  }
+
+  .all-characters-page-logo {
+    width: 8rem;
+    height: 6rem;
+  }
+
+  .character-container {
+    width: 83rem;
+  }
+
+  .character-name {
+    font-size: 2.5rem;
+  }
+
+  .character-image {
+    height: 39rem;
+  }
+
+  .scroll-icon {
+    font-size: 13rem;
+    margin-left: 94vw;
+    margin-top: 70vh;
+  }
+
+  .all-comics-container {
+    width: 31rem;
+  }
+
+  .all-comics-title {
+    font-size: 4rem;
+    margin-left: 35rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 46rem auto;
+    grid-gap: 6rem;
+    justify-content: space-around;
+}
+
+.character-comic-image {
+  margin-left: 25rem;
+}
+
+.all-series-title {
+  font-size: 4rem;
+  margin-left: 34rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
+  margin-left: 2rem;
+}
+
+.stories-info-container {
+  margin: 3rem;
+}
+
+.flip-card {
+  width: 26rem;
+  height: 24rem;
+}
+
+.stories-info-header {
+  font-size: 4rem;
+  margin-left: 31rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 23rem);
+  grid-gap: 1rem;
+}
+
+.stories-info-stories-info-title {
+  padding: .5rem;
+  font-size: 2rem;
+}
+
+.all-characters-footer-container {
+  width: 86rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: 2.2rem;
+}
+}
+
+
+
+
+
 @media (max-width: 650px) {
   .nav-bar-container {
     width: 87rem;
