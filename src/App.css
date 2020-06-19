@@ -388,6 +388,118 @@ a:link {
 ================   Media Queries  ======================
 ======================================================*/
 
+@media (max-width: 1000px) {
+  .nav-bar-container {
+    width: 88rem;
+  }
+
+  .nav-bar-about-auth-container {
+    margin-right: -2rem;
+  }
+
+  .MuiButton-label {
+    font-size: 1.7rem;
+  }
+
+  .all-characters-page-logo {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .character-container {
+    width: 85rem;
+  }
+
+  .character-name {
+    font-size: 2rem;
+  }
+
+  .character-image {
+    height: 39rem;
+  }
+
+  .scroll-icon {
+    font-size: 12rem;
+    margin-left: 63vw;
+    margin-top: 64vh;
+  }
+
+  .all-comics-container {
+    width: 27rem;
+  }
+
+  .all-comics-title {
+    font-size: 3.5rem;
+    margin-left: 26rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 40rem auto;
+    grid-gap: 3.5rem;
+    justify-content: space-around;
+    margin-left: -10rem;
+}
+
+.character-comic-image {
+  margin-left: 22rem;
+  width: 24rem;
+  height: 39rem;
+}
+
+.all-series-title {
+  font-size: 3.5rem;
+  margin-left: 29rem;
+}
+
+.all-series-thumbnail {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+  margin-left: 5rem;
+}
+
+.stories-info-container {
+  margin: 5rem;
+}
+
+.flip-card {
+  width: 26rem;
+  height: 24rem;
+}
+
+.stories-info-header {
+  font-size: 3.5rem;
+  margin-left: 31rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  margin: 1rem;
+  padding: 1rem;
+  grid-template-columns: repeat(3, 23rem);
+  grid-gap: 1rem;
+}
+
+.stories-info-stories-info-title {
+  padding: .5rem;
+  font-size: 1.7rem;
+}
+
+.all-characters-footer-container {
+  width: 87rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: 1.8rem;
+}
+}
+
+
+
+
+
 @media (max-width: 950px) {
   .nav-bar-container {
     width: 88rem;
