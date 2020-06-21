@@ -460,6 +460,70 @@ a:link {
 
 
 
+
+
+
+
+/*======================================================
+================   1300px Below ======================
+======================================================*/
+
+@media (max-width: 1300px) {
+    .all-characters-page-logo {
+      width: 4.5rem;
+      height: 3.7rem;
+      margin: 0;
+  }
+
+  .MuiButton-label {
+    font-size: 1.2rem;
+  }
+
+  .all-comics-title {
+    font-size: 3rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(3, 19rem);
+    grid-gap: 4.5rem;
+  }
+
+  .all-comics-container {
+    width: 23.5rem;
+    height: 39rem;
+  }
+
+  .character-comic-image {
+    width: 23rem;
+    height: 38rem;
+  }
+
+  .all-series-title {
+    font-size: 3rem;
+  }
+
+  .stories-info-header {
+    font-size: 3rem;
+  }
+
+  .stories-info-stories-info-title {
+    font-size: 1.4rem;
+  }
+
+  .all-characters-page-footer-data-text {
+    font-size: 1.3rem;
+  }
+
+
+}
+
+/*======================================================
+================   1300px Below ======================
+======================================================*/
+
+
+
 /* 
 Syntax
 @media (max-width: 900px)
