@@ -221,7 +221,7 @@ a:link {
 }
 
 .scroll-icon {
-  font-size: 12rem;
+  font-size: 8rem;
   font-weight: bold;
   animation: mouse 2s infinite;
   position: absolute;
@@ -719,9 +719,190 @@ a:link {
       font-size: .8rem;
   }
 }
-
 /*======================================================
 ================   450px Above ======================
+======================================================*/
+
+
+
+
+
+
+/*======================================================
+================   350px Below ======================
+======================================================*/
+
+@media (max-width: 350px) {
+    .MuiButton-label {
+      font-size: .9rem;
+  }
+
+  .character-container {
+    width: 83%;
+    height: 32rem;
+  }
+
+  .character-name {
+    font-size: 1.4rem;
+  }
+
+  .character-image {
+    height: 28.4rem;
+  }
+
+  .scroll-icon {
+    font-size: 6rem;
+    margin-left: 42vw;
+    margin-top: 54vh;
+  }
+
+  .character-series-image {
+    width: 16.2rem;
+    min-height: 16.2rem;
+    max-height: 16.2rem;
+  }
+
+  .flip-card {
+    width: 16.2rem;
+    height: 16.2rem;
+  }
+
+  .flip-card-inner {
+    width: 16.2rem;
+    height: 16.2rem;
+  }
+
+  .flip-card-back {
+    width: 15.2rem;
+    min-height: 15.2rem;
+    max-height: 15.2rem;
+  }
+
+  .stories-info-stories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .stories-info-stories-info-title {
+    font-size: .9rem;
+  }
+
+  .all-characters-page-footer-data-text {
+    font-size: .6rem;
+  }
+}
+/*======================================================
+================   350px Above ======================
+======================================================*/
+
+
+
+
+
+
+/*======================================================
+================   250px Below ======================
+======================================================*/
+
+@media (max-width: 250px) {
+  .MuiToolbar-gutters {
+    padding-left: -3px;
+    padding-right: 0px;
+}
+
+.MuiButton-root {
+  line-height: 1rem;
+}
+
+.nav-bar-about-auth-container {
+  margin-right: -3rem;
+}
+
+.all-characters-page-logo {
+  width: 2.8rem;
+  height: 2.5rem;
+}
+
+.MuiButton-label {
+  font-size: .8rem;
+}
+
+.character-container {
+  width: 83%;
+  height: 32rem;
+  margin-left: .9rem;
+}
+
+.scroll-icon {
+  font-size: 3rem;
+  margin-left: 39vw;
+  margin-top: 60vh;
+}
+
+.all-comics-title {
+  font-size: 1.8rem;
+}
+
+.character-comic-image {
+  width: 11.3rem;
+  height: 22rem;
+}
+
+.all-comics-container {
+  width: 11.5rem;
+  height: 23rem;
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-columns: 7rem;
+  grid-template-rows: 21rem auto;
+}
+
+.all-series-title {
+  font-size: 1.8rem;
+}
+
+.character-series-image {
+  width: 10.2rem;
+  min-height: 10.2rem;
+  max-height: 10.2rem;
+}
+
+.flip-card-inner {
+  width: 10.2rem;
+  height: 10.2rem;
+}
+
+.flip-card {
+  width: 10.2rem;
+  height: 10.2rem;
+}
+
+.flip-card-back {
+  width: 9.2rem;
+  min-height: 9.2rem;
+  max-height: 9.2rem;
+}
+
+.stories-info-header {
+  font-size: 1.8rem;
+}
+
+.footer-container {
+ display: inline;
+  text-align: center;
+  bottom: 0;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: .8rem;
+}
+
+}
+
+/*======================================================
+================   250px Above ======================
 ======================================================*/
 
 /* 
