@@ -34,7 +34,9 @@ function MainPage() {
 
               <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
 
-            <Footer />
+            <div  className="main-characters-footer-container">  
+              <Footer />
+            </div>
 
           </header>
       </div>

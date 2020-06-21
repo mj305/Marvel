@@ -69,7 +69,10 @@ const AllCharactersPage = () => {
                {allCharactersMap}
               </div>
             </div>
-         <Footer />
+
+            <div className="all-characters-footer-container" >
+              <Footer />
+            </div>
         </>
       )}
      </> 

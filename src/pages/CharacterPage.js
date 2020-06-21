@@ -31,7 +31,10 @@ const CharacterPage = () => {
           <StoriesInfo id={id} />
           
         </div>
-      <Footer />
+        
+         <div className="character-page-footer-contaier" >   
+            <Footer />
+          </div> 
     </>
   )
 };
