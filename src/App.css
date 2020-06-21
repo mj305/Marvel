@@ -197,7 +197,7 @@ a:link {
   border: solid #EF482A .5rem;
   margin: 1rem;
   height: 46rem;
-  width: 97%;
+  width: 95%;
 
   background-color: #EF482A;
   box-shadow: -10px 11px 9px -5px black;
@@ -373,7 +373,6 @@ a:link {
 
 .stories-info-header {
   border: dotted .2rem orange;
-  margin: 6rem;
   text-align: center;
   font-size: 3.5rem;
   color: #EF482A;
@@ -519,9 +518,47 @@ a:link {
 }
 
 /*======================================================
-================   1300px Below ======================
+================   1300px Above ======================
 ======================================================*/
 
+
+
+
+
+
+/*======================================================
+================   1150px Below ======================
+======================================================*/
+
+@media (max-width: 1150px) {
+  .nav-bar-about-auth-container{
+    margin-right: 0rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(3, 16rem);
+  }
+
+    .character-comic-image {
+      width: 20rem;
+      height: 35rem;
+  }
+
+  .all-comics-container {
+    width: 20.5rem;
+    height: 36rem;
+}
+
+  .all-series-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*======================================================
+================   1150px Above ======================
+======================================================*/
 
 
 /* 
