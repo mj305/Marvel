@@ -666,11 +666,62 @@ a:link {
   .stories-info-stories-info-title {
     font-size: 1rem;
   }
+}
+/*======================================================
+================   600px Above ======================
+======================================================*/
 
+
+
+
+
+
+
+/*======================================================
+================   450px Below ======================
+======================================================*/
+
+@media (max-width: 450px) {
+    .all-comics-title {
+      font-size: 2rem;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: 13rem;
+    grid-template-rows: 27rem auto;
+  }
+
+  .all-comics-container {
+    width: 17.5rem;
+    height: 28rem;
+  }
+
+  .character-comic-image {
+    width: 17.3rem;
+    height: 28rem;
+  }
+
+  .all-series-title {
+    font-size: 2rem;
+  }
+
+  .stories-info-header {
+    font-size: 2rem;
+  }
+
+  .stories-info-stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    .all-characters-page-footer-data-text {
+      font-size: .8rem;
+  }
 }
 
 /*======================================================
-================   600px Above ======================
+================   450px Above ======================
 ======================================================*/
 
 /* 
