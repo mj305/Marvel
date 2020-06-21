@@ -48,7 +48,6 @@ a:link {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-
   background: url(./assets/background.jpg);
   position:fixed;
   width: 100%;
@@ -78,6 +77,44 @@ a:link {
   font-weight: bold;
   padding: 1rem 11px -1px 8px;
   margin: 3rem 28px;
+}
+
+
+/* About Page */
+.about-page-parragraph-0 {
+  text-align: center;
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin: 1rem;
+   padding: 1rem;
+  color: #c70039;
+  font-weight: 400;
+}
+
+.about-page-parragraph-1 {
+   text-align: center;
+   font-size: 1.8rem;
+   margin: 1rem;
+   padding: 1rem;
+  color: #c70039;
+  font-weight: 400;
+}
+
+.about-page-parragraph-2 {
+    font-size: 1rem;
+    margin-bottom: 120px;
+    margin-top: 350px;
+    padding: 1rem;
+    color: #c70039;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.about-page-image {
+  width: 70vw;
+  height: 51vh;
+  margin-left: 16rem;
+  padding: 1rem;
 }
 
 
@@ -973,6 +1010,7 @@ a:link {
   .nav-bar-container {
     width: 106%;
 }
+
   .MuiToolbar-gutters {
     padding-left: -3px;
     padding-right: 0px;
