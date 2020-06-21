@@ -560,6 +560,36 @@ a:link {
 
 
 
+/*======================================================
+================   1024px Below ======================
+======================================================*/
+
+@media (max-width: 1024px) {
+  .character-container {
+    width: 94%;
+  }
+
+  .all-comics-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(2, 16rem);
+}
+
+.scroll-icon {
+  font-size: 9rem;
+  margin-left: 46vw;
+    margin-top: 42vh;
+}
+}
+
+/*======================================================
+================   1024px Above ======================
+======================================================*/
+
+
+
+
+
+
 
 /*======================================================
 ================   850px Below ======================
@@ -609,6 +639,25 @@ a:link {
 ================   850px Above ======================
 ======================================================*/
 
+
+
+
+
+
+/*======================================================
+================   768px Below ======================
+======================================================*/
+
+@media (max-width: 768px) {
+  .all-series-thumbnail {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+}
+
+/*======================================================
+================   768px Above ======================
+======================================================*/
 
 
 
@@ -705,6 +754,11 @@ a:link {
   .all-series-title {
     font-size: 2rem;
   }
+  
+  .all-series-thumbnail {
+    display: grid;
+    grid-template-columns: 20em;
+}
 
   .stories-info-header {
     font-size: 2rem;
@@ -727,12 +781,111 @@ a:link {
 
 
 
-
 /*======================================================
-================   350px Below ======================
+================   414px Above ======================
 ======================================================*/
 
-@media (max-width: 350px) {
+
+@media (max-width: 414px) {
+
+  .MuiButton-label {
+    font-size: .8rem;
+}
+
+  .character-container {
+    width: 77%;
+    height: 29rem;
+}
+
+.character-name {
+  font-size: 1.3rem;
+}
+
+.character-image {
+  height: 26rem;
+}
+
+.scroll-icon {
+  font-size: 5rem;
+  margin-left: 37vw;
+  margin-top: 49vh;
+}
+
+  .all-comics-title {
+    font-size: 1.8rem;
+}
+
+.all-comics-thumbnail {
+  display: grid;
+  grid-template-columns: 15rem;
+  grid-template-rows: 26rem auto;
+}
+
+.all-comics-container {
+  width: 17.5rem;
+  height: 28rem;
+}
+
+.character-comic-image {
+  width: 17.3rem;
+  height: 28rem;
+}
+
+.all-series-title {
+  font-size: 1.8rem;
+}
+
+.character-series-image {
+  width: 19rem;
+  min-height: 19rem;
+  max-height: 19rem;
+}
+
+.flip-card {
+  width: 18.5rem;
+  height: 19rem;
+}
+
+.flip-card-inner {
+  width: 18rem;
+  min-height: 18rem;
+  max-height: 18rem;
+}
+
+.flip-card-back {
+  width: 18rem;
+  min-height: 18rem;
+  max-height: 18rem;
+}
+
+.stories-info-header {
+  font-size: 2rem;
+}
+
+.stories-info-stories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+  .all-characters-page-footer-data-text {
+    font-size: .8rem;
+}
+}
+
+
+/*======================================================
+================   414px Above ======================
+======================================================*/
+
+
+
+
+
+/*======================================================
+================   375px Below ======================
+======================================================*/
+
+@media (max-width: 375px) {
     .MuiButton-label {
       font-size: .9rem;
   }
@@ -751,10 +904,10 @@ a:link {
   }
 
   .scroll-icon {
-    font-size: 6rem;
-    margin-left: 42vw;
-    margin-top: 54vh;
-  }
+    font-size: 5rem;
+    margin-left: 40vw;
+    margin-top: 65vh;
+}
 
   .character-series-image {
     width: 16.2rem;
@@ -792,7 +945,7 @@ a:link {
   }
 }
 /*======================================================
-================   350px Above ======================
+================   375px Above ======================
 ======================================================*/
 
 
@@ -801,10 +954,10 @@ a:link {
 
 
 /*======================================================
-================   250px Below ======================
+================   320px Below ======================
 ======================================================*/
 
-@media (max-width: 250px) {
+@media (max-width: 320px) {
   .MuiToolbar-gutters {
     padding-left: -3px;
     padding-right: 0px;
@@ -898,12 +1051,24 @@ a:link {
 .all-characters-page-footer-data-text {
   font-size: .8rem;
 }
-
 }
-
 /*======================================================
-================   250px Above ======================
+================   320px Above ======================
 ======================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 Syntax
