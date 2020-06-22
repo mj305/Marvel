@@ -12,18 +12,14 @@ const AboutPage = () => {
        <NavBarComponent />
           <header className="main-page-header">
 
-              <h1 className="about-page-parragraph-0"  >
-              Hi there, my name is Maria, and I’m a web developer. 
-              </h1>
-
-              <p className="about-page-parragraph-1" >
-              I created this super cool app so you can learn more 
+              <h2 className="about-page-parragraph-1" >
+              In this super cool app you'll learn more 
               about your favorite Marvel Comic characters. 
-              </p>
+              </h2>
 
-              <p className="about-page-parragraph-1" >
+              <h3 className="about-page-parragraph-1" >
               Have lots of fun checking out the Superheroes and Villans. 
-              </p>
+              </h3>
 
               <img className="about-page-image" src={aboutmarvel} alt="about heroes"/>
 

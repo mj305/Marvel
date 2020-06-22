@@ -1,4 +1,6 @@
-
+html {
+  border: dotted orange .5rem;
+}
 
 a:link {
   text-decoration: none;
@@ -6,6 +8,10 @@ a:link {
 }
 
 /* Nav Bar */
+
+.main-page-nav-bar-container {
+
+}
 
 .nav-bar-container {
   width: 100%;
@@ -450,6 +456,19 @@ a:link {
 ================   1550px Below ======================
 ======================================================*/
 @media (max-width: 1550px) {
+
+    .MuiButton-label {
+      font-size: 2rem;
+    }
+
+    .App-logo {
+      height: 18vmin;
+  }
+
+  .main-page-paragraph {
+    font-size: 3.5rem;
+  }
+
     .all-comics-thumbnail {
       display: grid;
       grid-template-columns: repeat(3, 24rem);
@@ -484,6 +503,26 @@ a:link {
 ================   1300px Below ======================
 ======================================================*/
 @media (max-width: 1300px) {
+  .about-page-parragraph-1 {
+    font-size: 3rem;
+  }
+
+  .about-page-parragraph-1 {
+    font-size: 2rem;
+}
+
+.about-page-parragraph-2 {
+  font-size: 1.2rem;
+  padding: 12rem;
+  margin-top: 1rem;
+}
+
+  .about-page-image {
+    width: 87vw;
+    height: 47vh;
+    margin-left: 2rem;
+}
+
     .all-characters-page-logo {
       width: 4.5rem;
       height: 3.7rem;
@@ -604,6 +643,11 @@ a:link {
 ======================================================*/
 
 @media (max-width: 1024px) {
+  .about-page-image {
+    width: 87vw;
+    height: 37vh;
+}
+
   .character-container {
     width: 94%;
   }
@@ -634,6 +678,18 @@ a:link {
 ================   850px Below ======================
 ======================================================*/
 @media (max-width: 850px) {
+  .about-page-image {
+    width: 80vw;
+    height: 30vh;
+} 
+
+  .about-page-parragraph-2 {
+    padding: 7rem;
+}
+
+  ..about-page-parragraph-2 {
+    padding: 7rem;
+}
   .all-comics-title {
     font-size: 2.5rem;
   }
@@ -688,6 +744,10 @@ a:link {
 ======================================================*/
 
 @media (max-width: 768px) {
+  .about-page-parragraph-2 {
+    padding: 4rem;
+}
+
   .all-series-thumbnail {
     display: grid;
     grid-template-columns: 1fr;
@@ -707,6 +767,16 @@ a:link {
 ======================================================*/
 
 @media (max-width: 600px) {
+  .about-page-image {
+    height: 22vh;
+
+}
+
+.about-page-parragraph-2 {
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
     .all-characters-page-logo {
       width: 3.5rem;
       height: 2.7rem;
@@ -775,6 +845,12 @@ a:link {
 ======================================================*/
 
 @media (max-width: 450px) {
+  .about-page-image {
+    height: 15vh;
+    margin-left: .2rem;
+    width: 85vw;
+}
+
     .all-comics-title {
       font-size: 2rem;
   }
@@ -1006,6 +1082,10 @@ a:link {
 ======================================================*/
 
 @media (max-width: 320px) {
+
+  .main-page-nav-bar-container {
+    width: 22rem;
+}
 
   .nav-bar-container {
     width: 106%;
