@@ -9,7 +9,6 @@ import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
 
 import logo from '../assets/logo.png';
-import SimpleModal from './SimpleModalComponent';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -33,6 +32,7 @@ export default function NavBarComponent() {
        history.push("/about") 
   }
 
+
   return (
 
     <div className="nav-bar-container" >
@@ -49,9 +49,8 @@ export default function NavBarComponent() {
                 <div className="nav-bar-about-auth-container" >
                     <Button className="nav-bar-about" color="inherit" onClick={handleAbout} >About </Button>
 
-                    {/* <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button> */} 
+                    <Button className="nav-bar-login" color="inherit">Login / Sign-Up</Button> 
                 </div>
-                <SimpleModal />
 
               </Toolbar>
           </AppBar>
