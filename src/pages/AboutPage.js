@@ -24,7 +24,6 @@ const AboutPage = () => {
               <img className="about-page-image" src={aboutmarvel} alt="about heroes"/>
 
               <p className="about-page-parragraph-2" > 
-              COMPANY INFO AND CONTACT
               Marvel Entertainment, LLC, 
               a wholly-owned subsidiary of The Walt Disney Company, 
               is one of the world's most prominent character-based 

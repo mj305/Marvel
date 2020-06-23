@@ -29,12 +29,12 @@ function MainPage() {
           <NavBarComponent />
         </div>
           <header className="App-header">
-{/* 
+
               <a href="http://marvel.com" target="blank" >
                 <img src={logo} className="App-logo" alt="logo" />
               </a>   
 
-              <p className="main-page-paragraph" > Marvel Website Coming Soon...</p> */}
+              <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
 
             <div  className="main-characters-footer-container">  
               <Footer />
