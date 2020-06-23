@@ -10,6 +10,7 @@ import CharacterInfo from './components/CharacterInfo';
 import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
+import ForgotPassword from './pages/ForgotPassword';
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
@@ -29,13 +30,17 @@ const App = () => {
                 <AboutPage />
               </Route>
 
+              <Router path="/signup" >
+                <SignUp />
+              </Router>
+
               <Route path="/login" >
                 <LogIn/>
               </Route>
 
-              <Router path="/signup" >
-                <SignUp />
-              </Router>
+              <Route path="forgotpassword" >
+                 <ForgotPassword/>
+              </Route>
 
               <Route path="/allcharacters">
                 <AllCharactersPage />
