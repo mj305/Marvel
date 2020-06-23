@@ -4,12 +4,17 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import './App.css'
+
+import CharacterInfo from './components/CharacterInfo';
+
+import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
-import CharacterInfo from './components/CharacterInfo';
+import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
-import AboutPage from './pages/AboutPage';
+import SignUp from './pages/SignUp';
+
+import './App.css'
 
 
 const App = () => {
@@ -23,6 +28,14 @@ const App = () => {
               <Route path="/about" >
                 <AboutPage />
               </Route>
+
+              <Route path="/login" >
+                <LogIn/>
+              </Route>
+
+              <Router path="/signup" >
+                <SignUp />
+              </Router>
 
               <Route path="/allcharacters">
                 <AllCharactersPage />
