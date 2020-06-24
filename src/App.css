@@ -492,17 +492,20 @@ a:link {
   border: dotted .5rem red;
   width: 26vw;
   height: 38vh;
-  margin-top: 2rem;
-  margin-left: 3.5rem;
+  margin-top: 1rem;
+  margin-left: 4.5rem;
   font-size: 1.5rem;
   font-weight: 400;
   color: #035aa6;
-  padding: 1.5rem;
+  padding: 2.5rem;
 }
 
 .new-user-form {
   border: dotted .5rem purple;
-  height: 20rem;
+  height: 24rem;
+  margin-top: -2rem;
+  width: 30rem;
+  margin-left: -2rem;
 }
 
 .login-page-field-container {
@@ -517,7 +520,7 @@ a:link {
 .login-button-wrapper {
   border: dotted .5rem blue;
   text-align: center;
-  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .login-button {
@@ -534,8 +537,13 @@ a:link {
   background-color: #035aa6;
   color: white;
   font-weight: 400;
-  font-size: 1.5rem;
-  border-radius: 1%;
+  font-size: 2rem;
+  border-radius: 2rem;
+  margin-left: -3rem;
+  width: 10rem;
+  height: 4rem;
+  margin-top: -1rem;
+  outline: 0;
 }
 
 .login-page-signup-button-wrapper {
@@ -543,7 +551,7 @@ a:link {
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 5.1rem;
+  margin-top: 3.1rem;
 }
 
 .login-page-footer-container {
@@ -552,8 +560,24 @@ a:link {
   margin-bottom: 0;
 }
 
+.login-page-form-group {
+  padding: .7rem;
+  
+}
 
+.remember-me {
+  text-align: center;
+}
 
+label {
+  margin-right: 1rem;
+}
+
+input {
+  margin-right: .7rem;
+    height: 1.8rem;
+    border-radius: .4rem;
+}
 
 
 
