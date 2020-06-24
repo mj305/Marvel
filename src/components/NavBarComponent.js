@@ -40,9 +40,9 @@ export default function NavBarComponent() {
           <AppBar position="static">
               <Toolbar>
 
-               <Link to="/" > 
+               <Link to="/" href="/"> 
                   <IconButton >
-                    <img href="#" src={logo} className="all-characters-page-logo" alt="logo" />
+                    <img src={logo} className="all-characters-page-logo" alt="logo" />
                   </IconButton>
                 </Link>
 

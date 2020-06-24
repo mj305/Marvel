@@ -1,10 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import logo from '../assets/logo.png';
+
+import Footer from '../components/FooterComponent';
 import LoadingComponent from '../components/LoadingComponent';
 import NavBarComponent from '../components/NavBarComponent';
-import Footer from '../components/FooterComponent';
+
 
 
 const AllCharactersPage = () => {
@@ -57,14 +58,16 @@ const AllCharactersPage = () => {
         <>
           <div>
             <NavBarComponent />
-            <LoadingComponent />
+            <div className="all-characters-loading-component">
+             <LoadingComponent />
+            </div>
           </div> 
         </>
       ) : (
         <>
           <div>
             <NavBarComponent />
-             <h1 className="all-characters-page-header" >All Characters Page</h1>
+             <h1 className="all-characters-page-header" >Marvel Characters</h1>
               <div className="all-characters-page" >
                {allCharactersMap}
               </div>

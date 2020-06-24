@@ -1,12 +1,13 @@
 import React from 'react';
-import NavBarComponent from '../components/NavBarComponent';
+
 import Footer from '../components/FooterComponent';
+import NavBarComponent from '../components/NavBarComponent';
 
 const SignUp = () => {
   return (
     <>
-      <div className="sign-up-page-nav-bar" >
-        <NavBarComponent/>
+      <div>
+          <NavBarComponent/>
       </div>
 
 

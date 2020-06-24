@@ -38,7 +38,7 @@ const App = () => {
                 <LogIn/>
               </Route>
 
-              <Route path="forgotpassword" >
+              <Route path="/forgotpassword" >
                  <ForgotPassword/>
               </Route>
 
