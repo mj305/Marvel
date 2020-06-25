@@ -5,6 +5,9 @@ import {
   Route,
 } from "react-router-dom";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import CharacterInfo from './components/CharacterInfo';
 
 import AboutPage from './pages/AboutPage';
@@ -60,6 +63,7 @@ const App = () => {
 
           </Switch>
       </Router>
+      <ToastContainer />
     </div>  
   )
 };

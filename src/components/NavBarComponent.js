@@ -28,8 +28,9 @@ export default function NavBarComponent() {
 
   const history = useHistory();
 
-  const handleAbout = () => {
-       history.push("/about") 
+  const handleNavigation = (route) => {
+     /*   history.push(`/${route}`)  */
+       console.log(route)
   }
 
 
@@ -40,17 +41,16 @@ export default function NavBarComponent() {
           <AppBar position="static">
               <Toolbar>
 
-               <Link to="/" href="/"> 
+               <Link to="/"> 
                   <IconButton >
                     <img src={logo} className="all-characters-page-logo" alt="logo" />
                   </IconButton>
                 </Link>
 
                 <div className="nav-bar-about-auth-container" >
-                    <Button className="nav-bar-about" color="inherit" onClick={handleAbout} >About </Button>
-
-                    <Button className="nav-bar-login" color="inherit">Login</Button> 
-                    <Button className="nav-bar-login" color="inherit">Sign-Up</Button> 
+                    <Link className="nav-bar-about" color="inherit" to="/about" >About </Link>
+                    <Link className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
+                    <Link className="nav-bar-login" color="inherit" to="/signup"> Sign-Up</Link> 
                 </div>
 
               </Toolbar>
