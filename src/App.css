@@ -6,18 +6,89 @@ a:link {
 
 /* Nav Bar */
 
-.main-page-nav-bar-container {
-
-}
-
 .nav-bar-container {
+  
   width: 100%;
 }
 
 .nav-bar-about-auth-container {
-  width: 100%;
+  
   text-align: right;
+  width: 100%;
   margin-right: 3rem;
+}
+
+
+.nav-bar-about {
+  margin-right: 2.5rem;
+  box-shadow: -10px 11px 9px -5px black; 
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fbe555;
+  background-color: #ff4d00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.nav-bar-about:hover {background-color:  #f17808;}
+
+.nav-bar-about:active {
+  background-color:  #f17808;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.nav-bar-login {
+  margin-right: 2.5rem;
+  box-shadow: -10px 11px 9px -5px black; 
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fbe555;
+  background-color: #ff4d00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.nav-bar-login:hover {background-color:  #f17808;}
+
+.nav-bar-login:active {
+  background-color:  #f17808;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.nav-bar-signup {
+  margin-right: 2.5rem;
+  box-shadow: -10px 11px 9px -5px black; 
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fbe555;
+  background-color: #ff4d00;
+  border: none;
+  border-radius: 15px;
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.nav-bar-signup:hover {background-color:  #f17808}
+
+.nav-bar-signup:active {
+  background-color:  #f17808;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* About and SignIn / SignUp Buttons */ 

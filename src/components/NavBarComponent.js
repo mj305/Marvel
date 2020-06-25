@@ -48,9 +48,9 @@ export default function NavBarComponent() {
                 </Link>
 
                 <div className="nav-bar-about-auth-container" >
-                    <Link className="nav-bar-about" color="inherit" to="/about" >About </Link>
-                    <Link className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
-                    <Link className="nav-bar-login" color="inherit" to="/signup"> Sign-Up</Link> 
+                    <Link className="nav-bar-group-item" className="nav-bar-about" color="inherit" to="/about" >About </Link>
+                    <Link className="nav-bar-group-item" className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
+                    <Link className="nav-bar-group-item" className="nav-bar-signup" color="inherit" to="/signup"> Sign-Up</Link> 
                 </div>
 
               </Toolbar>
