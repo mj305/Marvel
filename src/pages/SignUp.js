@@ -23,14 +23,13 @@ const SignUp = () => {
       console.log(error)
     })
   };
-
-
-
+ 
   return (
     <>
       <div>
           <NavBarComponent/>
       </div>
+      
 
 
         <div className="sign-up-page-container">
@@ -88,7 +87,7 @@ const SignUp = () => {
         <Footer/>
       </div>
     </>
-  )
+  ) 
 }
 
 export default SignUp

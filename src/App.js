@@ -33,9 +33,9 @@ const App = () => {
                 <AboutPage />
               </Route>
 
-              <Router path="/signup" >
+              <Route path="/signup" >
                 <SignUp />
-              </Router>
+              </Route>
 
               <Route path="/login" >
                 <LogIn/>
