@@ -31,14 +31,14 @@ const LogIn = () => {
                           <label>Password:</label>
                           <input autoComplete="current-password" className="" />
                         </div> 
-
-                        <div className="remember-me">
-                          <input className="form-check-input" type="checkbox" value="1" />
-                          <label>Remember Me</label>
-                        </div>
                    </div>
 
-                    <div className="login-page-form-group">
+                      <div className="remember-me">
+                          <input className="checkbox" type="checkbox" value="1" />
+                          <label>Remember Me</label>
+                      </div>
+
+                    <div >
                       <div className="login-button-wrapper" >
                         <button className="login-button">
                           <input className="login-input" type="submit"  />
