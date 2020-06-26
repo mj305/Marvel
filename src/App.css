@@ -528,11 +528,11 @@ a:link {
 }
 
 .login-page-container {
-  /* border: dotted .5rem orange; */
+  border: dotted .5rem orange;
   background: url(./assets/authMarvel.jpg);
 
   /* position:fixed; */
-  width: 100%;
+  width: 99%;
   height: 127vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -550,7 +550,7 @@ a:link {
 }
 
 .login-page-header {
-  /* border: dotted .5rem green; */
+  border: dotted .5rem green;
   font-size: 2rem;
   color: #035aa6;
   text-align: center;
@@ -558,7 +558,7 @@ a:link {
 }
 
 .login-page-form-container {
-/*   border: dotted .5rem red; */
+  border: dotted .5rem red;
   width: 26vw;
   height: 40vh;
   margin-top: 1rem;
@@ -570,7 +570,7 @@ a:link {
 }
 
 .new-user-form {
-  /* border: dotted .5rem purple; */
+  border: dotted .5rem purple;
   margin-top: -2rem;
   width: 40rem;
   margin-left: -2.5rem;
@@ -578,17 +578,17 @@ a:link {
 }
 
 .login-page-field-container {
-  /* border: dotted .5rem white; */
+  border: dotted .5rem white;
   height: 10.2rem;
   margin-top: -4rem;
 }
 
 .login-button-wrapper {
-/*  border: dotted .5rem blue; */
+ border: dotted .5rem blue;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
-  width: 98%;
+  width: 92%;
 }
 
 .login-button {
@@ -616,16 +616,16 @@ a:link {
 }
 
 .login-page-signup-button-wrapper {
-  /* border: dotted .5rem brown;  */
+  border: dotted .5rem brown; 
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
-  margin-top: 6rem;
-  width: 41rem;
+  margin-top: 3.5rem;
+  width: 39rem;
 }
 
 .login-page-footer-container {
- /*  border: dotted .5rem  violet; */
+  border: dotted .5rem  violet;
   background-color: navy;
   margin-bottom: 0;
 }
@@ -658,11 +658,68 @@ input {
 
 
 
+/*======================================================
+================   1900px Below ======================
+======================================================*/
+@media (max-width: 1900px) {
+  .login-page-nav-bar-container {
+    width: 90%;
+}
+
+ .login-page-container {
+  width: 85.2%;
+  height: 88vh;
+ }
+
+ .login-page-wrapper {
+  width: 57vh;
+  height: 52vh;
+ }
+
+ .login-page-form-container {
+  height: 20vh;
+  padding: 8.9rem;
+}
+
+.login-page-field-container {
+  margin-top: -5rem;
+}
+
+.login-button-wrapper {
+  width: 93%;
+}
+
+.login-page-signup-button-wrapper {
+  width: 39rem;
+}
+}
+
+
+/*======================================================
+================   1900px Above ======================
+======================================================*/
+
+
+
+
 
 /*======================================================
 ================   1550px Below ======================
 ======================================================*/
 @media (max-width: 1550px) {
+
+  .login-page-nav-bar-container {
+    width: 85%;
+}
+
+.login-page-container {
+  width: 84.2%;
+  height: 88vh;
+}
+
+.login-page-footer-container {
+  width: 8%;
+}
 
     .MuiButton-label {
       font-size: 2rem;
