@@ -8,7 +8,8 @@ import NavBarComponent from '../components/NavBarComponent';
 
 
 
-const AllCharactersPage = () => {
+const AllCharactersPage = (props) => {
+  const {auth} = props.user.data
 
   const [loading, setLoading] = React.useState(true)
 
@@ -57,7 +58,7 @@ const AllCharactersPage = () => {
       {loading ? (
         <>
           <div>
-            <NavBarComponent />
+            <NavBarComponent auth={auth} />
             <div className="all-characters-loading-component">
              <LoadingComponent />
             </div>
@@ -66,7 +67,7 @@ const AllCharactersPage = () => {
       ) : (
         <>
           <div>
-            <NavBarComponent />
+            <NavBarComponent auth={auth}/>
              <h1 className="all-characters-page-header" >Marvel Characters</h1>
               <div className="all-characters-page" >
                {allCharactersMap}

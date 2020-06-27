@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,6 +23,23 @@ import './App.css'
 
 
 const App = () => {
+  const [user, setUser] = useState({
+   data: {auth: false}
+  })
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const token = localStorage.getItem("token")
+      const result = await axios.get("http://localhost:4000/me", {
+        headers: {authorization: `Bearer ${token}`}, 
+        
+      })  
+      setUser(result)
+    }
+    fetchUser()
+  }, [])   
+
+
 
   return (
 
@@ -34,7 +52,7 @@ const App = () => {
               </Route>
 
               <Route path="/signup" >
-                <SignUp />
+                <SignUp user={user} />
               </Route>
 
               <Route path="/login" >
@@ -46,7 +64,7 @@ const App = () => {
               </Route>
 
               <Route path="/allcharacters">
-                <AllCharactersPage />
+                <AllCharactersPage user={user} />
               </Route>
 
               <Route path="/characterpage/:id">

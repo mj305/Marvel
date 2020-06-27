@@ -23,7 +23,7 @@ const AboutPage = () => {
 
               <img className="about-page-image" src={aboutmarvel} alt="about heroes"/>
 
-              <p className="about-page-parragraph-2" > 
+       {/*        <p className="about-page-parragraph-2" > 
               Marvel Entertainment, LLC, 
               a wholly-owned subsidiary of The Walt Disney Company, 
               is one of the world's most prominent character-based 
@@ -34,7 +34,7 @@ const AboutPage = () => {
               publishing. For more information visit 
               <a href="https://www.marvel.com/" target="blank" > marvel.com</a> © 2020 MARVEL.
               </p>
-
+ */}
             <div  className="main-characters-footer-container">  
               <Footer />
             </div>

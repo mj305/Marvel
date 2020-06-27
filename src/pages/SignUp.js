@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
 import { useForm } from "react-hook-form";
-import {Link} from 'react-router-dom';
+import {Link, useHistory} from 'react-router-dom';
 import { toast } from 'react-toastify';
 
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 import ForgotPassword from './ForgotPassword';
 
-const SignUp = () => {
+const SignUp = (user) => {
   const { register, handleSubmit, watch, errors } = useForm();
+  console.log(user.user.data)
+  const history = useHistory()
+
+  useEffect(() => {
+    if (user.user.data.auth) {
+      history.push("/allcharacters")
+    } 
+  }, [])
 
   const onSubmit = data => {
     axios({
