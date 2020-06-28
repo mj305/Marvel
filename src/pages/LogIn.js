@@ -70,7 +70,7 @@ const LogIn = () => {
                           <label>Remember Me</label>
                       </div>
 
-                    <div >
+                    <div>
                       <div className="login-button-wrapper" >
                         <button className="login-button" type="submit">
                           Submit
