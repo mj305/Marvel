@@ -563,14 +563,14 @@ a:link {
   height: 40vh;
   margin-top: 1rem;
   width: 36rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #035aa6;
   padding: 2.5rem;
 }
 
 .new-user-form {
-  border: dotted .5rem purple;
+  /* border: dotted .5rem purple; */
   margin-top: -2rem;
   width: 40rem;
   margin-left: -2.5rem;
@@ -589,20 +589,17 @@ a:link {
   padding: 1rem;
   margin-top: 3rem;
   width: 92%;
-
-  
+  margin-top: 1rem;
 }
 
 .login-button {
   background-color: #3F51B5;
   color: white;
   font-size: 1.5rem;
-  width: 5rem;
-  height: 2rem;
-  margin-left: 1rem;
-  padding-left: 0rem;
-  padding-top: 0rem;
-  border-radius: 1%;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 45%;
+  box-shadow: -10px 11px 9px -5px black;
 }
 
 .login-input {
@@ -657,6 +654,53 @@ input {
   width: 95%;
   margin-top: .3rem;
   margin-left: 1rem;
+}
+
+/* SignUp Page  */
+
+.sign-up-page-container {
+  border: dotted .5rem orange;
+  background: url(./assets/authMarvel.jpg);
+  width: 99%;
+  height: 127vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sign-up-page-wrapper {
+ border: solid 1rem #EF482A;
+ background-color: #fbe555;
+ box-shadow: -10px 11px 9px -5px black;
+ width: 76vh;
+ height: 73vh;
+ margin-top: 4rem;
+ margin-left: 6rem;
+}
+
+.sign-up-header-wrapper {
+  border: dotted .5rem yellowgreen;
+  color: #035aa6;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  
+}
+
+.sign-up-form-container {
+  border: dotted .5rem pink;
+}
+
+.sign-up-page-form-group {
+  border: dotted .5rem lightskyblue;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #035aa6;
+
+}
+
+.sign-up-page-log-in-button-wrapper{
+  border: dotted .5rem red;
 }
 
 
