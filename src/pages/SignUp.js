@@ -44,36 +44,36 @@ const SignUp = (user) => {
 
                 <div className="sign-up-page-wrapper">
                     <div className="sign-up-header-wrapper">
-                      <h1>Sign-Up</h1>
+                      <h1 className="sign-up-header">Sign-Up</h1>
                     </div>
 
                     <div className="sign-up-form-container">
                         <form onSubmit={handleSubmit(onSubmit)} > 
                             <div className="sign-up-page-form-group" >
-                                <label>Name</label>
+                                <label>Name *</label>
                                 <input name="name" autoFocus="autofocus" ref={register({ required: true })} type="text"/>
                             </div>
                             {errors.name && <span>This field is required</span>}
 
                             <div className="sign-up-page-form-group" >
-                                <label>Email</label>
+                                <label>Email *</label>
                                 <input name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
                             </div>
                             {errors.email && <span>This field is required</span>}
 
                             <div className="sign-up-page-form-group" >
-                                <label>Password</label>
+                                <label>Password *</label>
                                 <input className="" name="password" type="password" ref={register({ required: true })}/>
                                 <p>(what is the condition for the password?)</p>
                             </div> 
                             {errors.password && <span>This field is required</span>}
 
                             <div  className="sign-up-page-form-group" >
-                                <label>Password Confirmation</label>
+                                <label>Password Confirmation *</label>
                                 <input type="password" name="passwordConfirmation" />
                             </div>
 
-                            <div className="sign-up-page-form-group">
+                            <div>
                                 <div className="sign-up-button-wrapper" >
                                     <button type="submit" className="sign-up-button">
                                     Submit

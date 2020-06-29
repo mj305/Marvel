@@ -602,7 +602,7 @@ a:link {
   box-shadow: -10px 11px 9px -5px black;
 }
 
-.login-input {
+/* .login-input {
   background-color: #035aa6;
   color: white;
   font-weight: 400;
@@ -614,7 +614,7 @@ a:link {
   margin-top: -1rem;
   outline: 0;
   box-shadow: -10px 11px 9px -5px black;
-}
+} */
 
 .login-page-signup-button-wrapper {
   border: dotted .5rem brown; 
@@ -699,8 +699,37 @@ input {
 
 }
 
+
+
+.sign-up-button {
+  border: dotted .5rem black;
+  color: white;
+  font-size: 1.5rem;
+  background-color: #3F51B5;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 45%;
+
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.sign-up-button-wrapper {
+  border: dotted .5rem blue;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 92%;
+  margin-top: 1rem;
+}
+
+.sign-up-header {
+  margin: .2rem;
+}
+
 .sign-up-page-log-in-button-wrapper{
   border: dotted .5rem red;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 
