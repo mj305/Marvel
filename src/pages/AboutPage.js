@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBarComponent from '../components/NavBarComponent';
 import Footer from '../components/FooterComponent';
-import aboutmarvel from '../assets/aboutmarvel.png';
 
 const AboutPage = () => {
 
@@ -10,18 +9,20 @@ const AboutPage = () => {
     <>
       <div>
        <NavBarComponent />
-          <header className="main-page-header">
+          <div className="about-page-container">
 
-              <h2 className="about-page-parragraph-1" >
-              In this super cool app you'll learn more 
-              about your favorite Marvel Comic characters. 
-              </h2>
+            <div className="about-page-paragraph-wrapper">
+                <h2 className="about-page-parragraph-1" >
+                In this super cool app you'll learn more 
+                about your favorite Marvel Comic characters. 
+                </h2>
 
-              <h3 className="about-page-parragraph-1" >
-              Have lots of fun checking out the Superheroes and Villans. 
-              </h3>
+                <h3 className="about-page-parragraph-1" >
+                Have lots of fun checking out the Superheroes and Villans. 
+                </h3>
+            </div>
 
-              <img className="about-page-image" src={aboutmarvel} alt="about heroes"/>
+              {/* <img className="about-page-image" src={aboutmarvel} alt="about heroes"/> */}
 
        {/*        <p className="about-page-parragraph-2" > 
               Marvel Entertainment, LLC, 
@@ -35,11 +36,11 @@ const AboutPage = () => {
               <a href="https://www.marvel.com/" target="blank" > marvel.com</a> © 2020 MARVEL.
               </p>
  */}
-            <div  className="main-characters-footer-container">  
+          </div>
+
+          <div  className="main-characters-footer-container">  
               <Footer />
             </div>
-
-          </header>
       </div>
     </>
   )
