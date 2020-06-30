@@ -651,7 +651,7 @@ label {
 
 input {
   padding: .5rem;
-  width: 95%;
+  width: 94%;
   margin-top: .3rem;
   margin-left: 1rem;
 }
@@ -689,6 +689,7 @@ input {
 
 .sign-up-form-container {
   border: dotted .5rem pink;
+
 }
 
 .sign-up-page-form-group {
@@ -709,7 +710,6 @@ input {
   width: 9rem;
   height: 3rem;
   border-radius: 45%;
-
   box-shadow: -10px 11px 9px -5px black;
 }
 
@@ -728,9 +728,80 @@ input {
 
 .sign-up-page-log-in-button-wrapper{
   border: dotted .5rem red;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
+
+/* FORGOT PASSWORD PAGE  */
+
+.forgot-password-page-container {
+  border: dotted .5rem orange;
+  background: url(./assets/authMarvel.jpg);
+  width: 99%;
+  height: 80.1vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.forgot-password-page-wrapper {
+  border: solid 1rem #EF482A;
+  background-color: #fbe555;
+  box-shadow: -10px 11px 9px -5px black;
+  width: 76vh;
+  height: 45vh;
+  margin-top: 4rem;
+  margin-left: 6rem;
+  }
+
+  .forgot-password-header-wrapper {
+    border: dotted .5rem yellowgreen;
+    color: #035aa6;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+  
+  }
+
+  .forgot-password-header {
+    margin: .2rem;
+  }
+
+ .forgot-password-form-container {
+  border: dotted .5rem pink;
+  height: 71%;
+  
+ }
+
+ .forgot-password-page-form-group {
+  border: dotted .5rem red;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #035aa6;
+  width: 92%;
+  margin-left: 1rem;
+  margin-top: 2rem;
+ }
+
+ .forgot-password-button-wrapper {
+  
+ }
+
+ .forgot-password-button {
+  border: dotted .5rem black;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #3F51B5;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 45%;
+  box-shadow: -10px 11px 9px -5px black;
+  margin-top: 5rem;
+  margin-left: 38%;
+  }
+
+
 
 
 

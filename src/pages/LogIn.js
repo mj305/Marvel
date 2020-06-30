@@ -71,14 +71,12 @@ const LogIn = () => {
 
                     <div>
                       <div className="login-button-wrapper" >
-                        <button className="login-button" type="submit">
-                          Submit
-                        </button>
+                        <button className="login-button" type="submit"> Login </button>
                       </div>
                     </div>
 
                     <div className="login-page-form-group" className="login-page-signup-button-wrapper">
-                      <a href="./SignUp.js" >Sign-Up</a>
+                      <a href="./SignUp.js" ></a>
                       <br/>
                       <a href="./ForgotPassword.js" >Forgot your password?</a> 
                     </div>

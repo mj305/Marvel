@@ -75,9 +75,7 @@ const SignUp = (user) => {
 
                             <div>
                                 <div className="sign-up-button-wrapper" >
-                                    <button type="submit" className="sign-up-button">
-                                    Submit
-                                    </button>
+                                    <button type="submit" className="sign-up-button"> Sign-Up </button>
                                 </div>
                             </div>
 
