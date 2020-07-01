@@ -23,7 +23,8 @@ const LogIn = () => {
         if(result.data.token) {
           toast(result.data.message)
           localStorage.setItem("token", result.data.token)
-          history.push("/allcharacters")
+          window.location.reload()
+          /* history.push("/allcharacters") */
         } else {
           toast(result.data.message)
         }

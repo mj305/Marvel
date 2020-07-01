@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 import Footer from '../components/FooterComponent';
 import LoadingComponent from '../components/LoadingComponent';
@@ -9,7 +9,11 @@ import NavBarComponent from '../components/NavBarComponent';
 
 
 const AllCharactersPage = (props) => {
+
+  const history = useHistory();
+
   const {auth} = props.user.data
+  console.log(auth)
 
   const [loading, setLoading] = React.useState(true)
 

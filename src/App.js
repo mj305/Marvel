@@ -18,6 +18,7 @@ import ForgotPassword from './pages/ForgotPassword';
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
+import ProtectedRoute from './components/ProtectedRouteComponent';
 
 import './App.css'
 
@@ -30,20 +31,22 @@ const App = () => {
   useEffect(() => {
     const fetchUser = async () => {
       const token = localStorage.getItem("token")
+
       const result = await axios.get("http://localhost:4000/me", {
         headers: {authorization: `Bearer ${token}`}, 
         
       })  
+      console.log("authResult", result)
       setUser(result)
     }
     fetchUser()
   }, [])   
 
-
+  console.log("app.js", user.data.auth)
 
   return (
 
-    <div >
+    <div>
       <Router>
           <Switch>
 
@@ -63,12 +66,12 @@ const App = () => {
                  <ForgotPassword/>
               </Route>
 
-              <Route path="/allcharacters">
+              <ProtectedRoute path="/allcharacters" isAutenticated={user.data.auth} >
                 <AllCharactersPage user={user} />
-              </Route>
+              </ProtectedRoute>
 
               <Route path="/characterpage/:id">
-                <CharactersPage />
+                <CharactersPage user={user} />
               </Route>
 
               <Route path="/characterinfo">

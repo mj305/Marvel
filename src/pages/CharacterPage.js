@@ -9,12 +9,14 @@ import Footer from '../components/FooterComponent';
 
 
 
-const CharacterPage = () => {
+const CharacterPage = (props) => {
+  const {auth} = props.user.data
+
   const {id} = useParams(); 
 
   return (
     <>  
-     <NavBarComponent />
+     <NavBarComponent auth={auth} />
         <div>
              
           <div className="character-page-header-container" >
@@ -32,7 +34,7 @@ const CharacterPage = () => {
           
         </div>
         
-         <div className="character-page-footer-contaier" >   
+          <div className="character-page-footer-contaier" >   
             <Footer />
           </div> 
     </>
