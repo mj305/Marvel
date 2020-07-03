@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import logo from '../assets/logo.png'
-import NavBarComponent from '../components/NavBarComponent';
+
 import Footer from '../components/FooterComponent';
+import NavBarComponent from '../components/NavBarComponent';
+
+import logo from '../assets/logo.png'
 
 function MainPage() {
 

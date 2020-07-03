@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import { useForm } from "react-hook-form";
 import {Link, useHistory} from 'react-router-dom';
+
+import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
-import ForgotPassword from './ForgotPassword';
 
 const SignUp = (user) => {
   const { register, handleSubmit, watch, errors } = useForm();

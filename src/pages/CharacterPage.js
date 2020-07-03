@@ -1,11 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+
 import CharacterInfo from '../components/CharacterInfo';
 import ComicsInfo from '../components/ComicsInfo';
+import Footer from '../components/FooterComponent';
+import NavBarComponent from '../components/NavBarComponent';
 import SeriesInfo from '../components/SeriesInfo';
 import StoriesInfo from '../components/StoriesInfo';
-import NavBarComponent from '../components/NavBarComponent';
-import Footer from '../components/FooterComponent';
 
 
 

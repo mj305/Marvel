@@ -1,5 +1,5 @@
 import React from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 
 const StoriesInfo = (props) => {
 
@@ -17,7 +17,7 @@ const StoriesInfo = (props) => {
     const fetchStories = async () => {
       const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/stories?apikey=5189968cf45946bfc4dba96d1349fe75`
       try {
-        const results = await Axios(url);
+        const results = await axios(url);
         setStories(results)
       } catch(error) {
         console.log("there is an error", error)

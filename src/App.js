@@ -10,6 +10,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import CharacterInfo from './components/CharacterInfo';
+import ProtectedRoute from './components/ProtectedRouteComponent';
 
 import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
@@ -18,7 +19,6 @@ import ForgotPassword from './pages/ForgotPassword';
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
-import ProtectedRoute from './components/ProtectedRouteComponent';
 
 import './App.css'
 
