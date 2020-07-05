@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function NavBarComponent(props) {
-  const {auth} = props
 
   const classes = useStyles();
 
@@ -37,7 +36,7 @@ export default function NavBarComponent(props) {
     localStorage.removeItem("token");
     history.push("/")
   }
-
+  console.log("this props.user is coming from: ", props.user)
 
   return (
 
@@ -53,7 +52,7 @@ export default function NavBarComponent(props) {
                 </Link>
 
                 <div className="nav-bar-about-auth-container" >
-                  {auth ? (<Link className="nav-bar-group-item" className="nav-bar-about" onClick={handleLogout} >Logout</Link>) : (
+                  {props.user ? (<Link className="nav-bar-group-item" className="nav-bar-about" onClick={handleLogout} >Logout</Link>) : (
                    <>
                     <Link className="nav-bar-group-item" className="nav-bar-about" color="inherit" to="/about" >About </Link>
                     <Link className="nav-bar-group-item" className="nav-bar-login" color="inherit" to="/login"> Login</Link> 

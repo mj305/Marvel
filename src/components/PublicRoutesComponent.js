@@ -1,11 +1,11 @@
 import React, { createElement } from 'react';
 import { Redirect, Route } from 'react-router-dom';
 
-const ProtectedRoute = ({ user, ...rest }) => {
+const PublicRoute = ({ user, ...rest }) => {
 
   const routeComponent = (props) => 
     
-    user ? createElement(props) : < Redirect to={{pathname: "/"}} />
+    user ? < Redirect to={{pathname: "/allcharacters"}} /> : createElement(props) 
     
   return < Route 
    {
@@ -13,4 +13,4 @@ const ProtectedRoute = ({ user, ...rest }) => {
    } render={routeComponent} />
 }
 
-export default ProtectedRoute
+export default PublicRoute

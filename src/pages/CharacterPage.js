@@ -1,5 +1,7 @@
-import React from 'react';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useParams, useHistory } from 'react-router-dom';
+
+import jwtDecode from 'jwt-decode';
 
 import CharacterInfo from '../components/CharacterInfo';
 import ComicsInfo from '../components/ComicsInfo';
@@ -11,13 +13,31 @@ import StoriesInfo from '../components/StoriesInfo';
 
 
 const CharacterPage = (props) => {
-  const {auth} = props.user.data
+  const history = useHistory();
+  
+   useEffect(() => {
+    const token = localStorage.getItem("token")
 
+    if (token) {
+      const decoded = jwtDecode(token)
+
+       if (decoded && decoded.email) {
+
+        console.log("this is decoded: ", decoded)
+       } else {
+        console.log("this is decoded else: ", decoded)
+         history.push("/")
+       }
+    } else {
+      history.push("/")
+    }
+   }, []) 
+  
   const {id} = useParams(); 
 
   return (
     <>  
-     <NavBarComponent auth={auth} />
+     <NavBarComponent user={props.user} />
         <div>
              
           <div className="character-page-header-container" >

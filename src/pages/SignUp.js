@@ -8,13 +8,13 @@ import { toast } from 'react-toastify';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
-const SignUp = (user) => {
+const SignUp = (props) => {
   const { register, handleSubmit, watch, errors } = useForm();
-  console.log(user.user.data)
+ 
   const history = useHistory()
 
   useEffect(() => {
-    if (user.user.data.auth) {
+    if (props.user) {
       history.push("/allcharacters")
     } 
   }, [])
@@ -35,7 +35,7 @@ const SignUp = (user) => {
   return (
     <>
         <div>
-          <NavBarComponent/>
+          <NavBarComponent user={props.user} />
         </div>
 
 

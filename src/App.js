@@ -6,6 +6,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import jwtDecode from 'jwt-decode';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,34 +18,27 @@ import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
 import ForgotPassword from './pages/ForgotPassword';
+import PublicRoute from './components/PublicRoutesComponent'; 
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
+
 
 import './App.css'
 
 
 const App = () => {
-  const [user, setUser] = useState({
-   data: {auth: false}
-  })
+  const [user, setUser] = useState({})
 
   useEffect(() => {
-    const fetchUser = async () => {
-      const token = localStorage.getItem("token")
-
-      const result = await axios.get("http://localhost:4000/me", {
-        headers: {authorization: `Bearer ${token}`}, 
-        
-      })  
-      console.log("authResult", result)
-      setUser(result)
-    }
-    fetchUser()
-  }, [])   
-
-  console.log("app.js", user.data.auth)
-
+    const token = localStorage.getItem("token")
+    if (token) {
+      const decoded = jwtDecode(token)
+       setUser(decoded)
+    } 
+    
+  }, [])    
+ 
   return (
 
     <div>
@@ -66,9 +61,9 @@ const App = () => {
                  <ForgotPassword/>
               </Route>
 
-              <ProtectedRoute path="/allcharacters" isAutenticated={user.data.auth} >
+              <Route path="/allcharacters" >
                 <AllCharactersPage user={user} />
-              </ProtectedRoute>
+              </Route>
 
               <Route path="/characterpage/:id">
                 <CharactersPage user={user} />
