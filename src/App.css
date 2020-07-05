@@ -826,11 +826,11 @@ input {
 ======================================================*/
 @media (max-width: 1900px) {
   .login-page-nav-bar-container {
-    width: 90%;
+    width: 100%;
 }
 
  .login-page-container {
-  width: 89.2%;
+  width: 99.2%;
   height: 88vh;
  }
 
@@ -854,6 +854,10 @@ input {
 
 .login-page-signup-button-wrapper {
   width: 39rem;
+}
+
+.login-page-footer-container {
+  width: 99%;
 }
 }
 
