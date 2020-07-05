@@ -876,16 +876,22 @@ input {
 @media (max-width: 1550px) {
 
   .login-page-nav-bar-container {
-    width: 85%;
+    width: 100%;
 }
 
 .login-page-container {
-  width: 84.2%;
+  width: 99%;
   height: 88vh;
 }
 
+.login-page-form-container {
+  height: 23vh;
+padding: 9rem;
+width: 42rem;
+}
+
 .login-page-footer-container {
-  width: 8%;
+  width: 100%;
 }
 
     .MuiButton-label {
@@ -1006,6 +1012,35 @@ input {
     font-size: 1.3rem;
   }
 
+  .login-page-wrapper {
+    width: 42vh;
+  }
+
+  .login-page-form-container {
+    height: 19vh;
+    width: 21rem;
+}
+
+.login-page-field-container {
+  width: 37rem;
+}
+
+.new-user-form {
+  margin-left: -9.5rem;
+}
+
+.login-page-container {
+  width: 98%;
+}
+
+.login-page-nav-bar-container {
+  width: 100%;
+}
+
+.login-page-footer-container {
+  width: 100%;
+}
+
 
 }
 /*======================================================
@@ -1093,6 +1128,32 @@ input {
   margin-left: 46vw;
     margin-top: 42vh;
 }
+
+.login-page-wrapper {
+  width: 29vh;
+  height: 48vh;
+}
+
+.login-page-form-container {
+  height: 16vh;
+  width: 9rem;
+}
+
+.login-page-field-container {
+  width: 26rem;
+}
+
+.new-user-form {
+  margin-left: -9.5rem;
+  width: 27rem;
+}
+
+.login-page-signup-button-wrapper {
+  width: 27rem;
+}
+
+
+
 }
 
 /*======================================================
@@ -1160,6 +1221,11 @@ input {
   .all-characters-page-footer-data-text {
     font-size: 1.1rem;
   }
+
+  .login-page-wrapper {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
 }
 /*======================================================
 ================   850px Above ======================
@@ -1183,6 +1249,20 @@ input {
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.nav-bar-about-auth-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10.5rem;
+  padding: 1.2rem;
+}
+
+.all-characters-page-logo {
+  width: 6.5rem;
+  height: 5.7rem;
+  margin: 0;
+}
+
 }
 
 /*======================================================
@@ -1260,6 +1340,57 @@ input {
   .stories-info-stories-info-title {
     font-size: 1rem;
   }
+
+  .nav-bar-about-auth-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.5rem;
+    padding: 1.2rem;
+    margin-right: -3rem;
+}
+
+.all-characters-page-logo {
+  width: 5.5rem;
+  height: 4.7rem;
+}
+
+.all-characters-page-footer-data-text {
+  font-size: .8rem;
+}
+
+.login-page-container {
+  width: 67.2%;
+}
+
+.login-page-header {
+  font-size: 1rem;
+}
+
+.login-page-wrapper {
+  width: 22vh;
+  height: 42vh;
+}
+
+.login-page-form-container {
+  height: 15vh;
+  width: 2rem;
+}
+
+.login-page-field-container {
+  width: 19rem;
+  margin-left: -4px;
+}
+
+.login-button-wrapper {
+  width: 66%;
+}
+
+.login-page-signup-button-wrapper {
+  width: 20rem;
+}
+
+
+
 }
 /*======================================================
 ================   600px Above ======================
@@ -1323,6 +1454,41 @@ input {
     .all-characters-page-footer-data-text {
       font-size: .8rem;
   }
+
+  .login-page-nav-bar-container {
+    width: 74%;
+}
+
+  .nav-bar-about-auth-container {
+    margin-left: -0.5rem;
+    margin-right: -2rem;
+}
+
+.login-page-container {
+  width: 99%;
+}
+
+.login-page-wrapper {
+  width: 16.2vh;
+}
+
+.login-page-form-container {
+  padding-right: 56px;
+}
+
+.login-page-field-container {
+  width: 14rem;
+  margin-left: -7px;
+}
+
+.login-button-wrapper {
+  width: 47%;
+}
+
+.login-page-signup-button-wrapper {
+  width: 15rem;
+}
+
 }
 /*======================================================
 ================   450px Above ======================
@@ -1421,6 +1587,29 @@ input {
   .all-characters-page-footer-data-text {
     font-size: .8rem;
 }
+
+.nav-bar-container {
+  width: 145%;
+}
+
+.login-page-container {
+  width: 97%;
+}
+
+.login-page-nav-bar-container {
+  width: 100%;
+}
+
+.nav-bar-about-auth-container {
+  margin-left: 9.5rem;
+  margin-right: -2rem;
+}
+
+.login-page-footer-container {
+  width: 100%;
+}
+
+
 }
 
 
@@ -1498,6 +1687,34 @@ input {
   .all-characters-page-footer-data-text {
     font-size: .6rem;
   }
+
+
+
+  .login-page-nav-bar-container {
+    width: 100%;
+}
+
+.nav-bar-about-auth-container {
+
+  margin-left: 9.5rem;
+  margin-right: -10rem;
+
+}
+
+.login-page-container {
+
+  width: 100%;
+
+}
+
+.login-page-wrapper {
+
+  width: 20vh;
+  height: 42vh;
+
+}
+
+
 }
 /*======================================================
 ================   375px Above ======================
@@ -1614,6 +1831,37 @@ input {
 
 .all-characters-page-footer-data-text {
   font-size: .8rem;
+}
+
+.login-page-nav-bar-container {
+
+  width: 98%;
+
+}
+
+.nav-bar-container {
+
+  width: 120%;
+
+}
+
+.nav-bar-about-auth-container {
+
+  margin-left: 5.5rem;
+  margin-right: 9rem;
+
+}
+
+.new-user-form {
+
+  margin-left: -7.5rem;
+  width: 35rem;
+}
+
+.login-page-form-container {
+
+  margin-left: 2rem;
+
 }
 }
 /*======================================================
