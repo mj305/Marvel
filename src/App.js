@@ -24,7 +24,7 @@ import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
 
 
-import './App.css'
+import './styles/App.css'
 
 
 const App = () => {

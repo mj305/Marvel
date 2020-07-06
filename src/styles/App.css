@@ -124,7 +124,7 @@ a:link {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  background: url(./assets/background.jpg);
+  background: url(../assets/background.jpg);
   position:fixed;
   width: 100%;
   height: 100%;
@@ -159,7 +159,7 @@ a:link {
 /* About Page */
 
 .about-page-container {
-  background: url(./assets/Thanos.jpg);
+  background: url(../assets/Thanos.jpg);
   width: 100%;
   height: 90vh;
   background-repeat: no-repeat;
@@ -545,7 +545,7 @@ a:link {
 
 .login-page-container {
   border: dotted .5rem orange;
-  background: url(./assets/authMarvel.jpg);
+  background: url(../assets/authMarvel.jpg);
 
   /* position:fixed; */
   width: 99%;
@@ -676,7 +676,7 @@ input {
 
 .sign-up-page-container {
   border: dotted .5rem orange;
-  background: url(./assets/authMarvel.jpg);
+  background: url(../assets/authMarvel.jpg);
   width: 99%;
   height: 127vh;
   background-repeat: no-repeat;
@@ -752,7 +752,7 @@ input {
 
 .forgot-password-page-container {
   border: dotted .5rem orange;
-  background: url(./assets/authMarvel.jpg);
+  background: url(../assets/authMarvel.jpg);
   width: 99%;
   height: 80.1vh;
   background-repeat: no-repeat;
