@@ -18,6 +18,7 @@ import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
 import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPasswordPage'
 import PublicRoute from './components/PublicRoutesComponent'; 
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
@@ -59,6 +60,10 @@ const App = () => {
 
               <Route path="/forgotpassword" >
                  <ForgotPassword/>
+              </Route>
+
+              <Route path="/resetpassword">
+                <ResetPassword/>
               </Route>
 
               <Route path="/allcharacters" >

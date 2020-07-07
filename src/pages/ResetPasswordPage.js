@@ -8,7 +8,7 @@ import { toast } from 'react-toastify';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
-const SignUp = (props) => {
+const ResetPassword = (props) => {
   const { register, handleSubmit, watch, errors } = useForm();
  
   const history = useHistory()
@@ -44,22 +44,11 @@ const SignUp = (props) => {
 
                 <div className="sign-up-page-wrapper">
                     <div className="sign-up-header-wrapper">
-                      <h1 className="sign-up-header">Sign-Up</h1>
+                      <h1 className="sign-up-header">Enter New Password</h1>
                     </div>
 
                     <div className="sign-up-form-container">
                         <form onSubmit={handleSubmit(onSubmit)} > 
-                            <div className="sign-up-page-form-group" >
-                                <label>Name *</label>
-                                <input name="name" autoFocus="autofocus" ref={register({ required: true })} type="text"/>
-                            </div>
-                            {errors.name && <span>This field is required</span>}
-
-                            <div className="sign-up-page-form-group" >
-                                <label>Email *</label>
-                                <input name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
-                            </div>
-                            {errors.email && <span>This field is required</span>}
 
                             <div className="sign-up-page-form-group" >
                                 <label>Password *</label>
@@ -75,12 +64,8 @@ const SignUp = (props) => {
 
                             <div>
                                 <div className="sign-up-button-wrapper" >
-                                    <button type="submit" className="sign-up-button"> Sign-Up </button>
+                                    <button type="submit" className="sign-up-button"> Reset </button>
                                 </div>
-                            </div>
-
-                            <div className="sign-up-page-log-in-button-wrapper">
-                               <Link to="/login" >Login </Link>
                             </div>
                         </form>
                     </div>
@@ -95,4 +80,4 @@ const SignUp = (props) => {
   ) 
 }
 
-export default SignUp
+export default ResetPassword
