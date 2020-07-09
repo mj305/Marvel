@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import {Link, useHistory} from 'react-router-dom';
+import {Link, useHistory, useParams } from 'react-router-dom';
 
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
@@ -10,7 +10,7 @@ import NavBarComponent from '../components/NavBarComponent';
 
 const ResetPassword = (props) => {
   const { register, handleSubmit, watch, errors } = useForm();
- 
+  const { token, email } = useParams()
   const history = useHistory()
 
   /* useEffect(() => {
@@ -22,8 +22,8 @@ const ResetPassword = (props) => {
   const onSubmit = data => {
     axios({
       method: "post",
-      url: "http://localhost:4000/signUp",
-      data,
+      url: "http://localhost:4000/resetpassword",
+      data: {email, password: data.password, token},
     }).then((result) => {
       console.log(result)
       toast(result.data.message)
@@ -37,9 +37,6 @@ const ResetPassword = (props) => {
         <div>
           <NavBarComponent user={props.user} />
         </div>
-
-
-
             <div className="sign-up-page-container" >
 
                 <div className="sign-up-page-wrapper">

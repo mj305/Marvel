@@ -62,7 +62,7 @@ const App = () => {
                  <ForgotPassword/>
               </Route>
 
-              <Route path="/resetpassword">
+              <Route path="/resetpassword/:token/:email">
                 <ResetPassword/>
               </Route>
 

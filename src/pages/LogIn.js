@@ -79,7 +79,7 @@ const LogIn = () => {
                     <div className="login-page-form-group" className="login-page-signup-button-wrapper">
                       <a href="./SignUp.js" ></a>
                       <br/>
-                      <a href="./ForgotPassword.js" >Forgot your password?</a> 
+                      <a href="./ForgotPassword" >Forgot your password?</a> 
                     </div>
                   </form>
 
