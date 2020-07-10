@@ -88,20 +88,6 @@ a:link {
   transform: translateY(4px);
 }
 
-/* About and SignIn / SignUp Buttons */ 
-/* .MuiButton-text {
-  margin-right: 3rem !important;
-  font-size: 1.2rem !important;
-  text-transform: none !important;
-} */
-
-/* .MuiButton-label {
-    width: 100%;
-    display: inherit;
-    align-items: inherit;
-    justify-content: inherit;
-    font-size: 1.4rem;
-} */
 
 .footer-container {
   display: flex;
