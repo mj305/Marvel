@@ -8,10 +8,7 @@ const ComicsInfo = (props) => {
       data: {
         results: [{
           title: "",
-          images: [{
-            path: "",
-            extension: "",
-          }]
+          images: [{}]
         }]
       }
     }
@@ -33,22 +30,28 @@ const ComicsInfo = (props) => {
     fetchComics();
   },[]);
 
-  const characterComics = comics.data.data.results.map(data => {
-    let images;
+  let characterComics;
 
-    if(data.images.length > 0){
-       images = <img src={`${data.images[0].path}.${data.images[0].extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="book pic" className="character-comic-image" /> 
-    }
-    
-    return(
-      <>
-        <div className="all-comics-container" >
-          {images} 
-        </div>
-      </>
-     )
-    })
+  if (!comics.data.data.results.images === undefined || !comics.data.data.results.images.length) {
+    const characterComics = comics.data.data.results.map(data => {
+      let images;
+      if(data.images.length){
+         images = <img src={`${data.images[0].path}.${data.images[0].extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="book pic" className="character-comic-image" /> 
+      } else {
+        images = <p style={{display: "none"}}>NO IMAGE</p>
+      }
+      
+      return(
+        <>
+          <div className="all-comics-container" >
+            {images} 
+          </div>
+        </>
+       )
+      })  
+  }
 
+ 
     
     return(
 

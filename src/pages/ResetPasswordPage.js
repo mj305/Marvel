@@ -19,7 +19,7 @@ const ResetPassword = (props) => {
     } 
   }, []) */
 
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     axios({
       method: "post",
       url: "http://localhost:4000/resetpassword",
@@ -27,6 +27,7 @@ const ResetPassword = (props) => {
     }).then((result) => {
       console.log(result)
       toast(result.data.message)
+      history.push("/login")
     }).catch((error) => {
       console.log(error)
     })

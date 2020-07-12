@@ -19,7 +19,7 @@ const SignUp = (props) => {
     } 
   }, []) */
 
-  const onSubmit = data => {
+  const onSubmit = (data, event) => {
     axios({
       method: "post",
       url: "http://localhost:4000/signUp",
@@ -27,6 +27,7 @@ const SignUp = (props) => {
     }).then((result) => {
       console.log(result)
       toast(result.data.message)
+      event.target.reset()
     }).catch((error) => {
       console.log(error)
     })
@@ -37,8 +38,6 @@ const SignUp = (props) => {
         <div>
           <NavBarComponent user={props.user} />
         </div>
-
-
 
             <div className="sign-up-page-container" >
 

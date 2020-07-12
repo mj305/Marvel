@@ -11,16 +11,15 @@ import NavBarComponent from '../components/NavBarComponent'
 
 const ForgotPassword = () => {
   const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = data => {
+  const onSubmit = (data, event) => {
     axios({
       method: "post",
       url: "http://localhost:4000/forgotpassword",
       data,
     }) .then((result) => {
       console.log(result)
-     
         toast(result.data.message)
-     
+        event.target.reset()
     }).catch((error) => {
       console.log(error)
       toast("Ups... Something went wrong!")
