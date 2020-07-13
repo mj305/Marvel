@@ -29,24 +29,22 @@ const SeriesInfo = (props) => {
    }
     fetchSeries();
   }, [])
+
   
-  const characterSeries = series.data.data.results.map(data => {
-
-    return (
-      <>
-        <div className="flip-card">
-          <div className="flip-card-inner">
-            <div class="flip-card-front">
-               <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="series pic" className="character-series-image" />
-             </div>
-
-          <div/>
-            <h2 className="flip-card-back" > { data.title } </h2>
+    const characterSeries = series.data.data.results.map(data => {
+    return <>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div class="flip-card-front">
+                 <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="series pic" className="character-series-image" />
+               </div>
+  
+            <div/>
+              <h2 className="flip-card-back" > { data.title } </h2>
+            </div>
+            
           </div>
-          
-        </div>
-      </>
-    )
+        </>
   })
 
 
@@ -54,7 +52,7 @@ const SeriesInfo = (props) => {
   return (
     <>
       <p className="all-series-title" >Series</p>
-      <div className="all-series-thumbnail" > { characterSeries }  </div>
+      <div className="all-series-thumbnail" > { characterSeries }</div>
     </>
   )
 };

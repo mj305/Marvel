@@ -4,6 +4,7 @@ import {Link, useHistory} from 'react-router-dom';
 
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
+import jwtDecode from 'jwt-decode';
 
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
@@ -13,11 +14,18 @@ const SignUp = (props) => {
  
   const history = useHistory()
 
-  /* useEffect(() => {
-    if (props.user) {
-      history.push("/allcharacters")
+  useEffect(() => {
+    const token = localStorage.getItem("token")
+
+    if (token) {
+      const decoded = jwtDecode(token)
+
+       if (decoded && decoded.email) {
+        history.push("/allcharacters")
+        console.log("this is decoded: ", decoded)
+       } 
     } 
-  }, []) */
+  }, [])
 
   const onSubmit = (data, event) => {
     axios({
