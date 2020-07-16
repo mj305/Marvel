@@ -17,7 +17,7 @@ const SeriesInfo = (props) => {
     }
   });
 
- /*  React.useEffect(() => {
+  React.useEffect(() => {
     const fetchSeries = async () => {
       const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/series?apikey=5189968cf45946bfc4dba96d1349fe75`  
       try{
@@ -28,7 +28,7 @@ const SeriesInfo = (props) => {
     }
    }
     fetchSeries();
-  }, []) */
+  }, [])
 
   
     const characterSeries = series.data.data.results.map(data => {
