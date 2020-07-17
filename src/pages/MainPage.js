@@ -36,7 +36,7 @@ function MainPage() {
                 <img src={logo} className="App-logo" alt="logo" />
               </a>   
 
-              <p className="main-page-paragraph" > Marvel Website Coming Soon...</p>
+              <p className="main-page-paragraph" ></p>
 
             <div  className="main-characters-footer-container">  
               <Footer />
