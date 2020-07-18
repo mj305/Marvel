@@ -14,7 +14,6 @@ a:link {
   margin-right: 3rem;
 }
 
-
 .nav-bar-about {
   margin-right: 2.5rem;
   padding: 15px 25px;
@@ -30,7 +29,9 @@ a:link {
   box-shadow: -10px 11px 9px -5px black;
 }
 
-.nav-bar-about:hover {background-color:  #f17808;}
+.nav-bar-about:hover {
+  background-color:  #f17808;
+}
 
 .nav-bar-about:active {
   background-color:  #f17808;
@@ -78,7 +79,9 @@ a:link {
   box-shadow: -10px 11px 9px -5px black;
 }
 
-.nav-bar-signup:hover {background-color:  #f17808}
+.nav-bar-signup:hover {
+  background-color:  #f17808
+}
 
 .nav-bar-signup:active {
   background-color:  #f17808;
@@ -100,9 +103,6 @@ a:link {
 
 
 /* Main Page */
-.main-page-nav-bar-container {
-
-}
 
 .App-header {
   min-height: 89.8vh;
@@ -180,22 +180,8 @@ a:link {
 }
 
 
-
-
 /* All Characters Page */
-/* 
-.all-characters-nav-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(39, 39, 182);
-  color: white;
-  font-size: 1.5rem;
-  text-decoration: none;
-  padding: 1rem;  
-  width: 100%;
-} */
+
 
 .all-characters-page-logo {
   width: 6rem;
@@ -278,11 +264,6 @@ a:link {
   text-decoration: none;
   font-size: 1.5rem;
 }
-
-
-
-
-/* Individual Character Page */
 
 /* Character Large Card */ 
 .character-container {
@@ -424,7 +405,6 @@ a:link {
 
 .flip-card-front, .flip-card-back {
   position: absolute;
-  /* width: 53.5rem; */
   width: 31.5;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -444,8 +424,6 @@ a:link {
   padding-top: 2rem;
   padding: .5rem;
 }
-
-
 
 
 /* Character All Stories Info  */
@@ -505,8 +483,6 @@ a:link {
 }
 
 
-
-
 /* LogIn */
 
 .login-page-nav-bar-container {
@@ -514,15 +490,13 @@ a:link {
 }
 
 .login-page-container {
-  border: dotted .5rem orange;
   background: url(../assets/authMarvel.jpg);
-
-  /* position:fixed; */
   width: 99%;
   height: 127vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  padding: .6rem;
 }
 
 .login-page-wrapper {
@@ -536,7 +510,6 @@ a:link {
 }
 
 .login-page-header {
-  border: dotted .5rem green;
   font-size: 2rem;
   color: #035aa6;
   text-align: center;
@@ -544,7 +517,6 @@ a:link {
 }
 
 .login-page-form-container {
-  border: dotted .5rem red;
   width: 26vw;
   height: 40vh;
   margin-top: 1rem;
@@ -556,7 +528,6 @@ a:link {
 }
 
 .new-user-form {
-  /* border: dotted .5rem purple; */
   margin-top: -2rem;
   width: 40rem;
   margin-left: -2.5rem;
@@ -564,13 +535,11 @@ a:link {
 }
 
 .login-page-field-container {
-  border: dotted .5rem white;
   height: 10.2rem;
   margin-top: -4rem;
 }
 
 .login-button-wrapper {
- border: dotted .5rem blue;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
@@ -579,31 +548,16 @@ a:link {
 }
 
 .login-button {
-  background-color: #3F51B5;
   color: white;
   font-size: 1.5rem;
+  background-color: #3F51B5;
   width: 9rem;
   height: 3rem;
   border-radius: 45%;
   box-shadow: -10px 11px 9px -5px black;
 }
 
-/* .login-input {
-  background-color: #035aa6;
-  color: white;
-  font-weight: 400;
-  font-size: 2rem;
-  border-radius: 2rem;
-  margin-left: -3.5rem;
-  width: 10rem;
-  height: 4rem;
-  margin-top: -1rem;
-  outline: 0;
-  box-shadow: -10px 11px 9px -5px black;
-} */
-
 .login-page-signup-button-wrapper {
-  border: dotted .5rem brown; 
   font-size: 1rem;
   text-align: center;
   text-decoration: none;
@@ -612,7 +566,6 @@ a:link {
 }
 
 .login-page-footer-container {
-  border: dotted .5rem  violet;
   background-color: navy;
   margin-bottom: 0;
 }
@@ -645,13 +598,13 @@ input {
 /* SignUp Page  */
 
 .sign-up-page-container {
-  border: dotted .5rem orange;
   background: url(../assets/authMarvel.jpg);
-  width: 99%;
-  height: 127vh;
+  width: 99.5vw;
+  height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: -5rem;
 }
 
 .sign-up-page-wrapper {
@@ -659,37 +612,26 @@ input {
  background-color: #fbe555;
  box-shadow: -10px 11px 9px -5px black;
  width: 76vh;
- height: 76vh;
- margin-top: 4rem;
+ height: 62vh;
+ margin-top: 7rem;
  margin-left: 6rem;
 }
 
 .sign-up-header-wrapper {
-  border: dotted .5rem yellowgreen;
   color: #035aa6;
   text-align: center;
   font-size: 2rem;
   font-weight: 400;
-  
-}
-
-.sign-up-form-container {
-  border: dotted .5rem pink;
-
 }
 
 .sign-up-page-form-group {
-  border: dotted .5rem lightskyblue;
   font-size: 1.2rem;
   font-weight: 400;
   color: #035aa6;
-
+  width: 41rem;
 }
 
-
-
 .sign-up-button {
-  border: dotted .5rem black;
   color: white;
   font-size: 1.5rem;
   background-color: #3F51B5;
@@ -700,7 +642,6 @@ input {
 }
 
 .sign-up-button-wrapper {
-  border: dotted .5rem blue;
   text-align: center;
   padding: 1rem;
   margin-top: 3rem;
@@ -713,7 +654,6 @@ input {
 }
 
 .sign-up-page-log-in-button-wrapper{
-  border: dotted .5rem red;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -721,7 +661,6 @@ input {
 /* FORGOT PASSWORD PAGE  */
 
 .forgot-password-page-container {
-  border: dotted .5rem orange;
   background: url(../assets/authMarvel.jpg);
   width: 99%;
   height: 80.1vh;
@@ -741,7 +680,6 @@ input {
   }
 
   .forgot-password-header-wrapper {
-    border: dotted .5rem yellowgreen;
     color: #035aa6;
     text-align: center;
     font-size: 2rem;
@@ -754,13 +692,11 @@ input {
   }
 
  .forgot-password-form-container {
-  border: dotted .5rem pink;
   height: 71%;
   
  }
 
  .forgot-password-page-form-group {
-  border: dotted .5rem red;
   font-size: 1.2rem;
   font-weight: 400;
   color: #035aa6;
@@ -769,12 +705,7 @@ input {
   margin-top: 2rem;
  }
 
- .forgot-password-button-wrapper {
-  
- }
-
  .forgot-password-button {
-  border: dotted .5rem black;
   color: white;
   font-size: 1.5rem;
   text-align: center;
@@ -786,8 +717,6 @@ input {
   margin-top: 5rem;
   margin-left: 38%;
   }
-
-
 
 
 
@@ -833,9 +762,9 @@ input {
   width: 99%;
 }
 
-.sign-up-page-wrapper {
+/* .sign-up-page-wrapper {
   height: 90vh;
-}
+} */
 .forgot-password-header {
   font-size: 2.5rem;
 }
