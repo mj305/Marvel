@@ -164,29 +164,12 @@ a:link {
   align-content: center;
 }
 
-.about-page-parragraph-0 {
-  text-align: center;
-  font-weight: 700;
-  padding: 1rem;
-  color: #c70039;
-  font-weight: 400;
-}
-
 .about-page-parragraph-1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0px;
   padding: 1rem;
   color: white;
   font-weight: 400;
-}
-
-.about-page-parragraph-2 {
-    font-size: 2rem;
-    margin-bottom: 120px;
-    margin-top: 350px;
-    padding: 1rem;
-    color: #3F51B5;
-    font-weight: 400;
 }
 
 .about-page-image {
@@ -1238,11 +1221,14 @@ width: 42rem;
 }
 
 .nav-bar-about-auth-container {
-    display: flex;
-    flex-direction: column;
-    margin-left: 24.5rem;
-    padding: 1.2rem;
-    margin-bottom: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rem;
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-right: -3rem;
+
 }
 
 .nav-bar-about {
@@ -1259,6 +1245,11 @@ width: 42rem;
   margin: 0;
 }
 
+.about-page-parragraph-1 {
+  font-size: 1.5rem;
+  margin-right: -4rem;
+}
+
 }
 
 /*======================================================
@@ -1273,7 +1264,7 @@ width: 42rem;
 ================   600px Below ======================
 ======================================================*/
 
-@media (max-width: 600px) {
+@media (max-width: 630px) {
   .about-page-image {
     height: 22vh;
 
@@ -1340,9 +1331,10 @@ width: 42rem;
   .nav-bar-about-auth-container {
     display: flex;
     flex-direction: column;
-    margin-left: 6.5rem;
+    margin-left: 8rem;
     padding: 1.2rem;
-    margin-right: -3rem;
+    margin-bottom: 0.5rem;
+    margin-right: -1rem;
 }
 
 .all-characters-page-logo {
@@ -1501,6 +1493,13 @@ width: 42rem;
 
 @media (max-width: 414px) {
 
+  .App-logo {
+
+    height: 43vmin;
+    margin-top: -16rem;
+
+}
+
   .MuiButton-label {
     font-size: .8rem;
 }
@@ -1580,6 +1579,7 @@ width: 42rem;
   grid-template-columns: repeat(2, 1fr);
 }
 
+
   .all-characters-page-footer-data-text {
     font-size: .8rem;
 }
@@ -1597,12 +1597,19 @@ width: 42rem;
 }
 
 .nav-bar-about-auth-container {
-  margin-left: 9.5rem;
-  margin-right: -2rem;
+
+  margin-left: 0.5rem;
+  margin-right: 8rem;
+
 }
 
 .login-page-footer-container {
   width: 100%;
+}
+
+.about-page-parragraph-1 {
+  font-size: 1rem;
+  margin-right: -9rem;
 }
 
 
@@ -1684,16 +1691,21 @@ width: 42rem;
     font-size: .6rem;
   }
 
-
-
   .login-page-nav-bar-container {
     width: 100%;
 }
 
+.App-logo {
+
+  height: 45vmin;
+  margin-top: -19rem;
+
+}
+
 .nav-bar-about-auth-container {
 
-  margin-left: 9.5rem;
-  margin-right: -10rem;
+  margin-left: 1.5rem;
+  margin-right: 7rem;
 
 }
 
@@ -1708,6 +1720,11 @@ width: 42rem;
   width: 20vh;
   height: 42vh;
 
+}
+
+.about-page-parragraph-1 {
+  font-size: 1rem;
+  margin-right: -6rem;
 }
 
 
