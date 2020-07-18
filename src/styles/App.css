@@ -811,11 +811,11 @@ input {
 
  .login-page-form-container {
   height: 20vh;
-  padding: 8.9rem;
+  padding: 4.1rem;
 }
 
 .login-page-field-container {
-  margin-top: -5rem;
+  margin-top: -4rem;
 }
 
 .login-button-wrapper {
@@ -855,9 +855,9 @@ input {
 }
 
 .login-page-form-container {
-  height: 23vh;
-padding: 9rem;
-width: 42rem;
+  height: 20.9rem;
+  padding: 4rem;
+  width: 36.2rem;
 }
 
 .login-page-footer-container {
@@ -988,15 +988,23 @@ width: 42rem;
 
   .login-page-form-container {
     height: 19vh;
-    width: 21rem;
+    width: 24.5rem;
+}
+
+.login-button-wrapper {
+  width: 76%;
+}
+
+.login-page-signup-button-wrapper {
+  width: 32rem;
 }
 
 .login-page-field-container {
-  width: 37rem;
+  width: 31rem;
 }
 
 .new-user-form {
-  margin-left: -9.5rem;
+  margin-left: -4.5rem;
 }
 
 .login-page-container {
@@ -1016,9 +1024,6 @@ width: 42rem;
 /*======================================================
 ================   1300px Above ======================
 ======================================================*/
-
-
-
 
 
 
@@ -1064,6 +1069,8 @@ width: 42rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+
 }
 /*======================================================
 ================   1150px Above ======================
@@ -1100,26 +1107,26 @@ width: 42rem;
 }
 
 .login-page-wrapper {
-  width: 29vh;
-  height: 48vh;
+  width: 41vh;
+  height: 52vh;
 }
 
 .login-page-form-container {
-  height: 16vh;
-  width: 9rem;
+  height: 26vh;
+  width: 24rem;
 }
 
 .login-page-field-container {
-  width: 26rem;
+  width: 29rem;
 }
 
 .new-user-form {
-  margin-left: -9.5rem;
-  width: 27rem;
+  margin-left: -3.5rem;
+  width: 38rem;
 }
 
 .login-page-signup-button-wrapper {
-  width: 27rem;
+  width: 30rem;
 }
 
 
@@ -1196,12 +1203,12 @@ width: 42rem;
     margin-top: 1rem;
     margin-left: 1.5rem;
 }
+
+
 }
 /*======================================================
 ================   850px Above ======================
 ======================================================*/
-
-
 
 
 
@@ -1221,14 +1228,12 @@ width: 42rem;
 }
 
 .nav-bar-about-auth-container {
-
   display: flex;
   flex-direction: column;
   margin-left: 20rem;
   padding: 1.2rem;
   margin-bottom: 0.5rem;
   margin-right: -3rem;
-
 }
 
 .nav-bar-about {
@@ -1250,6 +1255,31 @@ width: 42rem;
   margin-right: -4rem;
 }
 
+.login-page-wrapper {
+  height: 62vh;
+}
+
+.login-page-header {
+  font-size: 1.5rem;
+}
+.login-page-field-container {
+  width: 22rem;
+}
+.login-page-signup-button-wrapper {
+  width: 24rem;
+}
+.new-user-form {
+  margin-left: -3.5rem;
+  width: 29rem;
+}
+
+.login-page-form-container {
+  height: 23vh;
+  width: 17rem;
+}
+
+
+
 }
 
 /*======================================================
@@ -1257,6 +1287,35 @@ width: 42rem;
 ======================================================*/
 
 
+@media (max-width: 630px) {
+  .login-page-form-container {
+    height: 23vh;
+    width: 20rem;
+}
+
+  .login-page-wrapper {
+    width: 37vh;
+    height: 46vh;
+}
+
+.login-page-header {
+  font-size: 1.5rem;
+}
+
+.login-page-field-container {
+  width: 25rem;
+}
+
+.login-button-wrapper {
+  width: 63%;
+}
+
+.remember-me {
+  margin-top: -.9rem;
+}
+
+
+}
 
 
 
@@ -1346,11 +1405,11 @@ width: 42rem;
   font-size: .8rem;
 }
 
-.login-page-container {
+/* .login-page-container {
   width: 67.2%;
-}
+} */
 
-.login-page-header {
+/* .login-page-header {
   font-size: 1rem;
 }
 
@@ -1375,7 +1434,7 @@ width: 42rem;
 
 .login-page-signup-button-wrapper {
   width: 20rem;
-}
+} */
 
 
 
@@ -1383,8 +1442,6 @@ width: 42rem;
 /*======================================================
 ================   600px Above ======================
 ======================================================*/
-
-
 
 
 
@@ -1443,15 +1500,15 @@ width: 42rem;
       font-size: .8rem;
   }
 
-  .login-page-nav-bar-container {
+/*   .login-page-nav-bar-container {
     width: 74%;
-}
+} */
 
   .nav-bar-about-auth-container {
     margin-left: -0.5rem;
     margin-right: -2rem;
 }
-
+/* 
 .login-page-container {
   width: 99%;
 }
@@ -1476,7 +1533,7 @@ width: 42rem;
 .login-page-signup-button-wrapper {
   width: 15rem;
 }
-
+ */
 }
 /*======================================================
 ================   450px Above ======================
@@ -1588,8 +1645,36 @@ width: 42rem;
   width: 145%;
 }
 
+.login-page-wrapper {
+  width: 45vh;
+  height: 73vh;
+}
+
 .login-page-container {
   width: 97%;
+}
+
+.login-page-header {
+  font-size: 1rem;
+}
+
+.login-page-form-container {
+  height: 39vh;
+  width: 11.5rem;
+}
+
+.login-page-field-container {
+  width: 16rem;
+}
+
+.login-page-signup-button-wrapper {
+  width: 18rem;
+}
+
+.new-user-form {
+  margin-left: -3.5rem;
+  width: 26rem;
+  font-size: 1rem;
 }
 
 .login-page-nav-bar-container {
@@ -1597,10 +1682,8 @@ width: 42rem;
 }
 
 .nav-bar-about-auth-container {
-
   margin-left: 0.5rem;
   margin-right: 8rem;
-
 }
 
 .login-page-footer-container {
@@ -1613,13 +1696,14 @@ width: 42rem;
 }
 
 
+
+
 }
 
 
 /*======================================================
 ================   414px Above ======================
 ======================================================*/
-
 
 
 
@@ -1691,10 +1775,6 @@ width: 42rem;
     font-size: .6rem;
   }
 
-  .login-page-nav-bar-container {
-    width: 100%;
-}
-
 .App-logo {
 
   height: 45vmin;
@@ -1708,18 +1788,37 @@ width: 42rem;
   margin-right: 7rem;
 
 }
-
 .login-page-container {
-
-  width: 100%;
-
+  width: 94%;
 }
 
 .login-page-wrapper {
+  width: 43vh;
+  height: 80vh;
+}
 
-  width: 20vh;
-  height: 42vh;
+.login-button-wrapper {
+  width: 70%;
+}
 
+.login-page-header {
+font-size: 1rem;
+}
+
+.new-user-form {
+margin-left: -4.5rem;
+width: 21rem;
+font-size: .9rem;
+}
+.login-page-form-container {
+height: 30vh;
+width: 9rem;
+}
+.login-page-field-container {
+width: 14rem;
+}
+.login-page-signup-button-wrapper {
+width: 16.5rem;
 }
 
 .about-page-parragraph-1 {
@@ -1734,7 +1833,12 @@ width: 42rem;
 ======================================================*/
 
 
-
+@media(max-width: 360px) {
+  .login-page-wrapper {
+    width: 36vh;
+    height: 73vh;
+}
+}
 
 
 
