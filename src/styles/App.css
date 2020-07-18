@@ -662,11 +662,12 @@ input {
 
 .forgot-password-page-container {
   background: url(../assets/authMarvel.jpg);
-  width: 99%;
-  height: 80.1vh;
+  width: 99.5vw;
+  height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  margin-top: -2rem;
 }
 
 .forgot-password-page-wrapper {
