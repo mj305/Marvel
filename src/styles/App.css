@@ -801,17 +801,20 @@ input {
 
  .login-page-container {
   width: 99.2%;
-  height: 88vh;
- }
-
- .login-page-wrapper {
-  width: 57vh;
-  height: 52vh;
+  height: 100vh;
  }
 
  .login-page-form-container {
   height: 20vh;
   padding: 4.1rem;
+}
+ .login-page-wrapper {
+  width: 82vh;
+  height: 80vh;
+ }
+
+.sign-up-header {
+  font-size: 2.5rem;
 }
 
 .login-page-field-container {
@@ -830,9 +833,6 @@ input {
   width: 99%;
 }
 
-.sign-up-header {
-  font-size: 3.5rem;
-}
 .sign-up-page-wrapper {
   height: 90vh;
 }
@@ -861,7 +861,7 @@ input {
 
 .login-page-container {
   width: 99%;
-  height: 88vh;
+  height: 99vh;
 }
 
 .login-page-form-container {
@@ -993,12 +993,16 @@ input {
   }
 
   .login-page-wrapper {
-    width: 42vh;
+    width: 65vh;
   }
 
   .login-page-form-container {
     height: 19vh;
     width: 24.5rem;
+}
+
+.login-page-header {
+  font-size: 1.5rem;
 }
 
 .login-button-wrapper {
@@ -1117,8 +1121,8 @@ input {
 }
 
 .login-page-wrapper {
-  width: 41vh;
-  height: 52vh;
+  width: 65vh;
+  height: 78vh;
 }
 
 .login-page-form-container {
@@ -1226,12 +1230,13 @@ input {
     width: 97%;
 }
 .sign-up-page-wrapper {
+  height: 80vh;
+  width: 72vw;
   margin-top: 3rem;
   margin-left: 3rem;
 }
-.sign-up-page-wrapper {
-  height: 52vh;
-  width: 72vw;
+.sign-up-header {
+  font-size: 3rem;
 }
 }
 
@@ -1278,11 +1283,12 @@ input {
 }
 
 .login-page-wrapper {
-  height: 62vh;
+  height: 70vh;
+  width: 55vw;
 }
 
 .login-page-header {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .login-page-field-container {
   width: 22rem;
@@ -1300,7 +1306,7 @@ input {
   width: 17rem;
 }
 .sign-up-page-wrapper {
-  height: 64vh;
+  height: 79vh;
 }
 
 .sign-up-header {
@@ -1328,12 +1334,12 @@ input {
 }
 
   .login-page-wrapper {
-    width: 37vh;
-    height: 46vh;
+    width: 55vh;
+    height: 65vh;
 }
 
 .login-page-header {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .login-page-field-container {
