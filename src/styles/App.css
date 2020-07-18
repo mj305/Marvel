@@ -836,6 +836,9 @@ input {
 .sign-up-page-wrapper {
   height: 90vh;
 }
+.forgot-password-header {
+  font-size: 2.5rem;
+}
 }
 
 
@@ -1303,6 +1306,13 @@ input {
 .sign-up-header {
   font-size: 3rem;
 }
+.forgot-password-page-container {
+  width: 97%;
+}
+.forgot-password-page-wrapper {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
 
 }
 
@@ -1345,7 +1355,16 @@ input {
   margin-left: 2rem;
   width: 60vh;
 }
-
+.forgot-password-page-wrapper {
+  width: 52vh;
+}
+.forgot-password-page-form-group {
+  width: 82%;
+}
+.forgot-password-button {
+  margin-top: 3rem;
+  margin-left: 33%;
+}
 
 }
 
@@ -1574,6 +1593,9 @@ input {
   width: 15rem;
 }
  */
+ .forgot-password-page-wrapper {
+  width: 43vh;
+}
 }
 /*======================================================
 ================   450px Above ======================
@@ -1825,17 +1847,13 @@ input {
   }
 
 .App-logo {
-
   height: 45vmin;
   margin-top: -19rem;
-
 }
 
 .nav-bar-about-auth-container {
-
   margin-left: 1.5rem;
   margin-right: 7rem;
-
 }
 .login-page-container {
   width: 94%;
@@ -1883,6 +1901,18 @@ width: 16.5rem;
 }
 .sign-up-page-form-group {
   font-size: 1rem;
+}
+.forgot-password-header {
+  font-size: 2rem;
+}
+.forgot-password-page-wrapper {
+  width: 37vh;
+}
+.forgot-password-page-form-group {
+  width: 73%;
+}
+.forgot-password-button {
+  margin-left: 24%;
 }
 }
 /*======================================================
@@ -2040,6 +2070,19 @@ width: 16.5rem;
 }
 .sign-up-header {
   font-size: 2.5rem;
+}
+.forgot-password-header {
+  font-size: 1.5rem;
+}
+.forgot-password-page-wrapper {
+  width: 30vh;
+}
+.forgot-password-page-form-group {
+  width: 92%;
+  margin-left: -1.5rem;
+}
+.forgot-password-button {
+  margin-left: 17%;
 }
 }
 /*======================================================
