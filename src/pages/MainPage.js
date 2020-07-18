@@ -35,8 +35,8 @@ function MainPage() {
               <a href="http://marvel.com" target="blank" >
                 <img src={logo} className="App-logo" alt="logo" />
               </a>   
-
-              <p className="main-page-paragraph" ></p>
+{/* 
+              <p className="main-page-paragraph" ></p> */}
 
             <div  className="main-characters-footer-container">  
               <Footer />

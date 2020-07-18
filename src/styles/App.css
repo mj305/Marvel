@@ -5,7 +5,6 @@ a:link {
 
 /* Nav Bar */
 .nav-bar-container {
-  
   width: 100%;
 } 
 
@@ -18,7 +17,6 @@ a:link {
 
 .nav-bar-about {
   margin-right: 2.5rem;
-  box-shadow: -10px 11px 9px -5px black; 
   padding: 15px 25px;
   font-size: 1.2rem;
   font-weight: 500;
@@ -102,6 +100,9 @@ a:link {
 
 
 /* Main Page */
+.main-page-nav-bar-container {
+
+}
 
 .App-header {
   min-height: 89.8vh;
@@ -1237,10 +1238,19 @@ width: 42rem;
 }
 
 .nav-bar-about-auth-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10.5rem;
-  padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-left: 24.5rem;
+    padding: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-bar-about {
+  margin-bottom: .5rem;
+}
+
+.nav-bar-login {
+  margin-bottom: .5rem;
 }
 
 .all-characters-page-logo {
