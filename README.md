@@ -56,3 +56,5 @@
 - heroku run rake db:migrate
 - Heroku open
 
+## Repl 
+-[![Run on Repl.it](https://repl.it/badge/github/mj305/Marvel)](https://repl.it/github/mj305/Marvel)
