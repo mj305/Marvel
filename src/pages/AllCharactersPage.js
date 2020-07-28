@@ -48,7 +48,7 @@ const AllCharactersPage = (props) => {
     
     
     const fetchAllCharacters = async () => {
-      const url = `https://gateway.marvel.com:443/v1/public/characters?limit=100&apikey=5189968cf45946bfc4dba96d1349fe75`
+      const url = `${process.env.REACT_APP_MARVEL_URL}/characters?limit=100&apikey=${process.env.REACT_APP_API_KEY}`
       try {
         const result = await axios(url);
         setAllCharacters(result);
@@ -65,7 +65,7 @@ const AllCharactersPage = (props) => {
       <div className="all-characters-container" >
         <Link to={`/characterpage/${data.id}`} >
           <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
-          <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} />
+          <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=${process.env.REACT_APP_API_KEY}`} />
         </Link>
       </div>
     )

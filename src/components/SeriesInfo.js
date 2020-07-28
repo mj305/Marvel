@@ -19,7 +19,7 @@ const SeriesInfo = (props) => {
 
   React.useEffect(() => {
     const fetchSeries = async () => {
-      const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/series?apikey=5189968cf45946bfc4dba96d1349fe75`  
+      const url = `${process.env.REACT_APP_MARVEL_URL}/characters/${props.id}/series?apikey=${process.env.REACT_APP_API_KEY}`  
       try{
       const result = await axios(url);
       setSeries(result)
@@ -36,7 +36,7 @@ const SeriesInfo = (props) => {
           <div className="flip-card">
             <div className="flip-card-inner">
               <div class="flip-card-front">
-                 <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} alt="series pic" className="character-series-image" />
+                 <img src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=${process.env.REACT_APP_API_KEY}`} alt="series pic" className="character-series-image" />
                </div>
   
             <div/>

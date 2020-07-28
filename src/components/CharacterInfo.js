@@ -21,7 +21,7 @@ const CharacterInfo = (props) => {
 
   React.useEffect(() => {
     const fetchCharacter = async () => {
-    const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}?apikey=5189968cf45946bfc4dba96d1349fe75`  
+    const url = `${process.env.REACT_APP_MARVEL_URL}/characters/${props.id}?apikey=${process.env.REACT_APP_API_KEY}`  
       try {
         const result = await axios(url);
         setCharacter(result);
@@ -42,7 +42,7 @@ const CharacterInfo = (props) => {
           <h1 className="character-name" > { results[0].name ? (results[0].name) : ("ups...")}</h1>
 
           <img className="character-image"
-            src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=5189968cf45946bfc4dba96d1349fe75`} 
+            src={`${results[0].thumbnail.path}.${results[0].thumbnail.extension}?apikey=${process.env.REACT_APP_API_KEY}`} 
             alt="character-pic" 
           />
 

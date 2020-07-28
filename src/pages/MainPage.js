@@ -12,7 +12,7 @@ function MainPage() {
 
   useEffect(() => {
     const fetchData = async () => {
-    const url = `https://gateway.marvel.com:443/v1/public/characters?apikey=5189968cf45946bfc4dba96d1349fe75`  
+    const url = `${process.env.REACT_APP_MARVEL_URL}/characters?apikey=${process.env.REACT_APP_API_KEY}`  
       try {
         const result = await axios(url);
         setQuery(result);
@@ -35,8 +35,6 @@ function MainPage() {
               <a href="http://marvel.com" target="blank" >
                 <img src={logo} className="App-logo" alt="logo" />
               </a>   
-{/* 
-              <p className="main-page-paragraph" ></p> */}
 
             <div  className="main-characters-footer-container">  
               <Footer />

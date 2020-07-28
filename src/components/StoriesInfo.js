@@ -15,7 +15,7 @@ const StoriesInfo = (props) => {
 
   React.useEffect(() => {
     const fetchStories = async () => {
-      const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/stories?apikey=5189968cf45946bfc4dba96d1349fe75`
+      const url = `https://gateway.marvel.com:443/v1/public/characters/${props.id}/stories?apikey=${process.env.REACT_APP_API_KEY}`
       try {
         const results = await axios(url);
         setStories(results)
