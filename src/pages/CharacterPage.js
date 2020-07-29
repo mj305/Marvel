@@ -41,7 +41,7 @@ const CharacterPage = (props) => {
         <div>
              
           <div className="character-page-header-container" >
-            <div class="scroll-down center">
+            <div class="scroll-down center" >
              <CharacterInfo id={id}/>
               <div class="scroll-icon center">&darr;</div>
             </div>   

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
 import '../styles/AboutPage.css';
@@ -26,12 +25,9 @@ const AboutPage = () => {
               publishing. For more information visit 
               <a href="https://www.marvel.com/" target="blank" > marvel.com</a> © 2020 MARVEL.
               </p> 
+               <p className="about-page-parragraph-1" > Created By <a href="https://mariabeckles.herokuapp.com/" target="blank" > Maria Beckles </a></p>
             </div>
           </div>
-
-{          <div  className="main-characters-footer-container">  
-              <Footer />
-            </div>}
       </div>
     </>
   )

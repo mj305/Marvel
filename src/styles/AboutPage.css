@@ -1,3 +1,15 @@
+
+ .about-page-parragraph-1 a {
+  color: #0060B6;
+  text-decoration: none;
+}
+
+.about-page-parragraph-1 a:hover {
+   color:#00A0C6; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
 .about-page-container {
   background: url(../assets/Thanos.jpg);
   width: 100%;
@@ -31,6 +43,8 @@
   margin-left: 16rem;
   padding: 1rem;
 }
+
+
 
 
 
