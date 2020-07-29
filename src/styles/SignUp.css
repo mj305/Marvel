@@ -1,0 +1,186 @@
+.sign-up-page-container {
+  background: url(../assets/authMarvel.jpg);
+  width: 99.5vw;
+  height: 150vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: -5rem;
+}
+
+.sign-up-page-wrapper {
+  border: solid 1rem #EF482A;
+  background-color: #fbe555;
+  box-shadow: -10px 11px 9px -5px black;
+  width: 76vh;
+  height: 62vh;
+  margin-top: 7rem;
+  margin-left: 6rem;
+ }
+
+ .sign-up-header-wrapper {
+  color: #035aa6;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.sign-up-header {
+  margin: .2rem;
+}
+
+.sign-up-page-form-group {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #035aa6;
+  width: 41rem;
+}
+
+.sign-up-button-wrapper {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  width: 92%;
+  margin-top: 1rem;
+}
+
+.sign-up-button {
+  color: white;
+  font-size: 1.5rem;
+  background-color: #3F51B5;
+  width: 9rem;
+  height: 3rem;
+  border-radius: 45%;
+  box-shadow: -10px 11px 9px -5px black;
+}
+
+.sign-up-page-log-in-button-wrapper{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 1900px) {
+  .sign-up-header {
+    font-size: 2.5rem;
+  }
+}  
+
+
+
+@media (max-width: 800px) {
+    .sign-up-page-container {
+      width: 97%;
+  }
+
+  .sign-up-page-wrapper {
+    height: 80vh;
+    width: 72vw;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  .sign-up-header {
+    font-size: 3rem;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .sign-up-page-wrapper {
+    height: 79vh;
+  }
+
+  .sign-up-header {
+    font-size: 3rem;
+  }
+}
+
+
+
+@media (max-width: 630px) {
+  .sign-up-page-wrapper {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 60vh;
+  }
+
+  .sign-up-header {
+    font-size: 3rem;
+  }
+}
+
+
+
+@media (max-width: 500px) {
+    .sign-up-page-wrapper {
+      width: 47vh;
+  }
+
+  .sign-up-form-container {
+    margin-right: 1.5rem;
+  }
+}
+
+
+
+@media (max-width: 414px) {
+  .sign-up-page-wrapper {
+    height: 87vh;
+  }
+
+  .sign-up-header {
+    font-size: 2.5rem;
+  }
+
+  .sign-up-page-form-group {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media (max-width: 375px) {
+  .sign-up-page-wrapper {
+    width: 36vh;
+    height: 99vh;
+  }
+
+  .sign-up-header {
+    font-size: 2.5rem;
+  }
+
+  .sign-up-page-form-group {
+    font-size: 1rem;
+  }
+}
+
+
+
+@media(max-width: 360px) {
+  .sign-up-page-wrapper {
+    height: 86vh;
+  }
+}
+
+
+
+@media (max-width: 320px) {
+  .sign-up-page-container{
+    width: 113%;
+    height: 102vh;
+  }
+
+  .sign-up-page-wrapper {
+    width: 29vh;
+  }
+
+  .sign-up-header {
+    font-size: 2.5rem;
+  }
+}

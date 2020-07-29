@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import axios from 'axios';
-import {Link, useHistory, useParams } from 'react-router-dom';
+import {useHistory, useParams } from 'react-router-dom';
 
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
@@ -8,16 +8,11 @@ import { toast } from 'react-toastify';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
+
 const ResetPassword = (props) => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
   const { token, email } = useParams()
   const history = useHistory()
-
-  /* useEffect(() => {
-    if (props.user) {
-      history.push("/allcharacters")
-    } 
-  }, []) */
 
   const onSubmit = (data) => {
     axios({
@@ -38,31 +33,31 @@ const ResetPassword = (props) => {
         <div>
           <NavBarComponent user={props.user} />
         </div>
-            <div className="sign-up-page-container" >
+            <div className="reset-password-page-container" >
 
-                <div className="sign-up-page-wrapper">
-                    <div className="sign-up-header-wrapper">
-                      <h1 className="sign-up-header">Enter New Password</h1>
+                <div className="reset-password-page-wrapper">
+                    <div className="reset-password-header-wrapper">
+                      <h1 className="reset-password-header">Enter New Password</h1>
                     </div>
 
-                    <div className="sign-up-form-container">
+                    <div className="reset-password-form-container">
                         <form onSubmit={handleSubmit(onSubmit)} > 
 
-                            <div className="sign-up-page-form-group" >
+                            <div className="reset-password-page-form-group" >
                                 <label>Password *</label>
                                 <input className="" name="password" type="password" ref={register({ required: true })}/>
                                 <p>(what is the condition for the password?)</p>
                             </div> 
                             {errors.password && <span>This field is required</span>}
 
-                            <div  className="sign-up-page-form-group" >
+                            <div  className="reset-password-page-form-group" >
                                 <label>Password Confirmation *</label>
                                 <input type="password" name="passwordConfirmation" />
                             </div>
 
                             <div>
-                                <div className="sign-up-button-wrapper" >
-                                    <button type="submit" className="sign-up-button"> Reset </button>
+                                <div className="reset-password-button-wrapper" >
+                                    <button type="submit" className="reset-password-button"> Reset </button>
                                 </div>
                             </div>
                         </form>
@@ -71,7 +66,7 @@ const ResetPassword = (props) => {
             </div>
 
 
-        <div className="sign-up-page-footer" >
+        <div className="reset-password-page-footer" >
           <Footer/>
         </div>
     </>

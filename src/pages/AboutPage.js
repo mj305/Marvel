@@ -3,6 +3,8 @@ import React from 'react';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
+import '../styles/AboutPage.css';
+
 
 const AboutPage = () => {
 

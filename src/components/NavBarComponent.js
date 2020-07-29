@@ -8,6 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Toolbar from '@material-ui/core/Toolbar';
 
 import logo from '../assets/logo.png';
+import '../styles/NavBarComponent.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,7 +29,6 @@ export default function NavBarComponent(props) {
   const history = useHistory();
 
   const handleNavigation = (route) => {
-     /*   history.push(`/${route}`)  */
        console.log(route)
   }
 
@@ -47,16 +47,16 @@ export default function NavBarComponent(props) {
 
                <Link to="/"> 
                   <IconButton >
-                    <img src={logo} className="all-characters-page-logo" alt="logo" />
+                    <img src={logo} className="nav-bar-logo" alt="logo" />
                   </IconButton>
                 </Link>
 
                 <div className="nav-bar-about-auth-container" >
-                  {props.user ? (<Link className="nav-bar-group-item" className="nav-bar-about" onClick={handleLogout} >Logout</Link>) : (
+                  {props.user ? (<Link className="nav-bar-about" onClick={handleLogout} >Logout</Link>) : (
                    <>
-                    <Link className="nav-bar-group-item" className="nav-bar-about" color="inherit" to="/about" >About </Link>
-                    <Link className="nav-bar-group-item" className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
-                    <Link className="nav-bar-group-item" className="nav-bar-signup" color="inherit" to="/signup"> Sign-Up</Link> 
+                    <Link className="nav-bar-about" color="inherit" to="/about" >About </Link>
+                    <Link className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
+                    <Link className="nav-bar-signup" color="inherit" to="/signup"> Sign-Up</Link> 
                    </>
                   )}
                 </div>
