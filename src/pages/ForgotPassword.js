@@ -16,7 +16,7 @@ const ForgotPassword = () => {
   const onSubmit = (data, event) => {
     axios({
       method: "post",
-      url: "http://localhost:4000/forgotpassword",
+      url: `${process.env.REACT_APP_DB_URL}/forgotpassword`,
       data,
     }).then((result) => {
       console.log(result)

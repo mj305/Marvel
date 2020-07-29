@@ -32,7 +32,7 @@ const SignUp = (props) => {
   const onSubmit = (data, event) => {
     axios({
       method: "post",
-      url: "http://localhost:4000/signUp",
+      url: `${process.env.REACT_APP_DB_URL}/signup`,
       data,
     }).then((result) => {
       console.log(result)

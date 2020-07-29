@@ -17,7 +17,7 @@ const ResetPassword = (props) => {
   const onSubmit = (data) => {
     axios({
       method: "post",
-      url: "http://localhost:4000/resetpassword",
+      url: `${process.env.REACT_APP_DB_URL}/resetpassword`,
       data: {email, password: data.password, token},
     }).then((result) => {
       console.log(result)

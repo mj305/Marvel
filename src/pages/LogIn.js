@@ -19,7 +19,7 @@ const LogIn = () => {
   const onSubmit = data => {
       axios({
         method: "post",
-        url: "http://localhost:4000/signIn",
+        url: `${process.env.REACT_APP_DB_URL}/signIn`,
         data,
       }).then((result) => {
         console.log(result)
