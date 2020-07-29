@@ -1,0 +1,16 @@
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #3F51B5;
+}
+
+
+/* Media Queries */
+@media (max-width: 320px) {
+.footer-container {
+  display: inline;
+   text-align: center;
+   bottom: 0;
+ }
+}

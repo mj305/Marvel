@@ -8,11 +8,13 @@ import { toast } from 'react-toastify';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
+import '../styles/LogIn.css';
+
 
 const LogIn = () => {
   const history = useHistory();
 
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = data => {
       axios({
@@ -52,13 +54,13 @@ const LogIn = () => {
 
                   <form onSubmit={handleSubmit(onSubmit)} className="new-user-form" method="post" > 
                    <div className="login-page-field-container" >
-                   <div className="login-up-page-form-group" >
+                   <div>
                       <label>Email *</label>
                       <input name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
                     </div>
                     {errors.email && <span>This field is required</span>}
 
-                    <div className="login-up-page-form-group" >
+                    <div >
                       <label>Password *</label>
                         <input className="" name="password" type="password" ref={register({ required: true })}/>
                     </div> 

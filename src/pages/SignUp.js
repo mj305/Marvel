@@ -9,6 +9,8 @@ import jwtDecode from 'jwt-decode';
 import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
+import '../styles/SignUp.css';
+
 const SignUp = (props) => {
   const { register, handleSubmit, watch, errors } = useForm();
  
@@ -70,7 +72,7 @@ const SignUp = (props) => {
 
                             <div className="sign-up-page-form-group" >
                                 <label>Password *</label>
-                                <input className="" name="password" type="password" ref={register({ required: true })}/>
+                                <input name="password" type="password" ref={register({ required: true })}/>
                                 <p>(what is the condition for the password?)</p>
                             </div> 
                             {errors.password && <span>This field is required</span>}

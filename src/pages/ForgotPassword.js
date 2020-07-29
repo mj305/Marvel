@@ -8,6 +8,8 @@ import { toast } from 'react-toastify';
 import Footer from '../components/FooterComponent'
 import NavBarComponent from '../components/NavBarComponent'
 
+import '../styles/ForgotPassword.css';
+
 
 const ForgotPassword = () => {
   const { register, handleSubmit, watch, errors } = useForm();
@@ -54,7 +56,7 @@ const ForgotPassword = () => {
                            
 
                             <div>
-                                <div className="forgot-password-button-wrapper">
+                                <div>
                                     <button type="submit" className="forgot-password-button"> Reset </button>
                                 </div>
                             </div>
@@ -65,7 +67,7 @@ const ForgotPassword = () => {
             </div>
 
 
-        <div className="sign-up-page-footer" >
+        <div className="forgot-password-page-footer" >
           <Footer/>
         </div>
     </>
