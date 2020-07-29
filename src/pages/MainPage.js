@@ -32,15 +32,7 @@ function MainPage() {
           <NavBarComponent />
         </div>
           <header className="App-header">
-
-              <a href="http://marvel.com" target="blank" >
-                <img src={logo} className="App-logo" alt="logo" />
-              </a>   
-
-            <div className="main-characters-footer-container">  
-              <Footer />
-            </div>
-
+              <h1 className="text-pop-up-top" >Marvel</h1>
           </header>
       </div>
     </>

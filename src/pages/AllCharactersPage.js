@@ -78,7 +78,7 @@ const AllCharactersPage = (props) => {
         <>
           <div>
             <NavBarComponent user={props.user} />
-            <div className="all-characters-loading-component">
+            <div className="all-characters-loading-component nav-bar-about">
              <LoadingComponent />
             </div>
           </div> 

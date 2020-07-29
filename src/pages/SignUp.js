@@ -46,7 +46,7 @@ const SignUp = (props) => {
   return (
     <>
         <div>
-          <NavBarComponent user={props.user} />
+          <NavBarComponent /* user={props.user} */ />
         </div>
 
             <div className="sign-up-page-container" >

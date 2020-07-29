@@ -50,9 +50,9 @@ export default function NavBarComponent(props) {
                 <div className="nav-bar-about-auth-container" >
                   {props.user ? (<Link className="nav-bar-about" onClick={handleLogout} >Logout</Link>) : (
                    <>
-                    <Link className="nav-bar-about" color="inherit" to="/about" >About </Link>
-                    <Link className="nav-bar-login" color="inherit" to="/login"> Login</Link> 
-                    <Link className="nav-bar-signup" color="inherit" to="/signup"> Sign-Up</Link> 
+                    <Link className="nav-bar-group" color="inherit" to="/about" >About </Link>
+                    <Link className="nav-bar-group" color="inherit" to="/login"> Login</Link> 
+                    <Link className="nav-bar-group" color="inherit" to="/signup"> Sign-Up</Link> 
                    </>
                   )}
                 </div>
