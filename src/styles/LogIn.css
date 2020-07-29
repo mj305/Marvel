@@ -16,7 +16,7 @@
   border: solid 1rem #EF482A;
   background-color: #fbe555;
   box-shadow: -10px 11px 9px -5px black;
-  width: 76vh;
+  width: 73.5vh;
   height: 55vh;
   margin-top: 4rem;
   margin-left: 6rem;
@@ -396,9 +396,25 @@
 
 
 @media(max-width: 360px) {
+  .login-page-container {
+    width: 139vw;
+    height: 117.5vh;
+  }
+
   .login-page-wrapper {
-    width: 36vh;
+    width: 39vh;
     height: 73vh;
+  }
+
+  .nav-bar-group {
+    margin-right: -8.5rem;
+    padding: 3px 25px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: right;
+    cursor: pointer;
+    outline: none;
+    color: white;
   }
 }
 
