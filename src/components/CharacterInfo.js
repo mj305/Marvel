@@ -32,7 +32,7 @@ const CharacterInfo = (props) => {
 
     fetchCharacter();
 
-  },[]);
+  },[props.id]);
 
   return(
     

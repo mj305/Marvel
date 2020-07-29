@@ -12,7 +12,7 @@ import NavBarComponent from '../components/NavBarComponent';
 import '../styles/SignUp.css';
 
 const SignUp = (props) => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
  
   const history = useHistory()
 
@@ -27,7 +27,7 @@ const SignUp = (props) => {
         console.log("this is decoded: ", decoded)
        } 
     } 
-  }, [])
+  }, [history])
 
   const onSubmit = (data, event) => {
     axios({

@@ -28,10 +28,6 @@ export default function NavBarComponent(props) {
 
   const history = useHistory();
 
-  const handleNavigation = (route) => {
-       console.log(route)
-  }
-
   const handleLogout = () => {
     localStorage.removeItem("token");
     history.push("/")

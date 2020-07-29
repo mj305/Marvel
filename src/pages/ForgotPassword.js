@@ -12,13 +12,13 @@ import '../styles/ForgotPassword.css';
 
 
 const ForgotPassword = () => {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data, event) => {
     axios({
       method: "post",
       url: "http://localhost:4000/forgotpassword",
       data,
-    }) .then((result) => {
+    }).then((result) => {
       console.log(result)
         toast(result.data.message)
         event.target.reset()

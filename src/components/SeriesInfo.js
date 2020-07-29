@@ -28,7 +28,7 @@ const SeriesInfo = (props) => {
     }
    }
     fetchSeries();
-  }, [])
+  }, [props.id])
 
   
     const characterSeries = series.data.data.results.map(data => {

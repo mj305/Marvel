@@ -24,7 +24,7 @@ const StoriesInfo = (props) => {
       }
     }
     fetchStories();
-  }, [])
+  }, [props.id])
 
   const characterStories = stories.data.data.results.map(data => {
     console.log(data)

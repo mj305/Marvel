@@ -31,7 +31,7 @@ const CharacterPage = (props) => {
     } else {
       history.push("/")
     }
-   }, []) 
+   }, [history]) 
   
   const {id} = useParams(); 
 

@@ -28,7 +28,7 @@ const ComicsInfo = (props) => {
     }
 
     fetchComics();
-  },[]);
+  },[props.id]);
 
       
 

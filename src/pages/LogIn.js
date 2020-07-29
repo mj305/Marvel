@@ -21,7 +21,7 @@ const LogIn = () => {
         method: "post",
         url: "http://localhost:4000/signIn",
         data,
-      }) .then((result) => {
+      }).then((result) => {
         console.log(result)
         if(result.data.token) {
           toast(result.data.message)
@@ -78,8 +78,8 @@ const LogIn = () => {
                       </div>
                     </div>
 
-                    <div className="login-page-form-group" className="login-page-signup-button-wrapper">
-                      <a href="./SignUp.js" ></a>
+                    <div className="login-page-form-group  login-page-signup-button-wrapper" >
+                      <a href="./SignUp.js" >SignUp</a>
                       <br/>
                       <a href="./ForgotPassword" >Forgot your password?</a> 
                     </div>

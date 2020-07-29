@@ -58,14 +58,14 @@ const AllCharactersPage = (props) => {
        }
     }
     fetchAllCharacters();
-  },[]);
+  },[history]);
 
   const allCharactersMap = allCharacters.data.data.results.map(data => {
     return (
       <div className="all-characters-container" >
         <Link to={`/characterpage/${data.id}`} >
           <h1 className="all-characters-name" key={data.id}> {data.name} </h1>
-          <img className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=${process.env.REACT_APP_API_KEY}`} />
+          <img alt="" className="all-characters-image" src={`${data.thumbnail.path}.${data.thumbnail.extension}?apikey=${process.env.REACT_APP_API_KEY}`} />
         </Link>
       </div>
     )

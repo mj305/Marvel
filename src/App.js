@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,18 +7,16 @@ import {
 
 import jwtDecode from 'jwt-decode';
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import CharacterInfo from './components/CharacterInfo';
-import ProtectedRoute from './components/ProtectedRouteComponent';
 
 import AboutPage from './pages/AboutPage';
 import AllCharactersPage from './pages/AllCharactersPage';
 import CharactersPage from './pages/CharacterPage';
 import ForgotPassword from './pages/ForgotPassword';
 import ResetPassword from './pages/ResetPasswordPage'
-import PublicRoute from './components/PublicRoutesComponent'; 
 import LogIn from './pages/LogIn';
 import MainPage from './pages/MainPage';
 import SignUp from './pages/SignUp';
