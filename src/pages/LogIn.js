@@ -67,11 +67,6 @@ const LogIn = () => {
                     {errors.password && <span>This field is required</span>}
                    </div>
 
-                      <div className="remember-me">
-                          <input className="checkbox" type="checkbox" value="1" />
-                          <label>Remember Me</label>
-                      </div>
-
                     <div>
                       <div className="login-button-wrapper" >
                         <button className="login-button" type="submit"> Login </button>

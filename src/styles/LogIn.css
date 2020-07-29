@@ -5,7 +5,7 @@
 .login-page-container {
   background: url(../assets/authMarvel.jpg);
   width: 99%;
-  height: 127vh;
+  height: 88vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -17,16 +17,15 @@
   background-color: #fbe555;
   box-shadow: -10px 11px 9px -5px black;
   width: 76vh;
-  height: 73vh;
+  height: 55vh;
   margin-top: 4rem;
   margin-left: 6rem;
 }
 
 .login-page-header {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #035aa6;
   text-align: center;
-  
 }
 
 .login-page-form-container {
@@ -74,13 +73,23 @@
   box-shadow: -10px 11px 9px -5px black;
 }
 
+.login-button {
+  color: #bbe1fa;
+  text-decoration: none;
+}
+
+.login-button:hover {
+   color:#00A0C6; 
+   text-decoration:none; 
+   cursor:pointer;  
+}
+
 .login-page-form-group {
   height: 1.8rem;
-  padding: 1.5rem;
 }
 
 .login-page-signup-button-wrapper {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
   text-decoration: none;
   margin-top: 3.5rem;
@@ -109,12 +118,13 @@
 
   .login-page-container {
     width: 99.2%;
-    height: 100vh;
-   }
-   .login-page-wrapper {
-    width: 82vh;
-    height: 80vh;
-   }
+    height: 93vh;
+  }
+
+  .login-page-wrapper {
+      width: 46vh;
+      height: 41vh;
+  }
 
    .login-page-field-container {
     margin-top: -4rem;
