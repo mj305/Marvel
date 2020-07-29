@@ -95,11 +95,6 @@ const SignUp = (props) => {
                     </div>
                 </div>
             </div>
-
-
-        <div className="sign-up-page-footer" >
-          <Footer/>
-        </div>
     </>
   ) 
 }

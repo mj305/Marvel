@@ -84,14 +84,8 @@ const LogIn = () => {
                       <a href="./ForgotPassword" >Forgot your password?</a> 
                     </div>
                   </form>
-
               </div>
           </div>
-
-      </div>
-
-      <div className="login-page-footer-container" >
-        <Footer/>
       </div>
     </>
   )
