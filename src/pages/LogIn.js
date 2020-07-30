@@ -55,14 +55,14 @@ const LogIn = () => {
                   <form onSubmit={handleSubmit(onSubmit)} className="new-user-form" method="post" > 
                    <div className="login-page-field-container" >
                    <div>
-                      <label>Email *</label>
-                      <input name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
+                      <label >Email *</label>
+                      <input className="login-labels"  name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
                     </div>
                     {errors.email && <span>This field is required</span>}
 
                     <div >
-                      <label>Password *</label>
-                        <input className="" name="password" type="password" ref={register({ required: true })}/>
+                      <label >Password *</label>
+                        <input className="login-labels" name="password" type="password" ref={register({ required: true })}/>
                     </div> 
                     {errors.password && <span>This field is required</span>}
                    </div>
