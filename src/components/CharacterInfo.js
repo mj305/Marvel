@@ -36,7 +36,7 @@ const CharacterInfo = (props) => {
 
   return(
     
-      <>
+      <> 
         <div className="character-container" >
 
           <h1 className="character-name" > { results[0].name ? (results[0].name) : ("ups...")}</h1>
@@ -52,3 +52,5 @@ const CharacterInfo = (props) => {
 };
 
 export default CharacterInfo;
+
+/* Removed ClassName for image */
