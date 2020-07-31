@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 
-import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
 import '../styles/LogIn.css';

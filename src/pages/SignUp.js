@@ -6,7 +6,6 @@ import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 import jwtDecode from 'jwt-decode';
 
-import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
 import '../styles/SignUp.css';
