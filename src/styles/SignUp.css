@@ -1,11 +1,11 @@
 .sign-up-page-container {
   background: url(../assets/authMarvel.jpg);
   width: 100vw;
-  height: 90vh;
+  height: 150vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin-top: -5rem;
+  margin-top: 0em;
 }
 
 .sign-up-page-wrapper {

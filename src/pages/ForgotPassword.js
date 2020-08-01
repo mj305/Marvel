@@ -65,11 +65,6 @@ const ForgotPassword = () => {
                     </div>
                 </div>
             </div>
-
-
-        <div className="forgot-password-page-footer" >
-          <Footer/>
-        </div>
     </>
   ) 
 }

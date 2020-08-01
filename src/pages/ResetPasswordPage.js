@@ -5,7 +5,6 @@ import {useHistory, useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import { toast } from 'react-toastify';
 
-import Footer from '../components/FooterComponent';
 import NavBarComponent from '../components/NavBarComponent';
 
 
@@ -64,11 +63,6 @@ const ResetPassword = (props) => {
                     </div>
                 </div>
             </div>
-
-
-        <div className="reset-password-page-footer" >
-          <Footer/>
-        </div>
     </>
   ) 
 }
