@@ -105,3 +105,34 @@
 
 
 /*Media Queries*/
+
+@media (max-width: 1550px) {
+  .nav-bar-container {
+    width: 212vw;
+  }
+
+  .login-page-container {
+    width: 206vw;
+    height: 257vh;
+    background-size: auto;
+  }
+
+  .login-page-wrapper {
+    width: 87.5vh;
+    height: 74vh;
+  }
+
+  input {
+    width: 78%;
+  }
+}
+
+
+
+
+@media (max-width: 1550px) {
+.login-page-wrapper {
+  width: 136vw;
+  height: 66vh;
+  }
+}
