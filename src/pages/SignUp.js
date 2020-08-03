@@ -72,7 +72,7 @@ const SignUp = (props) => {
                             <div className="sign-up-page-form-group" >
                                 <label>Password *</label>
                                 <input name="password" type="password" ref={register({ required: true })}/>
-                                <p>(what is the condition for the password?)</p>
+                                <p>(Minimum 8 characters, 1 letter, 1 number, and 1 special character.)</p>
                             </div> 
                             {errors.password && <span>This field is required</span>}
 

@@ -16,8 +16,8 @@
   border: solid 1rem #EF482A;
   background-color: #fbe555;
   box-shadow: -10px 11px 9px -5px black;
-  width: 73.5vh;
-  height: 55vh;
+  width: 35vw;
+  height: 54vh;
   margin-top: 4rem;
   margin-left: 6rem;
 }
@@ -104,8 +104,20 @@
 
 
 
-/*Media Queries*/
 
+/*Media Queries*/
+@media (max-width: 8768px){
+  .login-page-wrapper {
+      margin-left: 2rem;
+      width: 34vw;
+      height: 57vh;
+  }
+ } 
+
+
+
+
+ 
 @media (max-width: 1550px) {
   .nav-bar-container {
     width: 212vw;
@@ -122,7 +134,7 @@
     height: 74vh;
   }
 
-  input {
+  .login-labels {
     width: 78%;
   }
 }
@@ -130,9 +142,108 @@
 
 
 
-@media (max-width: 1550px) {
-.login-page-wrapper {
-  width: 136vw;
-  height: 66vh;
+@media (max-width: 800px) {
+  .login-page-container {
+    width: 98vw;
+    height: 132vh;
+  }
+
+  .login-page-wrapper {
+    width: 73vw;
+    height: 37vh;
+  }
+
+  .login-labels {
+    padding: .5rem;
+    width: 81%;
+  }
+}
+
+
+
+
+
+@media (max-width: 414px) {
+  .login-page-wrapper {
+    margin-top: 3rem;
+    margin-left: 2.2rem;
+    width: 73vw;
+    height: 66vh;
+  }
+
+  .login-page-header {
+    font-size: 1.3rem;
+  }
+
+  .login-labels {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    width: 38%;
+  }
+
+  .login-page-field-container {
+    margin-top: -3rem;
+  }
+
+  .login-button-wrapper {
+    width: 44%;
+  }
+
+  .login-page-signup-button-wrapper {
+    width: 20rem;
+  }
+}
+
+
+
+
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .login-page-wrapper {
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+
+  .login-page-container {
+    width: 107vw;
+    height: 99vh;
+  }
+
+  .login-page-wrapper {
+    width: 87vw;
+    height: 85vh;
+  }
+
+  .login-page-header {
+    font-size: 1.2rem;
+  }
+
+  .login-page-field-container {
+    margin-top: 0rem;
+  }
+
+  .login-button-wrapper {
+    width: 42%;
+  }
+
+  .login-labels {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    width: 37%;
+  }
+
+  .login-page-signup-button-wrapper {
+    width: 19rem;
+  }
+}
+
+
+
+
+@media (max-width: 375px) {
+  .login-labels {
+    width: 35%;
   }
 }
