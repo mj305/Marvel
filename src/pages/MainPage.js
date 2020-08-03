@@ -30,7 +30,7 @@ function MainPage() {
           <NavBarComponent />
         </div>
           <header className="App-header">
-              <h1 className="text-pop-up-top" >Marvel</h1>
+              <h1 className="tracking-in-expand-fwd-top" >Marvel</h1>
           </header>
       </div>
     </>
