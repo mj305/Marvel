@@ -69,28 +69,55 @@
 
 
 /* Media Queries */
-
-@media (max-width: 1550px) {
-    .App-logo {
-      height: 18vmin;
+@media (max-width: 1024px) {
+  .nav-bar-group {
+    font-size: 2.3rem;
+  }
+  .tracking-in-expand-fwd-top {
+    font-size: 16rem;
   }
 }
 
 
 
+@media (max-width: 768px) {
+  .nav-bar-group {
+    font-size: 1.8rem;
+  }
+
+.tracking-in-expand-fwd-top {
+  font-size: 13rem;
+  }
+}
+
+
+
+@media (max-width: 450px) {
+  .tracking-in-expand-fwd-top {
+    font-size: 8rem;
+  }
+}
+
+
 @media (max-width: 414px) {
-    .App-logo {
-      height: 43vmin;
-      margin-top: -16rem;
+  .nav-bar-group {
+    font-size: 1.2rem;
+  }
+
+  .tracking-in-expand-fwd-top {
+    font-size: 7rem;
   }
 }
 
 
 
 @media (max-width: 375px) {
-  .App-logo {
-    height: 45vmin;
-    margin-top: -19rem;
+  .nav-bar-group {
+    font-size: 1.2rem;
+  }
+
+  .tracking-in-expand-fwd-top {
+    font-size: 6rem;
   }
 }
 
@@ -100,5 +127,31 @@
     .main-page-nav-bar-container {
       width: 22rem;
   }
+
+  .nav-bar-logo {
+    width: 3.5rem;
+    height: 3rem;
+  }
+
+  .nav-bar-group {
+    font-size: .8rem;
+  }
 }
 
+
+
+@media (max-width: 280px) {
+  .nav-bar-container {
+    width: 126vw;
+  }
+
+  .nav-bar-group {
+    margin-right: -1.8rem;
+    font-size: 1rem;
+    padding: 0px 19px;
+  }
+
+  .tracking-in-expand-fwd-top {
+    font-size: 6rem;
+  }
+}
