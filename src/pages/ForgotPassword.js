@@ -4,8 +4,6 @@ import axios from 'axios';
 import { useForm } from "react-hook-form"
 import { toast } from 'react-toastify';
 
-
-import Footer from '../components/FooterComponent'
 import NavBarComponent from '../components/NavBarComponent'
 
 import '../styles/ForgotPassword.css';
