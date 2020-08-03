@@ -51,21 +51,35 @@
 
 /* Media Queries */
 
-@media (max-width: 1300px) {
+@media (max-width: 1295px) {
   .about-page-parragraph-1 {
-    font-size: 3rem;
+    font-size: 2.2rem;
   }
 
-  .about-page-image {
-    width: 87vw;
-    height: 47vh;
-    margin-left: 2rem;
+  .about-page-paragraph-wrapper {
+    width: 60vw;
+    height: 88vh;
+    margin-left: 3rem;
+  }
+
+  .about-page-container {
+    width: 100vw;
+    height: 100vh;
   }
 }
 
 
 
 @media (max-width: 1024px) {
+  .nav-bar-logo {
+    width: 8rem;
+    height: 6rem;
+  }  
+
+.nav-bar-group {
+  font-size: 2rem;
+ } 
+ 
 .about-page-image {
   width: 87vw;
   height: 37vh;
@@ -92,6 +106,15 @@
 
 
 @media (max-width: 768px) {
+  .nav-bar-logo {
+    width: 6rem;
+    height: 5rem;
+  }
+
+  .nav-bar-group {
+    font-size: 1.5rem;
+  }
+
   .about-page-parragraph-1 {
     font-size: 1.5rem;
     margin-right: -4rem;
@@ -118,26 +141,105 @@
 
 
 @media (max-width: 450px) {
+
+  .nav-bar-logo {
+    width: 4.5rem;
+    height: 3rem;
+    margin-left: 0rem;
+  }
+
+  .nav-bar-group {
+    margin-right: -1.5rem;
+    font-size: 1rem;
+  }
+
   .about-page-image {
   height: 15vh;
   margin-left: .2rem;
   width: 85vw;
   }
+
+  .about-page-parragraph-1 {
+    font-size: 1rem;
+    margin-right: -106px;
+  }
 }
 
 @media (max-width: 414px) {
+  .nav-bar-container {
+    width: 106vw;
+  }
+
+  .about-page-paragraph-wrapper {
+    width: 35vw;
+    height: 88vh;
+    margin-left: 1rem;
+  }
+
+  .about-page-container {
+    width: 107vw;
+    height: 100vh;
+  }
+
   .about-page-parragraph-1 {
-    font-size: 1rem;
-    margin-right: -9rem;
+    font-size: 1.2rem;
+    margin-right: -17rem;
   }
 }
 
 
 
 @media (max-width: 375px) {
+  .nav-bar-group {
+    margin-right: -2.5rem;
+    font-size: 1rem;
+  }
+
+  .about-page-paragraph-wrapper {
+    width: 72vw;
+    margin-left: 0rem;
+  }
+  
+
   .about-page-parragraph-1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-right: -6rem;
   }
+}
+
+
+
+@media (max-width: 320px) {
+  .nav-bar-group {
+    margin-right: -2.5rem;
+    font-size: .8rem;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 280px) {
+  .nav-bar-container {
+    width: 106vw;
+  }
+    .nav-bar-logo {
+      width: 4rem;
+      height: 3rem;
+   }
+
+   .nav-bar-group {
+    margin-right: .2rem;
+    font-size: .8rem;
+    padding: 0px 16px;
+   }
+
+  .about-page-container {
+    width: 106vw;
+  }
+
+  
 }
 
