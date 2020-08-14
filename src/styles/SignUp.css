@@ -63,14 +63,9 @@
 /* Media Queries */
 
 @media (max-width: 767px) {
-
   .sign-up-page-container {
     background-size: initial;
     background-position: right;
     height: 150vh;
   }
-
-}
-@media (max-width: 414px) {
-
 }

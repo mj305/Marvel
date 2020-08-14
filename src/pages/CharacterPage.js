@@ -39,25 +39,24 @@ const CharacterPage = (props) => {
     <>  
      <NavBarComponent user={props.user} />
         <div>
-             
           <div className="character-page-header-container" >
-            <div class="scroll-down center" >
-             <CharacterInfo id={id}/>
+              <div class="scroll-down center" >
+                <CharacterInfo id={id}/>
               <div class="scroll-icon center">&darr;</div>
-            </div>   
-          </div> 
+          </div>   
+        </div> 
 
-          <ComicsInfo id={id} /> 
+            <ComicsInfo id={id} /> 
 
-          <SeriesInfo id={id} />
+            <SeriesInfo id={id} />
 
-          <StoriesInfo id={id} />
-          
+            <StoriesInfo id={id} />     
+
         </div>
         
-          <div className="character-page-footer-contaier" >   
-            <Footer />
-          </div> 
+        <div className="character-page-footer-contaier" >   
+          <Footer />
+        </div> 
     </>
   )
 };

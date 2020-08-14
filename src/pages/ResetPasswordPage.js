@@ -28,66 +28,54 @@ const ResetPassword = (props) => {
   };
  
   return (
-    <>
-  
-  
-  
-      <div className="login-page-nav-bar-container" >
-          <NavBarComponent/>
-      </div>
-  
-        <div className="col-md-12">
-        <div className="row">
-  
-        <div className="login-page-container">
-  
-        <div className="col-md-6">
-  
-        <div className="login-page-wrapper">
-        <div className="login-page-header" >
-        <h1 className="reset-password-header">Enter New Password</h1>
-    </div>
-  
-    <div className="login-page-form-container" >
-  
-  
-  
-        <form onSubmit={handleSubmit(onSubmit)} className="new-user-form" method="post" >
-        <div className="login-page-field-container" >
-        <div>
-        <label >Password *</label>
-        <input className="" name="password" type="password" ref={register({ required: true })}/>
-        <p>(Minimum 8 characters, 1 letter, 1 number, and 1 special character.)</p>
-        </div>
-        {errors.password && <span>This field is required</span>}
-  
-    <div >
-    <label>Password Confirmation *</label>
-    <input type="password" name="passwordConfirmation" />
-    </div>
-        {errors.password && <span>This field is required</span>}
-        </div>
-  
-        <div>
-        <div className="login-button-wrapper" >
-        <button type="submit" className="reset-password-button"> Reset </button>
+        <>
+          <div className="login-page-nav-bar-container" >
+           <NavBarComponent/>
+          </div>
+
+            <div className="col-md-12">
+                <div className="row">
+                  <div className="login-page-container">
+                    <div className="col-md-6">
+
+                      <div className="login-page-wrapper">
+                          <div className="login-page-header" >
+                            <h1 className="reset-password-header">Enter New Password</h1>
+                          </div>
+
+                        <div className="login-page-form-container" >
+                          <form onSubmit={handleSubmit(onSubmit)} className="new-user-form" method="post" >
+                              <div className="login-page-field-container" >
+                                  <div>
+                                      <label >Password *</label>
+                                      <input className="" name="password" type="password" ref={register({ required: true })}/>
+                                      <p>(Minimum 8 characters, 1 letter, 1 number, and 1 special character.)</p>
+                                  </div>
+                                  {errors.password && <span>This field is required</span>}
+
+                                  <div >
+                                    <label>Password Confirmation *</label>
+                                    <input type="password" name="passwordConfirmation" />
+                                  </div>
+                                    {errors.password && <span>This field is required</span>}
+                               </div>
+
+                            <div>
+                              <div className="reset-password-button-wrapper" >
+                                <button type="submit" className="reset-password-button"> Reset </button>
+                              </div>
+                            </div>
+                            
+                          </form>
+
+                      </div>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
             </div>
-            </div>
-        </form>
-  
-        </div>
-        </div>
-  
-        </div>
-  
-  
-        </div>
-  
-        </div>
-        </div>
-  
-  
-    </>
+        </>
   ) 
 }
 
