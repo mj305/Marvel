@@ -33,36 +33,48 @@ const ForgotPassword = () => {
           <NavBarComponent/>
         </div>
 
+      <div className="col-md-12">
+        <div className="row">
 
 
-            <div className="forgot-password-page-container" >
+        <div className="forgot-password-page-container">
 
-                <div className="forgot-password-page-wrapper">
-                    <div className="forgot-password-header-wrapper">
-                      <h1 className="forgot-password-header">Reset Password</h1>
-                    </div>
+        <div className="col-md-6">
 
-                    <div className="forgot-password-form-container">
-                        <form onSubmit={handleSubmit(onSubmit)} > 
+        <div className="forgot-password-page-wrapper">
+        <div className="forgot-password-header-wrapper">
+        <h1 className="forgot-password-header">Reset Password</h1>
+    </div>
 
-                            <div className="forgot-password-page-form-group" >
-                                <label>Email *</label>
-                                <input name="email" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
-                            </div>
-                            {errors.email && <span>This field is required</span>}
+    <div className="forgot-password-form-container">
+        <form onSubmit={handleSubmit(onSubmit)} >
 
-                           
+        <div className="forgot-password-page-form-group" >
+        <label>Email *</label>
+        <input name="email" class="form-control" autoFocus="autofocus" ref={register({ required: true })} type="email"/>
+        </div>
+    {errors.email && <span>This field is required</span>}
 
-                            <div>
-                                <div>
-                                    <button type="submit" className="forgot-password-button"> Reset </button>
-                                </div>
-                            </div>
 
-                        </form>
-                    </div>
-                </div>
-            </div>
+
+    <div>
+    <div>
+    <button type="submit" className="forgot-password-button"> Reset </button>
+        </div>
+        </div>
+
+        </form>
+        </div>
+        </div>
+        </div>
+
+        </div>
+
+
+        </div>
+        </div>
+
+
     </>
   ) 
 }
