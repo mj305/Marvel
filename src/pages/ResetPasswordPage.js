@@ -40,13 +40,13 @@ const ResetPassword = (props) => {
                     </div>
 
                     <div className="reset-password-form-container">
-                        <form onSubmit={handleSubmit(onSubmit)} > 
+                        <form onSubmit={handleSubmit(onSubmit)} >
 
                             <div className="reset-password-page-form-group" >
                                 <label>Password *</label>
                                 <input className="" name="password" type="password" ref={register({ required: true })}/>
                                 <p>(what is the condition for the password?)</p>
-                            </div> 
+                            </div>
                             {errors.password && <span>This field is required</span>}
 
                             <div  className="reset-password-page-form-group" >

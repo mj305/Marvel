@@ -71,7 +71,7 @@
 /* Media Queries */
 @media (max-width: 1024px) {
   .nav-bar-group {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
   .tracking-in-expand-fwd-top {
     font-size: 16rem;
@@ -81,12 +81,9 @@
 
 
 @media (max-width: 800px) {
-  .nav-bar-container {
-    width: 113vw;
-  }
 
   .nav-bar-group {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
  .nav-bar-logo {
@@ -100,7 +97,7 @@
 
 @media (max-width: 768px) {
   .nav-bar-group {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
 .tracking-in-expand-fwd-top {
@@ -113,6 +110,9 @@
 @media (max-width: 450px) {
   .tracking-in-expand-fwd-top {
     font-size: 8rem;
+  }
+  .nav-bar-group {
+    font-size: 1rem;
   }
 }
 
@@ -147,7 +147,7 @@
   }
 
   .nav-bar-about-auth-container {
-    margin-right: 5rem;
+    margin-right: 3rem;
   }
 
   .tracking-in-expand-fwd-top {
