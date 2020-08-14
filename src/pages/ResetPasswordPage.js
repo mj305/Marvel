@@ -7,6 +7,8 @@ import { toast } from 'react-toastify';
 
 import NavBarComponent from '../components/NavBarComponent';
 
+import '../styles/ResetPasswordPage.css';
+
 
 const ResetPassword = (props) => {
   const { register, handleSubmit, errors } = useForm();
