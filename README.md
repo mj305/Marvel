@@ -1,6 +1,8 @@
 # Marvel API  -  React App
 
--This is a super cool Marvel App were you can check out tons of characters and learn more about your favorite heroes!
+-This is a super cool Marvel App were you can check out tons of characters and learn more about your favorite heroes!a
+
+### [Find the MarvelDB GitHub Repo HERE] (https://github.com/mj305/MarvelDB)
 
 
 ## Technologies used
