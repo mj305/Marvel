@@ -15,7 +15,7 @@ const AboutPage = () => {
           <div className="about-page-container">
             <div className="about-page-paragraph-wrapper">
                   <p className="about-page-parragraph-1" > 
-                  Marvel Entertainment, LLC, 
+                  Marvel Entertainment, LLC., 
                   a wholly-owned subsidiary of The Walt Disney Company, 
                   is one of the world's most prominent character-based 
                   entertainment companies, built on a proven library of 
